@@ -8,9 +8,14 @@
  */
 ?>
 <h3>用户注册</h3>
+
+<div class="alert fade in regTip" id="regTip">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <span></span>
+</div>
+
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
    'id'=>'regForm',
-   'action'=>Yii::app()->createUrl('register/reg'),
    'htmlOptions'=>array('class'=>'well')
 ));?>
 <?php echo $form->textFieldRow($regModel,'email',array('class'=>'span3 form-horizontal','placeholder'=>'email')); ?>
@@ -19,7 +24,7 @@
     'buttonType'=>'button',
     'label'=>'register',
     'loadingText'=>'Loading...',
-    'htmlOptions'=>array('id'=>'regButton')
+    'htmlOptions'=>array('id'=>'regButton','data'=>Yii::app()->createUrl('register/reg'))
     )); ?>
 <?php $this->endWidget(); ?>
 
