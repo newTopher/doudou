@@ -31,27 +31,18 @@
 
 <?php $this->beginWidget('bootstrap.widgets.TbModal', array('id'=>'regModal')); ?>
 
-    <div class="modal-header">
+    <div class="modal-header" id="tipHeader">
         <a class="close" data-dismiss="modal">&times;</a>
-        <h4>Modal header</h4>
+        <h4></h4>
     </div>
 
-    <div class="modal-body">
-        <p>One fine body...</p>
+    <div class="modal-body" id="tipBody">
+        <p></p>
     </div>
 
     <div class="modal-footer">
-        <?php $this->widget('bootstrap.widgets.TbButton', array(
-            'type'=>'primary',
-            'label'=>'Save changes',
-            'url'=>'#',
-            'htmlOptions'=>array('data-dismiss'=>'modal'),
-        )); ?>
-        <?php $this->widget('bootstrap.widgets.TbButton', array(
-            'label'=>'Close',
-            'url'=>'#',
-            'htmlOptions'=>array('data-dismiss'=>'modal'),
-        )); ?>
+        <button class="btn btn-primary" id="goEmail"></button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
     </div>
 
 <?php $this->endWidget(); ?>

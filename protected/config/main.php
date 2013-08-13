@@ -37,8 +37,8 @@ return array(
 
 	// application components
 	'components'=>array(
-        'bootstrap'=>array(//Ìí¼ÓÒ»¸öÐÂµÄbootstrapÈÝÆ÷
-            'class'=>'bootstrap.components.Bootstrap', //Ö´ÐÐBootstrap.phpÎÄ¼þ
+        'bootstrap'=>array(//ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½bootstrapï¿½ï¿½ï¿½ï¿½
+            'class'=>'bootstrap.components.Bootstrap', //Ö´ï¿½ï¿½Bootstrap.phpï¿½Ä¼ï¿½
         ),
 		'user'=>array(
 			// enable cookie-based authentication
@@ -78,7 +78,8 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'error, warning ,info ,trace',
+                    'categories'=>'system.db.*'
 				),
 				// uncomment the following to show log messages on web pages
 				/*

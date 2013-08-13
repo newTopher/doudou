@@ -6,6 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="zh-cn" />
     <?php Yii::app()->bootstrap->register(); ?>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/base.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js"></script>
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/base.css" rel="stylesheet">
 </head>

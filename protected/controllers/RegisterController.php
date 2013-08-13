@@ -3,7 +3,7 @@
  * Created by IntelliJ IDEA.
  * User: Topher
  * Date: 13-8-12
- * Time: ����2:48
+ * Time: 2:48
  * To change this template use File | Settings | File Templates.
  */
 class RegisterController extends Controller{
@@ -17,10 +17,19 @@ class RegisterController extends Controller{
                 if($regModel->validateEmail()){
                     echo CJSON::encode(array('code'=>"-1",'msg'=>'用户名已存在!'));
                 }else{
-                    $regModel->
+                    if(($uid=$regModel->addUser())){
+                        echo CJSON::encode(array(
+                            'code'=>"0",'uid'=>$uid,
+                            'tipheader'=>self::REG_TIP_HEADER,
+                            'tipbody'=>self::REG_TIP_BODY,
+                            'emailurl'=>$this->getEmailUrl()
+                        ));
+                    }else{
+                        echo CJSON::encode(array('code'=>"-1",'msg'=>'注册失败！'));
+                    }
                 }
             }else{
-
+                echo CJSON::encode(array('code'=>"-1",'msg'=>$regModel->errors()));
             }
         }else{
             $this->render('register',array(

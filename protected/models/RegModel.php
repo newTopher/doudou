@@ -19,4 +19,15 @@ class RegModel extends CFormModel{
     public function validateEmail(){
         return UserModel::validEmail($this->email);
     }
+
+    public function addUser(){
+        $userModel = new UserModel();
+        $userModel->email=$this->email;
+        $userModel->password=$userModel->passEncrypt($this->password);
+        if(false !== $userModel->save()){
+            return $userModel->id;
+        }else{
+            return false;
+        }
+    }
 }

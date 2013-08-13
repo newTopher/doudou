@@ -241,7 +241,7 @@ class CDbCommandBuilder extends CComponent
 			}
 		}
 		$sql="INSERT INTO {$table->rawName} (".implode(', ',$fields).') VALUES ('.implode(', ',$placeholders).')';
-		$command=$this->_connection->createCommand($sql);
+        $command=$this->_connection->createCommand($sql);
 
 		foreach($values as $name=>$value)
 			$command->bindValue($name,$value);
