@@ -10,10 +10,13 @@ class RegModel extends CFormModel{
     public $email;
     public $password;
 
-//    public function rules(){
-//        return array(
-//            array('email','email','message'=>'亲,邮箱格式不正确哦!'),
-//            array('password','min'=>6,'max'=>10,'tooLong'=>'太长了','tooShort'=>'太短了')
-//        );
-//    }
+    public function rules(){
+        return array(
+            array('email,password','required','message'=>'亲,邮箱格式不正确哦!'),
+        );
+    }
+
+    public function validateEmail(){
+        return UserModel::validEmail($this->email);
+    }
 }

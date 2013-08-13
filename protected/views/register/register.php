@@ -10,7 +10,7 @@
 <h3>用户注册</h3>
 
 <div class="alert fade in regTip" id="regTip">
-    <button type="button" class="close" data-dismiss="alert">×</button>
+    <button type="button" class="close" id="regClose">×</button>
     <span></span>
 </div>
 
@@ -21,10 +21,10 @@
 <?php echo $form->textFieldRow($regModel,'email',array('class'=>'span3 form-horizontal','placeholder'=>'email')); ?>
 <?php echo $form->passwordFieldRow($regModel,'password',array('class'=>'span3 .form-horizontal','placeholder'=>'password')); ?><br>
 <?php $this->widget('bootstrap.widgets.TbButton', array(
-    'buttonType'=>'button',
+    'buttonType'=>'primary',
     'label'=>'register',
     'loadingText'=>'Loading...',
-    'htmlOptions'=>array('id'=>'regButton','data'=>Yii::app()->createUrl('register/reg'))
+    'htmlOptions'=>array('id'=>'regButton','data'=>Yii::app()->createUrl('register/register'))
     )); ?>
 <?php $this->endWidget(); ?>
 

@@ -496,3 +496,205 @@ Stack trace:
 #17 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
 #18 E:\Apache2.2\htdocs\doudou\index-test.php(15): CWebApplication->run()
 REQUEST_URI=/index-test.php
+2013/08/13 03:32:54 [error] [php] Undefined index: regForm (E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php:13)
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): RegisterController->runAction()
+#1 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): RegisterController->runActionWithFilters()
+#2 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): RegisterController->run()
+#3 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\Apache2.2\htdocs\doudou\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/register/register
+2013/08/13 03:32:55 [error] [php] Undefined index: regForm (E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php:13)
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): RegisterController->runAction()
+#1 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): RegisterController->runActionWithFilters()
+#2 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): RegisterController->run()
+#3 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\Apache2.2\htdocs\doudou\index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php/register/register
+2013/08/13 03:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reg".' in E:\Apache2.2\htdocs\doudou\framework\web\CController.php:483
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(270): CController->missingAction('reg')
+#1 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('reg')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/reg')
+#3 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index-test.php/register/reg?email=123412%40qq.com&password=1234567
+HTTP_REFERER=http://doudou.test.local/index-test.php/register/register
+---
+2013/08/13 03:47:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reg".' in E:\Apache2.2\htdocs\doudou\framework\web\CController.php:483
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(270): CController->missingAction('reg')
+#1 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('reg')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/reg')
+#3 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index-test.php/register/reg?email=123412%40qq.com&password=1234567
+HTTP_REFERER=http://doudou.test.local/index-test.php/register/register
+---
+2013/08/13 04:01:20 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "isAjaxRequest".' in E:\Apache2.2\htdocs\doudou\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(13): CComponent->__call('isAjaxRequest', Array)
+#1 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(13): CHttpRequest->isAjaxRequest()
+#2 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#3 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#8 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/index-test.php/register/register
+---
+2013/08/13 05:01:48 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "isAjaxRequest".' in E:\Apache2.2\htdocs\doudou\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(13): CComponent->__call('isAjaxRequest', Array)
+#1 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(13): CHttpRequest->isAjaxRequest()
+#2 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#3 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#8 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/index-test.php/register/register
+---
+2013/08/13 05:02:20 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "getParams".' in E:\Apache2.2\htdocs\doudou\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(14): CComponent->__call('getParams', Array)
+#1 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(14): CHttpRequest->getParams('email', '')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#3 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#8 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/index-test.php/register/register?email=32352352&password=35235235
+HTTP_REFERER=http://doudou.test.local/index-test.php/register/register
+---
+2013/08/13 05:57:11 [error] [exception.CException] exception 'CException' with message 'RegModel has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in E:\Apache2.2\htdocs\doudou\framework\base\CModel.php:289
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(260): CModel->createValidators()
+#1 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(304): CModel->getValidators('email')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('email')
+#3 E:\Apache2.2\htdocs\doudou\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(RegModel), 'email', Array)
+#4 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(253): CActiveForm->labelEx(Object(RegModel), 'email', Array)
+#5 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(140): TbInput->getLabel()
+#6 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(173): TbInput->run()
+#8 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(RegModel), 'email', NULL, Array)
+#10 E:\Apache2.2\htdocs\doudou\protected\views\register\register.php(21): TbActiveForm->textFieldRow(Object(RegModel), 'email', Array)
+#11 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(126): require('E:\Apache2.2\ht...')
+#12 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\Apache2.2\ht...', Array, true)
+#13 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(869): CBaseController->renderFile('E:\Apache2.2\ht...', Array, true)
+#14 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#15 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(28): CController->render('register', Array)
+#16 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#17 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#21 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#22 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/register/register
+---
+2013/08/13 09:03:43 [error] [exception.CException] exception 'CException' with message 'RegModel has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in E:\Apache2.2\htdocs\doudou\framework\base\CModel.php:289
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(260): CModel->createValidators()
+#1 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(304): CModel->getValidators('email')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('email')
+#3 E:\Apache2.2\htdocs\doudou\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(RegModel), 'email', Array)
+#4 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(253): CActiveForm->labelEx(Object(RegModel), 'email', Array)
+#5 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(140): TbInput->getLabel()
+#6 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(173): TbInput->run()
+#8 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(RegModel), 'email', NULL, Array)
+#10 E:\Apache2.2\htdocs\doudou\protected\views\register\register.php(21): TbActiveForm->textFieldRow(Object(RegModel), 'email', Array)
+#11 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(126): require('E:\Apache2.2\ht...')
+#12 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\Apache2.2\ht...', Array, true)
+#13 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(869): CBaseController->renderFile('E:\Apache2.2\ht...', Array, true)
+#14 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#15 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(28): CController->render('register', Array)
+#16 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#17 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#21 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#22 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/register/register
+---
+2013/08/13 09:08:28 [error] [exception.CException] exception 'CException' with message 'RegModel has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in E:\Apache2.2\htdocs\doudou\framework\base\CModel.php:289
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(260): CModel->createValidators()
+#1 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(304): CModel->getValidators('email')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('email')
+#3 E:\Apache2.2\htdocs\doudou\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(RegModel), 'email', Array)
+#4 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(253): CActiveForm->labelEx(Object(RegModel), 'email', Array)
+#5 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(140): TbInput->getLabel()
+#6 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(173): TbInput->run()
+#8 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(RegModel), 'email', NULL, Array)
+#10 E:\Apache2.2\htdocs\doudou\protected\views\register\register.php(21): TbActiveForm->textFieldRow(Object(RegModel), 'email', Array)
+#11 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(126): require('E:\Apache2.2\ht...')
+#12 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\Apache2.2\ht...', Array, true)
+#13 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(869): CBaseController->renderFile('E:\Apache2.2\ht...', Array, true)
+#14 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#15 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(28): CController->render('register', Array)
+#16 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#17 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#21 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#22 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/register/register
+---
+2013/08/13 09:08:30 [error] [exception.CException] exception 'CException' with message 'RegModel has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in E:\Apache2.2\htdocs\doudou\framework\base\CModel.php:289
+Stack trace:
+#0 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(260): CModel->createValidators()
+#1 E:\Apache2.2\htdocs\doudou\framework\base\CModel.php(304): CModel->getValidators('email')
+#2 E:\Apache2.2\htdocs\doudou\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('email')
+#3 E:\Apache2.2\htdocs\doudou\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(RegModel), 'email', Array)
+#4 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(253): CActiveForm->labelEx(Object(RegModel), 'email', Array)
+#5 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(140): TbInput->getLabel()
+#6 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputVertical->textField()
+#7 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(173): TbInput->run()
+#8 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#9 E:\Apache2.2\htdocs\doudou\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(RegModel), 'email', NULL, Array)
+#10 E:\Apache2.2\htdocs\doudou\protected\views\register\register.php(21): TbActiveForm->textFieldRow(Object(RegModel), 'email', Array)
+#11 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(126): require('E:\Apache2.2\ht...')
+#12 E:\Apache2.2\htdocs\doudou\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\Apache2.2\ht...', Array, true)
+#13 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(869): CBaseController->renderFile('E:\Apache2.2\ht...', Array, true)
+#14 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#15 E:\Apache2.2\htdocs\doudou\protected\controllers\RegisterController.php(28): CController->render('register', Array)
+#16 E:\Apache2.2\htdocs\doudou\framework\web\actions\CInlineAction.php(49): RegisterController->actionRegister()
+#17 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 E:\Apache2.2\htdocs\doudou\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(282): CController->run('register')
+#21 E:\Apache2.2\htdocs\doudou\framework\web\CWebApplication.php(141): CWebApplication->runController('register/regist...')
+#22 E:\Apache2.2\htdocs\doudou\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 E:\Apache2.2\htdocs\doudou\index-test.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index-test.php/register/register
+---
