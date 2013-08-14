@@ -26,11 +26,12 @@ $(function(){
        }
        $("#regTip").hide();
        $(this).button('loading');
-       $.getJSON($url,{email:$emailVal,password:$password},function(data){
+       $.getJSON($url+tipMsg.registerurl,{email:$emailVal,password:$password},function(data){
            if(data.code == 0){
                $("#tipHeader h4").text(data.tipheader);
                $("#tipBody").text(data.tipbody);
-               $("#goEmail").attr('urldata',data.emailurl)
+               $("#goEmail").attr('urldata',data.emailurl);
+               $("#goEmail").data('uid',data.uid);
                $("#goEmail").text(tipMsg.activebutton);
                $("#regModal").modal({
                    keyboard:false
@@ -45,7 +46,23 @@ $(function(){
        });
 
        $("#goEmail").click(function(){
-           window.open($(this).attr('urldata'));
+           if($(this).attr("urldata") != ''){
+               window.open($(this).attr('urldata'));
+               $(this).text('再次发一次');
+               $(this).attr("urldata","");
+           }else if($(this).attr("urldata") == ''){
+               $uid=$(this).data('uid');
+               $.getJSON($url+tipMsg.secendemailurl,{uid:$uid},function(data){
+                   if(data.code==0){
+                       $("#tipBody").text(data.tipbody);
+                       $("#goEmail").button('loading');
+                       setTimeout($("#goEmail").button('reset'),30000);
+                   }else if(data.code=='-1'){
+                       $("#tipBody").text(data.msg);
+                       return false;
+                   }
+               });
+           }
        });
    });
 });
