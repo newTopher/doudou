@@ -24,7 +24,7 @@
     'buttonType'=>'primary',
     'label'=>'register',
     'loadingText'=>'Loading...',
-    'htmlOptions'=>array('id'=>'regButton','data'=>Yii::app()->createUrl('register/register'))
+    'htmlOptions'=>array('id'=>'regButton','data'=>Yii::app()->request->hostInfo)
     )); ?>
 <?php $this->endWidget(); ?>
 
@@ -41,7 +41,7 @@
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-primary" id="goEmail"></button>
+        <button class="btn btn-primary" id="goEmail" data-loading-text="已发送..."></button>
         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
     </div>
 

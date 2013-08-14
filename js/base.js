@@ -6,6 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 var tipMsg={
+    registerurl:'/index-test.php/register/register',
+    secendemailurl:'/index-test.php/register/SendEmailAgain',
     emailIsNotNull:'邮箱不能为空',
     passLength:'密码长度为6-12位',
     activebutton:'立即激活'

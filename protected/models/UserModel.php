@@ -20,6 +20,11 @@ class UserModel extends CActiveRecord{
         return self::model()->find('email=:email',array(':email'=>$email));
     }
 
+    public static function getRegUserEmailById($uid){
+        $user = self::model()->findByPk($uid);
+        return $user->attributes;
+    }
+
     public function passEncrypt($password){
         return md5($password);
     }
