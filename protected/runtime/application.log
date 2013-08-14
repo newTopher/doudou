@@ -789,3 +789,56 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/13 23:04:53 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
 2013/08/13 23:04:53 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
 2013/08/13 23:04:53 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`) VALUES (:yp0, :yp1)
+2013/08/14 21:26:32 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/14 21:26:32 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:26:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:26:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:26:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/14 21:26:34 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/14 21:26:34 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `is_active`, `acode`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/14 21:28:05 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/14 21:28:05 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:28:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:28:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:28:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=4 LIMIT 1
+2013/08/14 21:31:07 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/14 21:31:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:31:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:31:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:31:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/14 21:31:08 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/14 21:31:08 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `is_active`, `acode`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/14 21:31:17 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/14 21:31:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:31:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:31:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:31:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=5 LIMIT 1
+2013/08/14 21:37:07 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/14 21:37:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:37:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:37:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:37:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/14 21:37:08 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/14 21:37:08 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `is_active`, `acode`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/14 21:37:18 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/14 21:37:18 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:37:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:37:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:37:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=6 LIMIT 1
+2013/08/14 21:38:09 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/14 21:38:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:38:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:38:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:38:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/14 21:39:47 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/14 21:39:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:39:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:39:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:39:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/14 21:39:48 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/14 21:39:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `is_active`, `acode`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/14 21:40:04 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/14 21:40:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/14 21:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/14 21:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/14 21:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=7 LIMIT 1

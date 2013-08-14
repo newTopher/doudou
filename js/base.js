@@ -10,5 +10,6 @@ var tipMsg={
     secendemailurl:'/index-test.php/register/SendEmailAgain',
     emailIsNotNull:'邮箱不能为空',
     passLength:'密码长度为6-12位',
-    activebutton:'立即激活'
+    activebutton:'立即激活',
+    sendagain:'没收到再次发一次'
 };

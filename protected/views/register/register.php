@@ -42,7 +42,7 @@
 
     <div class="modal-footer">
         <button class="btn btn-primary" id="goEmail" data-loading-text="已发送..."></button>
-        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭并登录</button>
     </div>
 
 <?php $this->endWidget(); ?>

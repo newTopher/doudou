@@ -48,15 +48,13 @@ $(function(){
        $("#goEmail").click(function(){
            if($(this).attr("urldata") != ''){
                window.open($(this).attr('urldata'));
-               $(this).text('再次发一次');
+               $(this).text(tipMsg.sendagain);
                $(this).attr("urldata","");
            }else if($(this).attr("urldata") == ''){
                $uid=$(this).data('uid');
                $.getJSON($url+tipMsg.secendemailurl,{uid:$uid},function(data){
                    if(data.code==0){
                        $("#tipBody").text(data.tipbody);
-                       $("#goEmail").button('loading');
-                       setTimeout($("#goEmail").button('reset'),30000);
                    }else if(data.code=='-1'){
                        $("#tipBody").text(data.msg);
                        return false;

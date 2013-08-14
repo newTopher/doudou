@@ -41,7 +41,7 @@
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		<a href="www.doudow.com">兜兜网</a>
 	</div><!-- footer -->
 
 </div><!-- page -->

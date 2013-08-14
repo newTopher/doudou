@@ -18,6 +18,7 @@ class RegisterController extends Controller{
                     echo CJSON::encode(array('code'=>"-1",'msg'=>'用户名已存在!'));
                 }else{
                     if(($regUser=$regModel->addUser())){
+                        Yii::app()->session['user']=$regUser;
                         if($this->sendemail(self::REG_FROM_EMAIL,$regModel->email,self::REG_TIP_HEADER,RegModel::createActiveLink($regUser['uid'],$regUser['acode']))){
                             echo CJSON::encode(array(
                                 'code'=>"0",
