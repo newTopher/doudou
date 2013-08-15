@@ -11,5 +11,7 @@ var tipMsg={
     emailIsNotNull:'邮箱不能为空',
     passLength:'密码长度为6-12位',
     activebutton:'立即激活',
-    sendagain:'没收到再次发一次'
+    sendagain:'没收到再次发一次',
+    schooljsonurl:'/js/schoolJson.js',
+    loadfail:'加载失败,点击重新加载'
 };
