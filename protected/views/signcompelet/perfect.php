@@ -9,15 +9,22 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 
     <fieldset>
         <legend>完善信息</legend>
-
+        <input type='hidden' name='SignModel[school_id]' value="" id="schoolId">
         <?php echo $form->textFieldRow($model, 'name', array(
             'hint'=>'请输入您在兜兜网的昵称，方便别人认识你哦',
             'class'=>'input-medium'
             )
         ); ?>
         <?php echo $form->radioButtonListRow($model, 'sex', array('男','女'),array('class'=>'inline')); ?>
-        <?php echo $form->textFieldRow($model, 'school_id',array('id'=>'schoolSelect','placeholder'=>'点击选择您的学校')); ?>
-        <?php echo $form->dropDownListRow($model, 'grate', array('2008级', '2009级', '2010级', '2011级', '2012级'),array('class'=>'span2')); ?>
+        <?php echo $form->textFieldRow($model, 'schoolName',array('id'=>'schoolSelect','placeholder'=>'点击选择您的学校')); ?>
+        <?php echo $form->dropDownListRow($model, 'grate', array(
+            '2008'=>'2008级',
+            '2009'=>'2009级',
+            '2010'=>'2010级',
+            '2011'=>'2011级',
+            '2012'=>'2012级'),
+            array('class'=>'span2')
+        ); ?>
 
 
     </fieldset>
@@ -37,6 +44,7 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     </div>
     <div class="modal-body">
         <p id="loadFail" class="loadFail"></p>
+        <h5>先选择省份</h5>
         <div class="row show-grid listProvince" id="listProvince">
 
         </div>
@@ -46,7 +54,6 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
         </div>
     </div>
     <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">确定</button>
-        <button class="btn btn-primary">取消</button>
+        <button class="btn" data-dismiss="modal">关闭窗口</button>
     </div>
 </div>

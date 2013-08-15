@@ -13,6 +13,7 @@ class SignModel extends CFormModel{
     public $sex;
     public $school_id;
     public $grate;
+    public $schoolName;
 
     public function attributeLabels()
     {
@@ -20,7 +21,7 @@ class SignModel extends CFormModel{
             'username'=>'用户昵称',
             'name'=>'姓名',
             'sex'=>'性别',
-            'school_id'=>'学校',
+            'schoolName'=>'学校',
             'grate'=>'年级',
         );
     }

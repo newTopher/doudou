@@ -128,9 +128,17 @@ $(function(){
         $("#listSchools").html("");
         $listSchools='';
         $.each($proSchoolList.univs,function(i,o){
-            $listSchools+="<div class='span3'><a href='#' schoolid='"+ o.id+"' id='schoolButton'>"+o.name+"</a></div>";
+            $listSchools+="<div class='span2'><a href='#' schoolid='"+ o.id+"' id='schoolButton'>"+o.name+"</a></div>";
         });
         $("#listSchools").append($listSchools);
+    });
+
+    $("#schoolButton").live('click',function(){
+        $("#schoolSelect").val('');
+        $("#schoolSelect").val($(this).text());
+        $("#schoolId").val('');
+        $("#schoolId").val($(this).attr('schoolid'));
+        $("#schoolBox").modal('hide');
     });
 
 
