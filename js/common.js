@@ -141,6 +141,23 @@ $(function(){
         $("#schoolBox").modal('hide');
     });
 
+    $("#compeletButton").on('click',function(){
+        alert($('input[name="SignModel[sex]"]:radio:eq(0)').val());
+        if($("#SignModel_name").val() == ''){
+            $("#regTip span").text(tipMsg.nameIsNull);
+            $("#regTip").show();
+            return false;
+        }
+        /*
+        if($('input[name="SignModel[sex]"]:eq(1)').val() == '' && $('input[name="SignModel[sex]"]:eq(2)').val() == ''){
+            $("#regTip span").text(tipMsg.sexIsNull);
+            $("#regTip").show();
+            return false;
+        }
+        */
+        $("#regTip").hide();
+    });
+
 
 
 });

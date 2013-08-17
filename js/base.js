@@ -13,5 +13,7 @@ var tipMsg={
     activebutton:'立即激活',
     sendagain:'没收到再次发一次',
     schooljsonurl:'/js/schoolJson.js',
-    loadfail:'加载失败,点击重新加载'
+    loadfail:'加载失败,点击重新加载',
+    nameIsNull:'姓名不能为空哦!',
+    sexIsNull:'性别不可以不选的哦'
 };

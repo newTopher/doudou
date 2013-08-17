@@ -9,13 +9,17 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 
     <fieldset>
         <legend>完善信息</legend>
+        <div class="alert alert-error fade in regTip" id="regTip">
+            <button type="button" class="close" id="regClose">×</button>
+            <span></span>
+        </div>
         <input type='hidden' name='SignModel[school_id]' value="" id="schoolId">
         <?php echo $form->textFieldRow($model, 'name', array(
             'hint'=>'请输入您在兜兜网的昵称，方便别人认识你哦',
             'class'=>'input-medium'
             )
         ); ?>
-        <?php echo $form->radioButtonListRow($model, 'sex', array('男','女'),array('class'=>'inline')); ?>
+        <?php echo $form->radioButtonListRow($model, 'sex', array('1'=>'男','0'=>'女'),array('class'=>'inline')); ?>
         <?php echo $form->textFieldRow($model, 'schoolName',array('id'=>'schoolSelect','placeholder'=>'点击选择您的学校')); ?>
         <?php echo $form->dropDownListRow($model, 'grate', array(
             '2008'=>'2008级',
@@ -30,7 +34,12 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
     </fieldset>
 
     <div class="form-actions">
-        <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'确定')); ?>
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'type'=>'primary',
+            'label'=>'确定',
+            'htmlOptions'=>array('id'=>'compeletButton')
+        )); ?>
         <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'reset', 'label'=>'重置')); ?>
     </div>
 
