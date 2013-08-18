@@ -26,6 +26,11 @@ class UserModel extends CActiveRecord{
         return $user->attributes;
     }
 
+    public static function getUserById($uid){
+        $user = self::model()->findByPk($uid);
+        return $user->attributes;
+    }
+
     public static function validUserByUidAndAcode($uid,$acode){
         if(($user = self::model()->findByPk($uid))){
             if($user->attributes['acode']==$acode){

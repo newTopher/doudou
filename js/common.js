@@ -180,7 +180,7 @@ $(function(){
         },function(data){
             if(data.code == 0){
                 $("#compeletButton").button('reset');
-                window.location.href=$hostUrl+tipMsg.headrimageurl;
+                window.location.href=$hostUrl+tipMsg.headrimageurl+'/uid/'+$("#signUid").val()+'/sid/'+$("#signSid").val();
             }else if(data.code == '-1'){
                 $("#regTip span").text(tipMsg.msg);
                 $("#regTip").show();
@@ -196,6 +196,31 @@ $(function(){
 
     $("#SignModel_sex_1").click(function(){
         $("#ytSignModel_sex").val($(this).attr('value'));
+    });
+
+    if($("#headerSex").val()==1){
+        $tags=userTags.man;
+    }else if($("#headerSex").val()==0){
+        $tags=userTags.women;
+    }
+    $("#userTags").select2($tags);
+    $("#userTags").on("change", function(){
+        $("#e15_val").html($("#userTags").val());
+    });
+
+    $("#userTags").select2("container").find("ul.select2-choices").sortable({
+        containment: 'parent',
+        start: function() {
+                $("#userTags").select2("onSortStart");
+        },
+        update: function() {
+                $("#userTags").select2("onSortEnd");
+        }
+    });
+
+    $("#processUserHeader").click(function(){
+        alert(123);
+        $("#userHeaderForm").submit();
     });
 
 

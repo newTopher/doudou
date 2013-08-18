@@ -10,3 +10,30 @@
 .listSchools{
     padding:20px 10px 0px 35px;
 }
+.tagsTip{
+    color:#3a87ad;
+    padding:0px 10px 0px 20px;
+}
+.userTags{
+    width:300px;
+    display: inline-block;
+}
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
+.fileupload-buttonbar{
+    padding:50px 0px 10px 27px;
+}

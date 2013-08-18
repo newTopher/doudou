@@ -35,6 +35,9 @@ return array(
             )
         )
 	),
+    'aliases'=>array(
+        'xupload'=>'application.extensions.xupload'
+    ),
 
 	// application components
 	'components'=>array(
