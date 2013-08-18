@@ -8,6 +8,7 @@
  */
 class SignModel extends CFormModel{
 
+    public $id;
     public $username;
     public $name;
     public $sex;
@@ -15,8 +16,13 @@ class SignModel extends CFormModel{
     public $grate;
     public $schoolName;
 
-    public function attributeLabels()
-    {
+//    public function rules(){
+//        return array(
+//            array('name,sex,school_id,grate','required','不能为空'),
+//        );
+//    }
+
+    public function attributeLabels(){
         return array(
             'username'=>'用户昵称',
             'name'=>'姓名',
@@ -24,6 +30,20 @@ class SignModel extends CFormModel{
             'schoolName'=>'学校',
             'grate'=>'年级',
         );
+    }
+
+    public function compeletUser(){
+        $userModel=UserModel::model()->findByPk($this->id);
+        $userModel->name=$this->name;
+        $userModel->sex=$this->sex;
+        $userModel->school_id=$this->school_id;
+        $userModel->grate=$this->grate;
+        if($userModel->save()){
+            return true;
+        }else{
+            Yii::log($userModel->errors,CLogger::LEVEL_ERROR);
+            return false;
+        }
     }
 
 }

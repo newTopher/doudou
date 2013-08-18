@@ -35,6 +35,7 @@ $(function(){
                $("#tipBody").text(data.tipbody);
                $("#goEmail").attr('urldata',data.emailurl);
                $("#goEmail").data('uid',data.uid);
+               $("#goEmail").data('sid',data.sid);
                $("#goEmail").text(tipMsg.activebutton);
                $("#regModal").modal({
                    keyboard:false
@@ -57,6 +58,8 @@ $(function(){
                $uid=$(this).data('uid');
                $.getJSON($url+tipMsg.secendemailurl,{uid:$uid},function(data){
                    if(data.code==0){
+                       $("#goEmail").data('uid',data.uid);
+                       $("#goEmail").data('sid',data.sid);
                        $("#tipBody").text(data.tipbody);
                    }else if(data.code=='-1'){
                        $("#tipBody").text(data.msg);
@@ -65,6 +68,13 @@ $(function(){
                });
            }
        });
+    });
+
+    $("#regModal").on('hidden',function(){
+        $url = $("#regButton").attr("data");
+        $uid=$("#goEmail").data('uid');
+        $sid=$("#goEmail").data('sid')
+        window.location.href=$url+tipMsg.signperfecturl+'/uid/'+$uid+'/sid/'+$sid;
     });
 
     $("#schoolSelect").on('click',function(event){
@@ -142,20 +152,50 @@ $(function(){
     });
 
     $("#compeletButton").on('click',function(){
-        alert($('input[name="SignModel[sex]"]:radio:eq(0)').val());
         if($("#SignModel_name").val() == ''){
             $("#regTip span").text(tipMsg.nameIsNull);
             $("#regTip").show();
             return false;
         }
-        /*
-        if($('input[name="SignModel[sex]"]:eq(1)').val() == '' && $('input[name="SignModel[sex]"]:eq(2)').val() == ''){
+        if($("#ytSignModel_sex").val() == ''){
             $("#regTip span").text(tipMsg.sexIsNull);
             $("#regTip").show();
             return false;
         }
-        */
+        if($("#schoolSelect").val() == ''){
+            $("#regTip span").text(tipMsg.schoolIsNull);
+            $("#regTip").show();
+            return false;
+        }
         $("#regTip").hide();
+        $(this).button('loading');
+        $hostUrl=$("#SignCompeletForm").attr('data');
+        $.post($hostUrl+tipMsg.signperfecturl,{
+            name:$("#SignModel_name").val(),
+            sex:$("#ytSignModel_sex").val(),
+            school_id:$("#schoolId").val(),
+            grate:$("#SignModel_grate").val(),
+            uid:$("#signUid").val(),
+            sid:$("#signSid").val()
+        },function(data){
+            if(data.code == 0){
+                $("#compeletButton").button('reset');
+                window.location.href=$hostUrl+tipMsg.headrimageurl;
+            }else if(data.code == '-1'){
+                $("#regTip span").text(tipMsg.msg);
+                $("#regTip").show();
+                $("#compeletButton").button('reset');
+                return false;
+            }
+        },'json');
+    });
+
+    $("#SignModel_sex_0").click(function(){
+        $("#ytSignModel_sex").val($(this).attr('value'));
+    });
+
+    $("#SignModel_sex_1").click(function(){
+        $("#ytSignModel_sex").val($(this).attr('value'));
     });
 
 

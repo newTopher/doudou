@@ -14,6 +14,8 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
             <span></span>
         </div>
         <input type='hidden' name='SignModel[school_id]' value="" id="schoolId">
+        <input type='hidden' name='SignModel[uid]' value="<?php echo $uid; ?>" id="signUid">
+        <input type='hidden' name='SignModel[sid]' value="<?php echo $sid; ?>" id="signSid">
         <?php echo $form->textFieldRow($model, 'name', array(
             'hint'=>'请输入您在兜兜网的昵称，方便别人认识你哦',
             'class'=>'input-medium'
@@ -35,9 +37,10 @@ $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 
     <div class="form-actions">
         <?php $this->widget('bootstrap.widgets.TbButton', array(
-            'buttonType'=>'submit',
+            'buttonType'=>'button',
             'type'=>'primary',
             'label'=>'确定',
+            'loadingText'=>'加载中...',
             'htmlOptions'=>array('id'=>'compeletButton')
         )); ?>
         <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'reset', 'label'=>'重置')); ?>
