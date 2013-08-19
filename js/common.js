@@ -142,7 +142,7 @@ $(function(){
     });
 
     $("#compeletButton").on('click',function(){
-        alert($('input[name="SignModel[sex]"]:radio:eq(0)').val());
+        alert($('#SignModel_sex_0').is('checked'));
         if($("#SignModel_name").val() == ''){
             $("#regTip span").text(tipMsg.nameIsNull);
             $("#regTip").show();
