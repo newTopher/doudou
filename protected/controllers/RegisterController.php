@@ -25,7 +25,8 @@ class RegisterController extends Controller{
                                 'uid'=>$regUser['uid'],
                                 'tipheader'=>self::REG_TIP_HEADER,
                                 'tipbody'=>self::REG_TIP_BODY,
-                                'emailurl'=>$this->getEmailUrl()
+                                'emailurl'=>$this->getEmailUrl(),
+                                'sid'=>$regUser['acode']
                             ));
                         }else{
                             echo CJSON::encode(array(

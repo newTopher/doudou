@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'doudou web2.0',
     'defaultController'=>'index',
+    'language'=>'zh_cn',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -34,11 +35,14 @@ return array(
             )
         )
 	),
+    'aliases'=>array(
+        'xupload'=>'application.extensions.xupload'
+    ),
 
 	// application components
 	'components'=>array(
-        'bootstrap'=>array(//���һ���µ�bootstrap����
-            'class'=>'bootstrap.components.Bootstrap', //ִ��Bootstrap.php�ļ�
+        'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
         ),
 		'user'=>array(
 			// enable cookie-based authentication
@@ -75,7 +79,7 @@ return array(
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
-			'errorAction'=>'site/error',
+			'errorAction'=>'error/error',
 		),
 		'log'=>array(
 			'class'=>'CLogRouter',

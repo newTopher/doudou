@@ -7,6 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 class UserModel extends CActiveRecord{
+    public $id;
 
     public static function model($className=__CLASS__){
         return parent::model($className);
@@ -23,6 +24,24 @@ class UserModel extends CActiveRecord{
     public static function getRegUserEmailById($uid){
         $user = self::model()->findByPk($uid);
         return $user->attributes;
+    }
+
+    public static function getUserById($uid){
+        $user = self::model()->findByPk($uid);
+        return $user->attributes;
+    }
+
+    public static function validUserByUidAndAcode($uid,$acode){
+        if(($user = self::model()->findByPk($uid))){
+            if($user->attributes['acode']==$acode){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            Yii::log(self::model()->errors,CLogger::LEVEL_ERROR);
+            return false;
+        }
     }
 
     public function passEncrypt($password){
