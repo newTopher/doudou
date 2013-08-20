@@ -1956,3 +1956,24 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/18 21:41:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
 2013/08/18 21:41:52 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
 2013/08/18 21:41:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:45:28 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:45:28 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/18 21:45:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/18 21:45:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/18 21:45:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:45:29 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:45:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:45:31 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:45:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/18 21:45:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/18 21:45:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/18 21:45:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:45:32 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:45:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:47:25 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:47:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/18 21:47:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/18 21:47:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/18 21:47:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/18 21:47:26 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/18 21:47:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
