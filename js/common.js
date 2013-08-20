@@ -219,10 +219,8 @@ $(function(){
     });
 
     $("#processUserHeader").click(function(){
-        alert(123);
         $("#userHeaderForm").submit();
     });
-
 
 
 });

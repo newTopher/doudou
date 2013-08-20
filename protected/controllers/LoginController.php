@@ -12,7 +12,7 @@ class LoginController extends Controller{
     public function actionLogin(){
         $email=Yii::app()->request->getParam('email','');
         $password=Yii::app()->request->getParam('password','');
-
+        $this->render('login');
     }
 
 

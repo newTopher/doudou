@@ -17,6 +17,12 @@ class UserModel extends CActiveRecord{
         return '{{user}}';
     }
 
+    public function relations(){
+        return array(
+
+        );
+    }
+
     public static function validEmail($email){
         return self::model()->find('email=:email',array(':email'=>$email));
     }

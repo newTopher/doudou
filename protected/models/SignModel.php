@@ -15,6 +15,8 @@ class SignModel extends CFormModel{
     public $school_id;
     public $grate;
     public $schoolName;
+    public $head_img;
+    public $tags;
 
 //    public function rules(){
 //        return array(
@@ -38,6 +40,18 @@ class SignModel extends CFormModel{
         $userModel->sex=$this->sex;
         $userModel->school_id=$this->school_id;
         $userModel->grate=$this->grate;
+        if($userModel->save()){
+            return true;
+        }else{
+            Yii::log($userModel->errors,CLogger::LEVEL_ERROR);
+            return false;
+        }
+    }
+
+    public function compeletUserHeadImage(){
+        $userModel=UserModel::model()->findByPk($this->id);
+        $userModel->head_img=$this->head_img;
+        $userModel->tags=$this->tags;
         if($userModel->save()){
             return true;
         }else{

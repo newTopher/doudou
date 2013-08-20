@@ -12,8 +12,10 @@ class SignCompeletController extends Controller{
         return array(
             'upload'=>array(
                 'class'=>'xupload.actions.XUploadAction',
+                'subfolderVar'=>"userheadimage",
                 'path' =>Yii::app()->getBasePath() . "/../uploads",
                 'publicPath' => Yii::app()->getBaseUrl() . "/uploads",
+                'secureFileNames'=>true
             ),
         );
     }
@@ -81,8 +83,36 @@ class SignCompeletController extends Controller{
     }
 
     public function actionProcessUserHeader(){
-        print_r($_POST);
-        print_r(Yii::app()->user->getState('xuploadFiles'));
+        $sessionImages = Yii::app()->session['xuploadFiles'];
+        $imageUrl=Yii::app()->request->getParam('imagesurl','');
+        $uid=Yii::app()->request->getParam('uid','');
+        $sid=Yii::app()->request->getParam('sid','');
+        $userTags=Yii::app()->request->getParam('usertags','');
+        if(empty($uid) || empty($sid)){
+            //$this->redirect(Yii::app()->request->baseUrl);
+            Yii::app()->runController('Error/error/errorMsg/'.'uid或者sid不能为空');
+        }else if(false === UserModel::validUserByUidAndAcode($uid,$sid)){
+            Yii::app()->runController('Error/error/errorMsg/'.'非法用户');
+        }else{
+            $signModel= new SignModel();
+            $signModel->head_img='';
+            if(!empty($imageUrl)){
+                if(($pos =strrpos($imageUrl,'/'))){
+                    $imageOffset=substr($imageUrl,$pos+1);
+                    $signModel->head_img=$sessionImages[$imageOffset]['filename'];
+                }else{
+                    Yii::app()->runController('Error/error/errorMsg/'.'imagesurl offset error');
+                }
+            }
+            $signModel->id=$uid;
+            $signModel->tags=$userTags;
+            if($signModel->compeletUserHeadImage()){
+                $this->redirect(Yii::app()->createUrl('UserHome/index'));
+            }else{
+                Yii::app()->runController('Error/error/errorMsg/'.'添加失败');
+            }
+        }
+
     }
 
 }

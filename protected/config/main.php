@@ -50,7 +50,6 @@ return array(
 		),
         'session'=>array(
             'autoStart'=>true,
-            'sessionName'=>'Site Access',
         ),
 		// uncomment the following to enable URLs in path-format
 		/**/
