@@ -152,10 +152,6 @@ $(function(){
     });
 
     $("#compeletButton").on('click',function(){
-<<<<<<< HEAD
-        alert($('#SignModel_sex_0').is('checked'));
-=======
->>>>>>> origin/master
         if($("#SignModel_name").val() == ''){
             $("#regTip span").text(tipMsg.nameIsNull);
             $("#regTip").show();
@@ -223,10 +219,8 @@ $(function(){
     });
 
     $("#processUserHeader").click(function(){
-        alert(123);
         $("#userHeaderForm").submit();
     });
-
 
 
 });

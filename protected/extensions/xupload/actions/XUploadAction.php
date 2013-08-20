@@ -165,8 +165,9 @@ class XUploadAction extends CAction {
             chmod( $this->path, 0777 );
             //throw new CHttpException(500, "{$this->path} is not writable.");
         }
-        if( $this->subfolderVar === null ) {
-            $this->_subfolder = Yii::app( )->request->getQuery( $this->subfolderVar, date( "mdY" ) );
+        if( $this->subfolderVar !== null ) {
+            //$this->_subfolder = Yii::app( )->request->getQuery( $this->subfolderVar, date( "mdY" ) );
+            $this->_subfolder = $this->subfolderVar;
         } else if($this->subfolderVar !== false ) {
             $this->_subfolder = date( "mdY" );
         }
@@ -208,11 +209,11 @@ class XUploadAction extends CAction {
     {
         if (isset($_GET["_method"]) && $_GET["_method"] == "delete") {
             $success = false;
-            if ($_GET["file"][0] !== '.' && Yii::app()->user->hasState($this->stateVariable)) {
+            //Yii::app()->user->hasState($this->stateVariable);
+            if ($_GET["file"][0] !== '.' && Yii::app()->session[$this->stateVariable]) {
                 // pull our userFiles array out of state and only allow them to delete
                 // files from within that array
-                $userFiles = Yii::app()->user->getState($this->stateVariable, array());
-
+                $userFiles = Yii::app()->session[$this->stateVariable];
                 if ($this->fileExists($userFiles[$_GET["file"]])) {
                     $success = $this->deleteFile($userFiles[$_GET["file"]]);
                     if ($success) {
@@ -265,7 +266,7 @@ class XUploadAction extends CAction {
                         "thumbnail_url" => $model->getThumbnailUrl($this->getPublicPath()),
                         "delete_url" => $this->getController()->createUrl($this->getId(), array(
                             "_method" => "delete",
-                            "file" => $model->{$this->fileNameAttribute},
+                            "file" => $model->{$this->fileNameAttribute}
                         )),
                         "delete_type" => "POST"
                     )));
@@ -293,7 +294,7 @@ class XUploadAction extends CAction {
         $path = $this->getPath();
 
         // Now we need to save our file info to the user's session
-        $userFiles = Yii::app( )->user->getState( $this->stateVariable, array());
+        //$userFiles = Yii::app( )->user->getState( $this->stateVariable, array());
 
         $userFiles[$this->formModel->{$this->fileNameAttribute}] = array(
             "path" => $path.$this->formModel->{$this->fileNameAttribute},
@@ -304,7 +305,7 @@ class XUploadAction extends CAction {
             'mime' => $this->formModel->{$this->mimeTypeAttribute},
             'name' => $this->formModel->{$this->displayNameAttribute},
         );
-        Yii::app( )->user->setState( $this->stateVariable, $userFiles );
+        Yii::app( )->session[$this->stateVariable]=$userFiles;
 
         return true;
     }
