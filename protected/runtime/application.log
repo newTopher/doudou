@@ -3130,3 +3130,44 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/22 08:40:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
 2013/08/22 08:40:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
 2013/08/22 08:40:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:38:04 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/22 21:38:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:38:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:38:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:38:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:41:20 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/22 21:41:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:41:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:41:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:41:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/08/22 21:41:53 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/22 21:41:53 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:41:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:41:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:41:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:41:54 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/22 21:41:54 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:41:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:41:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:41:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/08/22 21:46:40 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/22 21:46:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:46:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:46:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:46:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:46:41 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/22 21:46:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/22 21:47:51 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/22 21:47:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:47:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:47:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:47:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:47:52 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/22 21:47:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/08/22 21:48:03 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/22 21:48:03 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/22 21:48:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/22 21:48:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/22 21:48:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/22 21:48:04 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/22 21:48:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
