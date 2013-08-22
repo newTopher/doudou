@@ -54,6 +54,14 @@ class UserModel extends CActiveRecord{
         return md5($password);
     }
 
+    public function validatePassword($password){
+        if($this->password===$password){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 
 

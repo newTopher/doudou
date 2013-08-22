@@ -107,7 +107,7 @@ class SignCompeletController extends Controller{
             $signModel->id=$uid;
             $signModel->tags=$userTags;
             if($signModel->compeletUserHeadImage()){
-                $this->redirect(Yii::app()->createUrl('UserHome/index'));
+                $this->redirect(Yii::app()->user->returnUrl);
             }else{
                 Yii::app()->runController('Error/error/errorMsg/'.'添加失败');
             }
