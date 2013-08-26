@@ -11,17 +11,28 @@ $this->pageTitle=Yii::app()->name;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">Project name</a>
+            <a class="brand" href="#">兜兜网</a>
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
-                    Logged in as <a href="#" class="navbar-link">Username</a>
+                    <?php if(!Yii::app()->user->isGuest): ?>
+                        <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>" class="navbar-link"><?php echo Yii::app()->user->name; ?></a>
+                    <?php elseif(Yii::app()->user->isGuest): ?>
+                        <a href="<?php echo Yii::app()->createUrl('login/login'); ?>" class="navbar-link">登陆</a>
+                    <?php endif; ?>
+
                 </p>
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a href="#">个人中心</a></li>
+                    <li><a href="#about">找人</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="span4"> span4</div>
+        <div class="span8"> span8</div>
     </div>
 </div>
