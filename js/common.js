@@ -197,7 +197,7 @@ $(function(){
     $("#SignModel_sex_1").click(function(){
         $("#ytSignModel_sex").val($(this).attr('value'));
     });
-
+    $tags=null;
     if($("#headerSex").val()==1){
         $tags=userTags.man;
     }else if($("#headerSex").val()==0){

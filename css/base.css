@@ -1,3 +1,7 @@
+.topBackColor{
+    background-color: rgba(175, 175, 175, 0.36);
+    height: 170px;
+}
 .regTip{
     display: none;
 }
@@ -62,4 +66,82 @@
 }
 .container{
     margin-top: 50px;
+}
+.topContainer{
+    height:170px;
+}
+.headerBox{
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+}
+.uploadHeader{
+    background:black;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    top: -35px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    display: block;
+}
+.pencilColor{
+    color: white;
+}
+.container .headerBox .uploadHeader .uploadAlink{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.userBaseInfoBox{
+    width:670px;
+    height:160px;
+    padding:5px 0px;
+}
+.userBaseInfoBox-Top{
+    width:670px;
+    height:30px;
+}
+.infoTips{
+    padding:0px 5px;
+}
+.recommendInfoBox{
+    width:670px;
+    heigth:50px;
+    padding-bottom: 25px;
+}
+.userPubMsgBox{
+    width:670px;
+    heigth:60px;
+}
+.pubTextAreaBox{
+    width:450px;
+    height:45px;
+    resize:none;
+}
+.appendInputBox{
+    margin-bottom: 0px;
+}
+.pubButton{
+    height:55px;
+}
+.pubToolsBar{
+    width:580px;
+    heigth:30px;
+}
+.pubToolsBarRightLi{
+    float: right;
+}
+.limitText{
+    font-family: Constantia, Georgia;
+}
+.topUserRightBox{
+    width:270px;
+    height:160px;
+    padding:0px 5px;
 }
