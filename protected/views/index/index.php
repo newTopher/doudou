@@ -58,8 +58,8 @@ $this->pageTitle=Yii::app()->name;
             <div class="userBaseInfoBox">
                 <div class="userBaseInfoBox-Top">
                     <ul class="inline">
-                        <li><i class="icon-envelope"></i><span class="infoTips">有眼缘的</span><a href="">135</a></li>
-                        <li><i class="icon-envelope"></i><span class="infoTips">爱慕我的</span><a href="">235</a></li>
+                        <li><i class="icon-envelope"></i><span class="infoTips">有眼缘的</span><a href=""><?php if($attentions==null){echo '0';}else{echo $attentions;}; ?></a></li>
+                        <li><i class="icon-envelope"></i><span class="infoTips">爱慕我的</span><a href=""><?php if($fans==null){echo '0';}else{echo $fans;}; ?></a></li>
                         <li><i class="icon-envelope"></i><span class="infoTips">收到的求爱</span><a href="">235</a></li>
                         <li><i class="icon-envelope"></i><span class="infoTips">收到的鲜花</span><a href="">235</a></li>
                     </ul>
@@ -76,11 +76,19 @@ $this->pageTitle=Yii::app()->name;
                 <div class="pubToolsBar">
                     <ul class="inline">
                         <li><a href="javascript:void(0)" id="emotionAlink">表情</a></li>
-                        <li><a href="javascript:void(0)" id="imgUpload">添加图片</a></li>
+                        <li>
+                            <a data-toggle="popover" href="javascript:void(0)" id="imgUpload">添加图片</a>
+                        </li>
                         <li><a href="">@</a></li>
                         <li class="pubToolsBarRightLi">你还可以输入<i class="limitText">128</i>个字</li>
                     </ul>
-
+                    <div class="popover fade bottom in uploadImageBox">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title">请选择你要上传的图片<button type="button" class="close" id="uploadImageClose">×</button></h3>
+                        <div class="popover-content">
+                           <button type="button" class="btn btn-success uploadFileBtn">上传照片<input type="file" class="fileButton" value="请选择图片"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

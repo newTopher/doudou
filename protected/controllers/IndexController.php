@@ -5,6 +5,8 @@ class IndexController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+    const USERKEY_PREFIX='ddkeys_';
+
 	public function actions()
 	{
 		return array(
@@ -33,8 +35,18 @@ class IndexController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.SinaEmotion.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/homebase.js');
         $user=Yii::app()->session['user'];
+        if(!($fans = Yii::app()->cache->get(self::USERKEY_PREFIX.'fans'.$user['id']))){
+            $fans=AttentionListModel::getFansByUid($user['id']);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'fans'.$user['id'],$fans,60);
+        }
+        if(!($attentions = Yii::app()->cache->get(self::USERKEY_PREFIX.'attentions'.$user['id']))){
+            $attentions=AttentionListModel::getAttentionByUid($user['id']);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'attentions'.$user['id'],$attentions,60);
+        }
 		$this->render('index',array(
-            'user'=>$user
+            'user'=>$user,
+            'fans'=>$fans,
+            'attentions'=>$attentions
         ));
 	}
 

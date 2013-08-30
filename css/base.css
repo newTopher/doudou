@@ -273,3 +273,21 @@
 .addWrap{
     display: none;
 }
+.uploadImageBox{
+    top: 0px;
+    left: -60px;
+    position: relative;
+    display: none;
+}
+.fileButton{
+    opacity: 0;
+    font-size:30px;
+    position: relative;
+    top:-25px;
+}
+.uploadFileBtn{
+    width: 248px;
+    height:35px;
+    line-height: 30px;
+    cursor: pointer;
+}

@@ -7,4 +7,11 @@
  */
 $(function(){
     $('#emotionAlink').SinaEmotion($('.pubTextAreaBox'));
+    $('#imgUpload').click(function(event){
+        $('.uploadImageBox').show();
+        event.stopPropagation();
+    });
+    $('#uploadImageClose').click(function(){
+        $('.uploadImageBox').hide();
+    });
 });
