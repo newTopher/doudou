@@ -11,4 +11,8 @@ class ErrorController extends Controller{
         echo Yii::t('error',Yii::app()->request->getParam('errorMsg'));
         exit;
     }
+
+    public function test(){
+
+    }
 }
