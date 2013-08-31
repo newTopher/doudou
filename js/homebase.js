@@ -19,7 +19,8 @@ $(function(){
         'auto'      :false,
         'swf'       : 'http://doudou.test.local/js/uploadify/uploadify.swf',
         'uploader' : 'http://doudou.test.local/js/uploadify/uploadify.php',
-        'queueID':'uploadImageBox'
+        'queueID':'uploadImageBox',
+        'bottonText':'<div>选择文件</div>'
     });
 
 });

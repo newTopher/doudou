@@ -86,7 +86,7 @@ $this->pageTitle=Yii::app()->name;
                         <div class="arrow"></div>
                         <h3 class="popover-title">请选择你要上传的图片<button type="button" class="close" id="uploadImageClose">×</button></h3>
                         <div class="popover-content">
-                            <form> <button type="button" class="btn btn-success uploadFileBtn">上传照片<input type="file" id="fileButton" class="fileButton" value="请选择图片"></button></form>
+                            <form> <input type="file" id="fileButton" class="fileButton" value="请选择图片"></form>
                         </div>
                     </div>
                 </div>
