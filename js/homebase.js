@@ -14,4 +14,12 @@ $(function(){
     $('#uploadImageClose').click(function(){
         $('.uploadImageBox').hide();
     });
+
+    $('#fileButton').uploadify({
+        'auto'      :false,
+        'swf'       : 'http://doudou.test.local/js/uploadify/uploadify.swf',
+        'uploader' : 'http://doudou.test.local/js/uploadify/uploadify.php',
+        'queueID':'uploadImageBox'
+    });
+
 });

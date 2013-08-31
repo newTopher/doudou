@@ -82,11 +82,11 @@ $this->pageTitle=Yii::app()->name;
                         <li><a href="">@</a></li>
                         <li class="pubToolsBarRightLi">你还可以输入<i class="limitText">128</i>个字</li>
                     </ul>
-                    <div class="popover fade bottom in uploadImageBox">
+                    <div class="popover fade bottom in uploadImageBox" id="uploadImageBox">
                         <div class="arrow"></div>
                         <h3 class="popover-title">请选择你要上传的图片<button type="button" class="close" id="uploadImageClose">×</button></h3>
                         <div class="popover-content">
-                           <button type="button" class="btn btn-success uploadFileBtn">上传照片<input type="file" class="fileButton" value="请选择图片"></button>
+                            <form> <button type="button" class="btn btn-success uploadFileBtn">上传照片<input type="file" id="fileButton" class="fileButton" value="请选择图片"></button></form>
                         </div>
                     </div>
                 </div>
