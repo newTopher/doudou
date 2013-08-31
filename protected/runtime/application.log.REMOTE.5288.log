@@ -3406,15 +3406,6 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/28 09:12:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
 2013/08/28 09:12:16 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
 2013/08/28 09:12:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
-<<<<<<< HEAD
-2013/08/28 21:46:57 [trace] [system.db.ar.CActiveRecord] UserModel.find()
-2013/08/28 21:46:57 [trace] [system.db.CDbConnection] Opening DB connection
-2013/08/28 21:47:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
-2013/08/28 21:47:03 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
-2013/08/28 21:47:03 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
-2013/08/28 21:47:03 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
-2013/08/28 21:47:03 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
-=======
 2013/08/29 02:06:01 [trace] [system.db.ar.CActiveRecord] UserModel.find()
 2013/08/29 02:06:01 [trace] [system.db.CDbConnection] Opening DB connection
 2013/08/29 02:06:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
@@ -3971,4 +3962,3 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/31 04:01:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
 2013/08/31 04:01:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
 2013/08/31 04:01:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
->>>>>>> doudou/master

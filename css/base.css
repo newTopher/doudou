@@ -1,3 +1,6 @@
+.clear {
+    zoom: 1;
+}
 .topBackColor{
     background-color: rgba(175, 175, 175, 0.36);
     height: 170px;
@@ -144,4 +147,147 @@
     width:270px;
     height:160px;
     padding:0px 5px;
+}
+.userLeftBar{
+    width:160px;
+    height:300px;
+    padding:15px 5px 0px 5px;
+}
+.userPubCenter{
+    width: 670px;
+    height: auto;
+    padding:5px 0px;
+}
+.stautsButton{
+    width:670px;
+    height:35px;
+    padding-top:5px;
+    margin-top:6px;
+    border-top: 1px solid #CAE5EF;
+}
+.stautsButton li{
+    width: 84px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border: none;
+    background: #1763a7;
+    cursor: pointer;
+}
+.stautsButton li a{
+    color:white;
+}
+.weiboListBox{
+    widht:670px;
+    height:auto;
+}
+.conWrap .userHeaderPic {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background: #ededed;
+}
+.conText {
+    float: left;
+    width: 600px;
+    color: #333;
+}
+.conText .userLitleInfo{
+    padding:8px 0px;
+}
+.conText .userLitleInfo .mb_name a{
+    font-size: 18px;
+    color: #2595B7;
+}
+.conText .userLitleInfo .sign{
+    padding-left:15px;
+    font-size: 13px;
+}
+.fromTime{
+    font-size: 12px;
+}
+.otherUserToolBar a{
+    padding:0px 5px;
+    font-size: 12px;
+}
+.commentBox{
+    width:100%;
+    height:auto;
+    padding:5px 0px;
+}
+.commentBox ul li{
+    padding:5px;
+    height: 32px;
+    line-height: 32px;
+    clear: both;
+}
+.comUserHeaderPic{
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+.userComContents{
+    float: left;
+    width:380px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.comUserNick a{
+    float: left;
+    padding-left:12px;
+    padding-right: 10px;
+    line-height: 14px;
+}
+.userComTime{
+    float: right;
+    line-height: 18px;
+}
+.fromTime{
+    padding:0px 10px;
+}
+.userComTextarea{
+    width: 450px;
+    height:35px;
+    border:1px solid #2595B7;
+    resize: none;
+}
+.userComToolsBar ul li{
+   height: 25px;
+   line-height: 25px;
+   padding:0px 5px;
+}
+.userComButtonLi{
+    float: right;
+    margin-right:133px;
+}
+.userComButton{
+    width: 66px;
+    height: 30px;
+}
+.conWrap{
+    height:auto;
+    padding:5px 0px;
+}
+.addWrap{
+    display: none;
+}
+.uploadImageBox{
+    top: 0px;
+    left: -60px;
+    position: relative;
+    display: none;
+}
+.fileButton{
+    opacity: 0;
+    font-size:30px;
+    position: relative;
+    top:-25px;
+}
+.uploadFileBtn{
+    width: 248px;
+    height:35px;
+    line-height: 25px;
+    cursor: pointer;
 }
