@@ -275,7 +275,7 @@
 }
 .uploadImageBox{
     top: 0px;
-    left: -60px;
+    left: -65px;
     position: relative;
     display: none;
 }
@@ -290,4 +290,34 @@
     height:35px;
     line-height: 25px;
     cursor: pointer;
+}
+.uploadedImageBox{
+    width:100%;
+    padding:0px 12px;
+}
+.fileUploadError{
+    display: none;
+    width: 200px;
+}
+.uploadedImages{
+    width:240px;
+    margin-bottom: 15px;
+}
+.delButtonUploadImage{
+    width:20px;
+    height:20px;
+    background: url(../images/ico_layer.png);
+    position: relative;
+    float: right;
+    left:-28px;
+    top:2px;
+}
+.shareUrl{
+    top: 0px;
+    left: -10px;
+    position: relative;
+    display: none;
+}
+.shareUrlBox{
+    padding:5px 0px 0px 5px;
 }

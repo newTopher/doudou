@@ -4021,3 +4021,941 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/31 22:29:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
 2013/08/31 22:29:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
 2013/08/31 22:29:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 22:43:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:43:54 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 22:43:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 22:43:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 22:43:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 22:43:55 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:43:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 22:45:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:45:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 22:45:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 22:45:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 22:45:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 22:45:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:45:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 22:46:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:46:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 22:46:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 22:46:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 22:46:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 22:46:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 22:46:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:28:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:28:28 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:28:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:28:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:28:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:28:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:28:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:29:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:29:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:29:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:29:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:29:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:29:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:29:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:40:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:40:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:40:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:40:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:40:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:40:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:40:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:41:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:41:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:41:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:41:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:41:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:41:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:41:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:43:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:43:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:43:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:43:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:43:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:43:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:43:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:44:18 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:44:18 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:44:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:44:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:44:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:44:19 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:44:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:44:35 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:44:35 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:44:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:44:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:44:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:44:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:44:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 23:55:51 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:55:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 23:55:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 23:55:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 23:55:53 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 23:55:53 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 23:55:53 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 00:00:26 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:00:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 00:00:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 00:00:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 00:00:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 00:00:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:00:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 00:02:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:02:41 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 00:02:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 00:02:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 00:02:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 00:02:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:02:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 00:11:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:11:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 00:11:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 00:11:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 00:11:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 00:11:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:11:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 00:14:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:14:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 00:14:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 00:14:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 00:14:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 00:14:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:14:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 00:15:19 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:15:19 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 00:15:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 00:15:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 00:15:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 00:15:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 00:15:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 01:14:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 01:14:28 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 01:14:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 01:14:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 01:14:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 01:14:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 01:14:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 01:16:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 01:16:38 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 01:16:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 01:16:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 01:16:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 01:16:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 01:16:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:00:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:00:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:00:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:00:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:00:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:00:26 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:00:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:00:47 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/01 11:00:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:00:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/01 11:00:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/01 11:00:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/01 11:00:48 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/01 11:00:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/01 11:00:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:00:49 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:00:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:00:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:00:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:00:50 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:00:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:29:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:29:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:29:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:29:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:29:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:29:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:42 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:29:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:29:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:29:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:29:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:29:54 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/01 11:29:54 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:29:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/01 11:29:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/01 11:29:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/01 11:29:55 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/01 11:29:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/01 11:29:55 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:55 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:29:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:29:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:29:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:29:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:29:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:40:26 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:40:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:40:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:40:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:40:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:40:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:40:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:47:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:47:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:47:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:47:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:47:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:47:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:47:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:48:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:48:29 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:48:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:48:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:48:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 11:53:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:53:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 11:53:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 11:53:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 11:53:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 11:53:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 11:53:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:00:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:00:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:00:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:00:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:00:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:00:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:00:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:01:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:01:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:01:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:01:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:01:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:01:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:01:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:04:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:04:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:04:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:04:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:04:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:06:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:06:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:06:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:06:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:06:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:06:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:06:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:13:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:13:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:13:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:13:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:13:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:13:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:13:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:16:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:16:43 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:16:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:16:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:16:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:16:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:16:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:17:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:17:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:17:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:17:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:17:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:17:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:17:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:18:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:18:14 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:18:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:18:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:18:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:18:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:18:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:18:46 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:18:46 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:18:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:18:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:18:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:18:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:18:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:23:51 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:23:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:23:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:23:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:23:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:23:52 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:23:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:25:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:25:28 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:25:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:25:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:25:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:25:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:25:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:26:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:26:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:26:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:26:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:26:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:26:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:26:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:28:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:28:02 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:28:03 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:28:03 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:28:03 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:28:03 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:28:03 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:32:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:32:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:32:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:32:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:32:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:32:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:32:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:32:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:32:42 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:32:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:32:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:32:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:32:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:32:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:34:17 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/01 12:34:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:34:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/01 12:34:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/01 12:34:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/01 12:34:19 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/01 12:34:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/01 12:34:19 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:34:19 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:34:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:34:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:34:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:34:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:34:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:35:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:35:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:35:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:35:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:35:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:35:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:35:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:37:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:37:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:37:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:37:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:37:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:37:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:37:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 12:39:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:39:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 12:39:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 12:39:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 12:39:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 12:39:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 12:39:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:26:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:26:08 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:26:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:26:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:26:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:26:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:26:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:28:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:28:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:28:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:28:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:28:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:28:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:28:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:28:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:28:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:28:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:28:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:28:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:28:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:28:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:29:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:29:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:29:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:29:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:29:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:29:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:29:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:33:03 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:33:03 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:33:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:33:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:33:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:33:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:33:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:34:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:34:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:34:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:34:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:34:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:34:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:34:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:35:26 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:35:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:35:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:35:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:35:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:35:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:35:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:36:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:36:15 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:36:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:36:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:36:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:36:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:36:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:38:51 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:38:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:38:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:38:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:38:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:38:52 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:38:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:39:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:39:59 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:40:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:40:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:40:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:40:01 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:40:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:40:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:40:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:40:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:40:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:40:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:40:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:40:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:45:19 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:45:19 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:45:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:45:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:45:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 15:57:51 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:57:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 15:57:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 15:57:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 15:57:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 15:57:52 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 15:57:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:03:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:03:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:03:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:03:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:03:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:03:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:03:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:04:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:04:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:04:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:04:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:04:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:04:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:04:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:04:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:04:57 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:04:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:04:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:04:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:04:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:04:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:05:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:05:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:05:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:05:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:05:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:05:46 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:05:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:07:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:07:56 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:07:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:09:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:09:38 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:09:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:09:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:09:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:09:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:09:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:20:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:20:28 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:20:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:20:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:20:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:20:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:20:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:24:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:24:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:24:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:24:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:24:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:24:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:24:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:24:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:24:49 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:24:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:24:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:24:51 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:24:51 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:24:51 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:25:35 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:25:35 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:25:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:25:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:25:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:25:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:25:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:26:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:26:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:26:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:26:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:26:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:26:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:29:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:29:32 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:29:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:29:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:29:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:29:33 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:29:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:37:03 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:37:03 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:37:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:37:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:37:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:37:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:37:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:37:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:37:59 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:38:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:38:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:38:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:38:00 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:38:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:43:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:43:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:43:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:43:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:43:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:43:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:43:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:44:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:44:27 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:44:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:44:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:44:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:44:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:44:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:44:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:44:56 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:44:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:44:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:44:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:44:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:44:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:47:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:47:39 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:47:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:47:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:47:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:47:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:47:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:48:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:48:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:48:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:48:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:48:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:48:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:48:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 16:53:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:53:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 16:53:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 16:53:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 16:53:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 16:53:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 16:53:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:27:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:27:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:27:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:27:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:27:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:27:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:27:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:29:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:29:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:29:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:29:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:29:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:29:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:29:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:32:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:32:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:32:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:32:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:32:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:32:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:32:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:34:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:34:54 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:34:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:34:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:34:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:34:55 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:34:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:35:35 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:35:35 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:35:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:35:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:35:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:35:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:35:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:38:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:38:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:38:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:38:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:38:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:38:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:38:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:39:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:39:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:39:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:39:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:39:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:39:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:39:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:39:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:39:43 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:39:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:39:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:39:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:39:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:39:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:40:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:40:41 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:40:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:40:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:40:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:40:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:40:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:42:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:42:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:42:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:42:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:42:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:42:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:42:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:44:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:44:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:44:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:44:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:44:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:44:46 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:44:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:45:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:45:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:45:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:45:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:45:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:45:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:45:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:46:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:46:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:46:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:46:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:46:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:46:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:46:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:47:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:47:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:47:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:47:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:47:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:47:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:47:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:48:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:48:38 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:48:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:49:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:49:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:49:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:49:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:49:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:49:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:49:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:53:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:53:10 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:53:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:53:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:53:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:53:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:53:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:54:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:54:08 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:54:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:54:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:54:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:54:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:54:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 17:54:33 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:54:33 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 17:54:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 17:54:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 17:54:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 17:54:34 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 17:54:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:01:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:01:05 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:01:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:01:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:01:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:01:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:01:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:03:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:03:14 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:03:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:03:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:03:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:03:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:03:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:03:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:03:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:03:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:03:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:03:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:03:25 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:03:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:04:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:04:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:04:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:04:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:04:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:04:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:04:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:08:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:08:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:08:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:08:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:08:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:08:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:08:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:12:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:12:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:12:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:12:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:12:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:12:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:12:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:12:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:12:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:12:18 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:12:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:12:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:12:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:12:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:12:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:12:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:14:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:14:59 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:15:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:15:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:15:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:15:00 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:15:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:19:01 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:19:01 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:19:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:19:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:19:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:19:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:19:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:34:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:34:36 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:34:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:34:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:34:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:34:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:34:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:39:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:39:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:39:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:39:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:39:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:39:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:39:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:39:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:39:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:39:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:39:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:58 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:39:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:39:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:39:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:39:59 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:39:59 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:41:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:41:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:41:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:41:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:41:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:41:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:41:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:41:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:41:43 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:41:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:41:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:41:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:41:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:41:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:42:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:42:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:42:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:42:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:42:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:42:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:42:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:42:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:42:15 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:42:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:42:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:42:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:42:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:42:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:43:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:43:44 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:43:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:43:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:43:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:43:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:43:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:44:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:44:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:44:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:44:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:44:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:44:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:44:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:48:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:48:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:48:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:48:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:48:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:48:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:48:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:49:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:49:13 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:49:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:49:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:49:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:49:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:55:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:55:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:55:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:55:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:55:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:55:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:55:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:56:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:56:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:56:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:56:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:56:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:56:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:56:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 18:56:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:56:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 18:56:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 18:56:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 18:56:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 18:56:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 18:56:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:05:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:05:54 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:05:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:05:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:05:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:05:55 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:05:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:07:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:07:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:07:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:07:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:07:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:07:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:07:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:41:53 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:41:53 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:41:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:41:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:41:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:41:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:41:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:50:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:50:11 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:50:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:50:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:50:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:50:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:50:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:50:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:50:49 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:50:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:50:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:50:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:50:50 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:50:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:51:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:51:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:51:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:51:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:51:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:52:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:52:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:52:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:52:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:52:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:52:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:52:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 19:52:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:52:10 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/01 19:52:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/01 19:52:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/01 19:52:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/01 19:52:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/01 19:52:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid

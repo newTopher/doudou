@@ -79,7 +79,7 @@ $this->pageTitle=Yii::app()->name;
                         <li>
                             <a data-toggle="popover" href="javascript:void(0)" id="imgUpload">添加图片</a>
                         </li>
-                        <li><a href="">@</a></li>
+                        <li><a href="javascript:void(0)" id="shareUrlBtn">分享</a></li>
                         <li class="pubToolsBarRightLi">你还可以输入<i class="limitText">128</i>个字</li>
                     </ul>
                     <div class="popover fade bottom in uploadImageBox" id="uploadImageBox">
@@ -87,6 +87,23 @@ $this->pageTitle=Yii::app()->name;
                         <h3 class="popover-title">请选择你要上传的图片<button type="button" class="close" id="uploadImageClose">×</button></h3>
                         <div class="popover-content">
                             <form> <input type="file" id="fileButton" class="fileButton" value="请选择图片"></form>
+                        </div>
+                        <div class="uploadedImageBox" id="uploadedImageBox">
+                            <div class="alert alert-block alert-error fade in fileUploadError">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <h5 class="alert-heading">You got an error!</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popover fade bottom in shareUrl" id="shareUrl">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title">请输入你要分享的音乐或者视频链接<button type="button" class="close" id="shareUrlClose">×</button></h3>
+                        <div class="popover-content">
+                            <div class="input-append shareUrlBox">
+                                <input type="text" class="input-medium" id="hasShareUrl">
+                                <button type="button" class="btn" id="shareUrlButton">分享</button>
+                            </div>
                         </div>
                     </div>
                 </div>

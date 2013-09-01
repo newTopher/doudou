@@ -8,6 +8,7 @@
 $(function(){
     $('#emotionAlink').SinaEmotion($('.pubTextAreaBox'));
     $('#imgUpload').click(function(event){
+        $('.shareUrl').hide();
         $('.uploadImageBox').show();
         event.stopPropagation();
     });
@@ -15,12 +16,71 @@ $(function(){
         $('.uploadImageBox').hide();
     });
 
-    $('#fileButton').uploadify({
-        'auto'      :false,
-        'swf'       : 'http://doudou.test.local/js/uploadify/uploadify.swf',
-        'uploader' : 'http://doudou.test.local/js/uploadify/uploadify.php',
-        'queueID':'uploadImageBox',
-        'bottonText':'<div>选择文件</div>'
+    $('#shareUrlBtn').click(function(){
+        $('.uploadImageBox').hide();
+        $('.shareUrl').show();
     });
+
+    $('#shareUrlClose').click(function(){
+        $('.shareUrl').hide();
+    });
+    $("#shareUrlButton").click(function(){
+        if($("#hasShareUrl").val()==''){
+            alert(tipMsg.shareurltip);
+            return false;
+        }else{
+            $('#appendedInputButton').insertAtCaret($("#hasShareUrl").val());
+            $('.shareUrl').hide();
+        }
+    });
+    $('#fileButton').uploadify({
+        'swf'       : tipMsg.baseUrl+'/js/uploadify/uploadify.swf',
+        'uploader' : tipMsg.uploadphotourl,
+        'queueID':'uploadImageBox',
+        'buttonText':'<div>选择照片</div>',
+        'width': 100,
+        'method':'post',
+        'multi': false,
+        'fileTypeExts': '*.jpg;*.png;*.jpeg;*.gif;*.bmp',
+        'onUploadSuccess' : function(file,data){
+            data=eval("("+data+")");
+            if(data.code==0){
+                var divs = $('<div>').attr('class','divImages');
+                var img = $('<img>').attr('class','img-polaroid uploadedImages')
+                    .attr('src',tipMsg.baseUrl+'/uploads/'+data.data).attr('imagedata',data.data);
+                $(img).appendTo(divs);
+                $('#uploadedImageBox').append(divs);
+            }else if(data.code=='-1'){
+                $(".fileUploadError h5").text(data.msg);
+                $(".fileUploadError").show();
+            }
+        }
+    });
+
+    $(".divImages").live('mouseenter',function(){
+        var adom = $('<a>').attr('href','javascript:;').attr('class','delButtonUploadImage');
+        $(this).append(adom)
+    });
+    $(".divImages").live('mouseleave',function(){
+        $(this).children('.delButtonUploadImage').remove();
+    });
+
+    $('.delButtonUploadImage').live('click',function(){
+        var imagedata = $(this).prev().attr('imagedata');
+        var thisobj=$(this);
+        $.getJSON(tipMsg.deluploadimage,{imagename:imagedata},function(data){
+            if(data.code==0){
+                thisobj.parent('.divImages').remove();
+            }else if(data.code=='-1'){
+                alert(data.msg);
+            }
+        })
+    });
+
+    /*
+      @ function
+     */
+
+
 
 });

@@ -53,4 +53,8 @@ class Controller extends CController
             return false;
         }
     }
+
+    public function generateNewImageName(){
+        return md5(substr(time(),5));
+    }
 }
