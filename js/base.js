@@ -22,7 +22,8 @@ var tipMsg={
     baseUrl:'http://doudou.test.local',
     uploadphotourl:'/index-test.php/base/uploadPhoto',
     deluploadimage:'/index-test.php/base/delUploadImage',
-    shareurltip:'分享的url地址无效'
+    shareurltip:'分享的url地址无效',
+    pubnulltip:'你想给你爱的人和爱你的人说点什么呢'
 };
 
 var userTags={
