@@ -74,7 +74,7 @@ $(function(){
             }else if(data.code=='-1'){
                 alert(data.msg);
             }
-        })
+        });
     });
 
     /*
