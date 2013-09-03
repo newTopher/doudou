@@ -69,8 +69,8 @@ $this->pageTitle=Yii::app()->name;
                 </div>
                 <div class="userPubMsgBox">
                     <div class="input-append appendInputBox">
-                        <textarea class="pubTextAreaBox" id="appendedInputButton"></textarea>
-                        <button class="btn btn-info btn-large pubButton" type="button">发表状态</button>
+                        <textarea class="pubTextAreaBox" uid="<?php echo $user['id'] ;?>" id="appendedInputButton"></textarea>
+                        <button class="btn btn-info btn-large pubButton" type="button" id="pubButton">发表状态</button>
                     </div>
                 </div>
                 <div class="pubToolsBar">

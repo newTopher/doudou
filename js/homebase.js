@@ -77,6 +77,17 @@ $(function(){
         });
     });
 
+    $('#pubButton').click(function(){
+        if($('#appendedInputButton').val()==''){
+            alert(tipMsg.pubnulltip);
+        }else{
+            var imagedata = $('.divImages img').attr('imagedata')
+            if( imagedata != 'undefined'){
+                alert(imagedata);
+            }
+        }
+    });
+
     /*
       @ function
      */
