@@ -5207,3 +5207,24 @@ in E:\Apache2.2\htdocs\doudou\index.php (13)
 2013/09/02 09:17:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
 2013/09/02 09:17:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
 >>>>>>> doudou/master
+2013/09/03 23:14:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:14:39 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 23:14:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 23:14:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 23:14:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 23:14:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:14:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 23:15:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:15:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 23:15:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 23:15:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 23:15:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 23:15:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:15:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 23:49:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:49:10 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 23:49:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 23:49:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 23:49:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 23:49:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 23:49:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid

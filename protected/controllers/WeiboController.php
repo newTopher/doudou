@@ -8,6 +8,8 @@
  */
 class WeiboController extends Controller{
 
+    public function actionPub(){
 
+    }
 
 }

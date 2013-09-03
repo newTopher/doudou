@@ -82,8 +82,10 @@ $(function(){
             alert(tipMsg.pubnulltip);
         }else{
             var imagedata = $('.divImages img').attr('imagedata')
-            if( imagedata != 'undefined'){
-                alert(imagedata);
+            if( imagedata != undefined){
+                $.post(tipMsg.baseUrl+tipMsg.weibourl,{},function(){
+
+                },'json');
             }
         }
     });
