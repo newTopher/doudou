@@ -46,10 +46,18 @@ class IndexController extends Controller
             $attentions=AttentionListModel::getAttentionByUid($user['id']);
             Yii::app()->cache->set(self::USERKEY_PREFIX.'attentions'.$user['id'],$attentions,60);
         }
+        if(!($attentionList = Yii::app()->cache->get(self::USERKEY_PREFIX.'fanslists'.$user['id']))){
+            $attentionList=AttentionListModel::getUserAttentionUidList($user['id']);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'fanslists'.$user['id'],$attentionList,60);
+        }
+        $weiboModel=new WeiboModel();
+        $weiboList = $weiboModel->getUserWeiboList($attentionList);
+        print_r($weiboList);
 		$this->render('index',array(
             'user'=>$user,
             'fans'=>$fans,
-            'attentions'=>$attentions
+            'attentions'=>$attentions,
+            'weiboList'=>$weiboList
         ));
 	}
 

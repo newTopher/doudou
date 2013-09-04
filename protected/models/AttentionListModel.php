@@ -36,4 +36,16 @@ class AttentionListModel extends CActiveRecord{
         }
 
     }
+
+    static public function getUserAttentionUidList($uid){
+        if(null !== ($attentionList=self::model()->findAll('marster_uid=:marster_uid',array(':marster_uid'=>$uid)))){
+            $ids=array($uid);
+            foreach($attentionList as $list){
+                $ids[]=$list->attributes['id'];
+            }
+            return $ids;
+        }else{
+            return array($uid);
+        }
+    }
 }

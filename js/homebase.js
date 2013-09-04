@@ -80,13 +80,66 @@ $(function(){
     $('#pubButton').click(function(){
         if($('#appendedInputButton').val()==''){
             alert(tipMsg.pubnulltip);
+        }else if($('#appendedInputButton').attr('uid')==''){
+            alert(tipMsg.uidisnull);
         }else{
-            var imagedata = $('.divImages img').attr('imagedata')
-            if( imagedata != undefined){
-                $.post(tipMsg.baseUrl+tipMsg.weibourl,{},function(){
-
-                },'json');
+            var imagedata = $('.divImages img').attr('imagedata');
+            var userheaderimage=$('.userHeaderImage').attr('src');
+            var uname=$('#appendedInputButton').attr('uname');
+            if( imagedata == undefined){
+                imagedata='';
             }
+            $.post(tipMsg.baseUrl+tipMsg.weibourl,{text:$('#appendedInputButton').val(),pics:imagedata,uid:$('#appendedInputButton').attr('uid')},function(data){
+                if(data.code==0){
+                    var pubText = AnalyticEmotion($('#appendedInputButton').val());
+                    var htmlText="<div class='conWrap clear'>"+
+                        "<div class='userHeaderPic'>"+
+                        "<a href=''><img class='img-rounded' src='"+userheaderimage+"' alt='头像'></a>"+
+                        "</div>"+
+                        "<div class='conText'>"+
+                        "<div class='tAreaBox'>"+
+                        "<div class='userLitleInfo'>"+
+                        "<span class='mb_name'><a href=''>"+uname+"</a></span>"+
+                        "<span class='sign'>my sign is for you !!!</span>"+
+                        "</div>"+
+                        "<div class='ps'>"+
+                        "<div class='content'>"+
+                        "<p>"+pubText+"</p>"+
+                        "<div class='weiimagesBox'>"+
+                        "<img src='"+tipMsg.baseUrl+'/uploads/'+imagedata+"'>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='otherUserToolBar'>"+
+                        "<span class='fromTime'>10秒钟前</span>"+
+                        "<a href='javascript:;'>喜欢(0)</a>"+
+                        "<a href='javascript:;'>评论(0)</a>"+
+                        "<a href='javascript:;'>转发(0)</a>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='commentBox'>"+
+                        "<ul class='unstyled'>"+
+                        "</ul> "+
+                        "<div class='addWrap'>"+
+                        "<textarea class='userComTextarea' placeholder='在此输入评论内容'></textarea>"+
+                        "<div class='userComToolsBar'>"+
+                        "<ul class='inline'>"+
+                        "<li class='userComButtonLi'><button class='btn userComButton' type='button'>回复</button></li>"+
+                        "<li><a href='javascript:void(0)'>表情</a></li>"+
+                        "</ul> "+
+                        "</div> "+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>";
+                    $('.weiboListBox').prepend(htmlText);
+                    $('.shareUrl').hide();
+                    $('.uploadImageBox').hide();
+                    $('#appendedInputButton').val('');
+                }else if(data.code=='-1'){
+                    alert(data.msg);
+                }
+            },'json');
         }
     });
 

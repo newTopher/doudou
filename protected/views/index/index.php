@@ -16,7 +16,7 @@ $this->pageTitle=Yii::app()->name;
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     <?php if(!Yii::app()->user->isGuest): ?>
-                        <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>" class="navbar-link"><?php echo Yii::app()->user->name; ?></a>
+                        <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>" class="navbar-link"><?php echo Yii::app()->user->name.'('.$user['name'].')'; ?></a>
                     <?php elseif(Yii::app()->user->isGuest): ?>
                         <a href="<?php echo Yii::app()->createUrl('login/login'); ?>" class="navbar-link">登陆</a>
                     <?php endif; ?>
@@ -41,16 +41,16 @@ $this->pageTitle=Yii::app()->name;
                     <?php if($user['sex']==0):?>
                       <div>
                           <span class="uploadHeader"></span>
-                          <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/images/base/defaultheaderman.jpg' ;?>">
+                          <img class="img-rounded userHeaderImage" src="<?php echo Yii::app()->request->baseUrl.'/images/base/defaultheaderman.jpg' ;?>">
                       </div>
                     <?php elseif($user['sex']==1): ?>
                       <div>
-                          <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/images/base/defaultheaderwomen.jpg' ;?>">
+                          <img class="img-rounded userHeaderImage" src="<?php echo Yii::app()->request->baseUrl.'/images/base/defaultheaderwomen.jpg' ;?>">
                           <span class="uploadHeader"><i class="icon-pencil icon-white"></i><a href="" class="uploadAlink">没头像不好看</a></span>
                       </div>
                     <?php endif; ?>
                 <?php else: ?>
-                    <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$user['head_img'] ;?>">
+                    <img class="img-rounded userHeaderImage" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$user['head_img'] ;?>">
                 <?php endif; ?>
             </span>
         </div>
@@ -69,7 +69,7 @@ $this->pageTitle=Yii::app()->name;
                 </div>
                 <div class="userPubMsgBox">
                     <div class="input-append appendInputBox">
-                        <textarea class="pubTextAreaBox" uid="<?php echo $user['id'] ;?>" id="appendedInputButton"></textarea>
+                        <textarea class="pubTextAreaBox" uname="<?php echo $user['name']; ?>" uid="<?php echo $user['id'] ;?>" id="appendedInputButton"></textarea>
                         <button class="btn btn-info btn-large pubButton" type="button" id="pubButton">发表状态</button>
                     </div>
                 </div>
@@ -140,118 +140,66 @@ $this->pageTitle=Yii::app()->name;
             </div>
 
             <div class="weiboListBox">
-                <div class="conWrap clear">
-                    <div class="userHeaderPic">
-                        <img class="img-rounded" src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
-                    </div>
-                    <div class="conText">
-                        <div class="tAreaBox">
-                            <div class="userLitleInfo">
-                                <span class="mb_name"><a href="">DeliChan</a></span>
-                                <span class="sign">  Keep each other warm</span>
+                <?php if($weiboList !== null): ?>
+                    <?php foreach($weiboList as $key => $val): ?>
+                        <div class="conWrap clear">
+                            <div class="userHeaderPic">
+                                <img class="img-rounded" src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
                             </div>
-                            <div class="ps">
-                                <div class="content">
-                                    <p>
-                                        想问下哈，9月10号不是发布iphone5s嘛，我想入手iphone5，我知道5s一出，iphone5价格肯定会跳水，5s出了之后，多久入手iphone5合适呢，你觉得5的价格大概会降到什么价位呢？ 在哪儿买比较好？可以解答下吗？现在的iphone5还会掉漆吗，黑色版的，
-                                    </p>
+                            <div class="conText">
+                                <div class="tAreaBox">
+                                    <div class="userLitleInfo">
+                                        <span class="mb_name"><a href="">DeliChan</a></span>
+                                        <span class="sign">  Keep each other warm</span>
+                                    </div>
+                                    <div class="ps">
+                                        <div id="q_ps_3180" class="content">
+                                            <p>
+                                                今天去哪里玩呢，你觉得怎么样啊
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="otherUserToolBar">
+                                        <span class="fromTime">49分钟前</span>
+                                        <a href="javascript:;">赞(12)</a>
+                                        <a href="javascript:;">评论(15)</a>
+                                        <a href="javascript:;">转发(25)</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="otherUserToolBar">
-                                <span class="fromTime">49分钟前</span>
-                                <a href="javascript:;">赞(12)</a>
-                                <a href="javascript:;">评论(15)</a>
-                                <a href="javascript:;">转发(25)</a>
-                            </div>
-                        </div>
-                        <div class="commentBox">
-                            <ul class="unstyled">
-                                <li>
-                                    <div class="comUserHeaderPic">
-                                        <img src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
-                                    </div>
-                                    <div class="comUserNick">
-                                        <a href="">陈晓冰</a>
-                                    </div>
-                                    <div class="userComContents">
-                                        <span>
-                                            我喜欢你这样子的回答我喜欢你这样子的回答我喜欢你这样子的回答我喜欢你这样子的回答
-                                        </span>
-                                    </div>
-                                    <div class="userComTime">
-                                        <span class="fromTime">3分钟前</span><a href="javascript:;">回复</a>
-                                    </div>
+                                <div class="commentBox">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <div class="comUserHeaderPic">
+                                                <img src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
+                                            </div>
+                                            <div class="comUserNick">
+                                                <a href="">陈晓冰</a>
+                                            </div>
+                                            <div class="userComContents">
+                                                <span>
+                                                    估计你是神了！！！
+                                                </span>
+                                            </div>
+                                            <div class="userComTime">
+                                                <span class="fromTime">3分钟前</span><a href="javascript:;">回复</a>
+                                            </div>
 
-                                </li>
-                            </ul>
-                            <div class="addWrap">
-                                <textarea class="userComTextarea" placeholder="在此输入评论内容"></textarea>
-                                <div class="userComToolsBar">
-                                    <ul class="inline">
-                                        <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
-                                        <li><a href="javascript:void(0)">表情</a></li>
+                                        </li>
                                     </ul>
+                                    <div class="addWrap">
+                                        <textarea class="userComTextarea" placeholder="在此输入评论内容"></textarea>
+                                        <div class="userComToolsBar">
+                                            <ul class="inline">
+                                                <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
+                                                <li><a href="javascript:void(0)">表情</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="conWrap clear">
-                    <div class="userHeaderPic">
-                        <img class="img-rounded" src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
-                    </div>
-                    <div class="conText">
-                        <div class="tAreaBox">
-                            <div class="userLitleInfo">
-                                <span class="mb_name"><a href="">DeliChan</a></span>
-                                <span class="sign">  Keep each other warm</span>
-                            </div>
-                            <div class="ps">
-                                <div id="q_ps_3180" class="content">
-                                    <p>
-                                        今天去哪里玩呢，你觉得怎么样啊
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="otherUserToolBar">
-                                <span class="fromTime">49分钟前</span>
-                                <a href="javascript:;">赞(12)</a>
-                                <a href="javascript:;">评论(15)</a>
-                                <a href="javascript:;">转发(25)</a>
-                            </div>
-                        </div>
-                        <div class="commentBox">
-                            <ul class="unstyled">
-                                <li>
-                                    <div class="comUserHeaderPic">
-                                        <img src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
-                                    </div>
-                                    <div class="comUserNick">
-                                        <a href="">陈晓冰</a>
-                                    </div>
-                                    <div class="userComContents">
-                                        <span>
-                                            估计你是神了！！！
-                                        </span>
-                                    </div>
-                                    <div class="userComTime">
-                                        <span class="fromTime">3分钟前</span><a href="javascript:;">回复</a>
-                                    </div>
-
-                                </li>
-                            </ul>
-                            <div class="addWrap">
-                                <textarea class="userComTextarea" placeholder="在此输入评论内容"></textarea>
-                                <div class="userComToolsBar">
-                                    <ul class="inline">
-                                        <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
-                                        <li><a href="javascript:void(0)">表情</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="span3">span3</div>

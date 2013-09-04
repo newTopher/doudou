@@ -321,3 +321,10 @@
 .shareUrlBox{
     padding:5px 0px 0px 5px;
 }
+.content p img{
+    padding:0px 3px;
+}
+.weiimagesBox img{
+    max-width:200px;
+    padding:5px;
+}
