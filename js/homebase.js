@@ -89,7 +89,14 @@ $(function(){
             if( imagedata == undefined){
                 imagedata='';
             }
-            $.post(tipMsg.baseUrl+tipMsg.weibourl,{text:$('#appendedInputButton').val(),pics:imagedata,uid:$('#appendedInputButton').attr('uid')},function(data){
+            if(imagedata!=''){
+                var imghtml = "<div class='weiimagesBox'>"+
+                    "<img src='"+tipMsg.baseUrl+'/uploads/'+imagedata+"'>"+
+                    "</div>";
+            }else{
+                imghtml='';
+            }
+            $.post(tipMsg.baseUrl+tipMsg.weibourl,{text:AnalyticEmotion($('#appendedInputButton').val()),pics:imagedata,uid:$('#appendedInputButton').attr('uid')},function(data){
                 if(data.code==0){
                     var pubText = AnalyticEmotion($('#appendedInputButton').val());
                     var htmlText="<div class='conWrap clear'>"+
@@ -105,9 +112,7 @@ $(function(){
                         "<div class='ps'>"+
                         "<div class='content'>"+
                         "<p>"+pubText+"</p>"+
-                        "<div class='weiimagesBox'>"+
-                        "<img src='"+tipMsg.baseUrl+'/uploads/'+imagedata+"'>"+
-                        "</div>"+
+                             imghtml+
                         "</div>"+
                         "</div>"+
                         "<div class='otherUserToolBar'>"+
@@ -142,6 +147,11 @@ $(function(){
             },'json');
         }
     });
+
+    $('.weiboContentText').load(function(){
+        alert($(this).text());
+    });
+
 
     /*
       @ function

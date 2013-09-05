@@ -52,7 +52,6 @@ class IndexController extends Controller
         }
         $weiboModel=new WeiboModel();
         $weiboList = $weiboModel->getUserWeiboList($attentionList);
-        print_r($weiboList);
 		$this->render('index',array(
             'user'=>$user,
             'fans'=>$fans,

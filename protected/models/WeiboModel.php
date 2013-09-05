@@ -26,7 +26,7 @@ class WeiboModel extends CActiveRecord{
 
     public function relations(){
         return array(
-            'user'=>array(self::BELONGS_TO,'UserModel','uid')
+            'user'=>array(self::BELONGS_TO,'UserModel','uid','select'=>'user.user_sign,user.name,user.id,user.head_img')
         );
     }
 
@@ -45,15 +45,33 @@ class WeiboModel extends CActiveRecord{
         $critria->order='create_time DESC';
         if(null !== ($list=self::model()->with('user')->findAll($critria))){
             $weiboList=array();
-            foreach($list as $l){
+            foreach($list as $k=>$l){
                 $larray=array();
                 $larray['weibo']=$l->attributes;
+                $larray['weibo']['create_time']=$this->formatPubTime($larray['weibo']['create_time']);
                 $larray['user']=$l->getRelated('user')->attributes;
                 $weiboList[]=$larray;
             }
             return $weiboList;
         }else{
             return null;
+        }
+    }
+
+    private function formatPubTime($time){
+        $subTime = time() - $time;
+        switch($subTime){
+            case $subTime > 0 && $subTime <60:
+                return $subTime.'秒之前';
+                break;
+            case $subTime >=60 && $subTime <3600:
+                return ceil($subTime/60).'分钟之前';
+                break;
+            case $subTime >= 3600 && $subTime < 3600*24:
+                return ceil($subTime/3600).'小时之前';
+                break;
+            default:
+                return date("Y-m-d H:i",$time);
         }
     }
 

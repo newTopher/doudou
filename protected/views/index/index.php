@@ -144,26 +144,31 @@ $this->pageTitle=Yii::app()->name;
                     <?php foreach($weiboList as $key => $val): ?>
                         <div class="conWrap clear">
                             <div class="userHeaderPic">
-                                <img class="img-rounded" src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
+                                <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$val['user']['head_img']; ?>" alt="头像">
                             </div>
                             <div class="conText">
                                 <div class="tAreaBox">
                                     <div class="userLitleInfo">
-                                        <span class="mb_name"><a href="">DeliChan</a></span>
-                                        <span class="sign">  Keep each other warm</span>
+                                        <span class="mb_name"><a href=""><?php echo $val['user']['name'] ;?></a></span>
+                                        <span class="sign">  <?php echo $val['user']['user_sign'] ;?></span>
                                     </div>
                                     <div class="ps">
                                         <div id="q_ps_3180" class="content">
-                                            <p>
-                                                今天去哪里玩呢，你觉得怎么样啊
+                                            <p class="weiboContentText">
+                                                <?php echo $val['weibo']['text'] ;?>
                                             </p>
                                         </div>
+                                        <?php if($val['weibo']['pics'] != ''): ?>
+                                            <div class='weiimagesBox'>
+                                                <img src='<?php echo Yii::app()->request->baseUrl.'/uploads/'.$val['user']['id'].'/'.$val['weibo']['pics']; ?>'>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                     <div class="otherUserToolBar">
-                                        <span class="fromTime">49分钟前</span>
-                                        <a href="javascript:;">赞(12)</a>
-                                        <a href="javascript:;">评论(15)</a>
-                                        <a href="javascript:;">转发(25)</a>
+                                        <span class="fromTime"><?php echo $val['weibo']['create_time'] ;?></span>
+                                        <a href="javascript:;">喜欢(<?php echo $val['weibo']['like'] ;?>)</a>
+                                        <a href="javascript:;">评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
+                                        <a href="javascript:;">转发(<?php echo $val['weibo']['reposts_counts'] ;?>)</a>
                                     </div>
                                 </div>
                                 <div class="commentBox">
