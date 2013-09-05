@@ -58,6 +58,26 @@ class WeiboModel extends CActiveRecord{
         }
     }
 
+    static public function addLikeCounts($wid){
+        $weibo = self::model()->findByPk($wid);
+        $weibo->like+=1;
+        if($weibo->save()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    static public function subLikeCounts($wid){
+        $weibo = self::model()->findByPk($wid);
+        $weibo->like-=1;
+        if($weibo->save()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     private function formatPubTime($time){
         $subTime = time() - $time;
         switch($subTime){

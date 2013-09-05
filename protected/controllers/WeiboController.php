@@ -36,4 +36,32 @@ class WeiboController extends Controller{
         }
     }
 
+    public function actionLike(){
+        $uid=Yii::app()->request->getParam('uid','');
+        $wid=Yii::app()->request->getParam('wid','');
+        if(!empty($uid) && !empty($wid)){
+            $likeModel=new LikeModel();
+            $likeModel->uid=$uid;
+            $likeModel->wid=$wid;
+            if(($like=$likeModel->getIsLiked())){
+                if($likeModel->cancelLike($like)){
+                    echo CJSON::encode(array('code'=>'1','msg'=>'success'));
+                }else{
+                    echo CJSON::encode(array('code'=>'-1','msg'=>'取消喜欢失败了'));
+                    return false;
+                }
+            }else{
+                if($likeModel->insertLike()){
+                    echo CJSON::encode(array('code'=>'0','msg'=>'success'));
+                }else{
+                    echo CJSON::encode(array('code'=>'-1','msg'=>'喜欢这个失败了'));
+                    return false;
+                }
+            }
+        }else{
+            echo CJSON::encode(array('code'=>'-1','msg'=>'错误操作'));
+            return false;
+        }
+    }
+
 }

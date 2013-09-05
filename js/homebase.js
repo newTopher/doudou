@@ -148,8 +148,28 @@ $(function(){
         }
     });
 
-    $('.weiboContentText').load(function(){
-        alert($(this).text());
+    $('.likeButton').click(function(){
+        var uid = $(this).attr('uid');
+        var wid = $(this).attr('wid');
+        var thisobj = $(this);
+        if(uid != '' && wid != ''){
+            $.getJSON(tipMsg.baseUrl+tipMsg.weilikeurl+'?uid='+uid+'&wid='+wid,function(data){
+                var likes = thisobj.children().text();
+                if(data.code==0){
+                    thisobj.children().text(parseInt(likes)+1);
+                }else if(data.code==1){
+                    thisobj.children().text(parseInt(likes)-1);
+                }else if(data.code=='-1'){
+                    alert(data.msg);
+                }
+            });
+        }
+    });
+
+    $('.commentButton').click(function(){
+        var nickname = $(this).attr('nikename');
+        var dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态'});
+        dialog.show();
     });
 
 

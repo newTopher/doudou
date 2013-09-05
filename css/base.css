@@ -260,7 +260,6 @@
 }
 .userComButtonLi{
     float: right;
-    margin-right:133px;
 }
 .userComButton{
     width: 66px;
@@ -324,7 +323,39 @@
 .content p img{
     padding:0px 3px;
 }
+.weiimagesBox{
+    max-width:200px;
+    max-height: 280px;
+    overflow: hidden;
+}
 .weiimagesBox img{
     max-width:200px;
     padding:5px;
 }
+.dialog{
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: white;
+}
+.dialog .content{
+    padding: 10px;
+}
+.bar{
+    width:auto;
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+

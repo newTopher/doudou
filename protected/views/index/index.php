@@ -116,7 +116,15 @@ $this->pageTitle=Yii::app()->name;
         </div>
     </div>
     <!--end top-->
-
+    <div class="addWrap" id="commentHideBox">
+        <textarea class="userComTextarea" placeholder="在此输入评论内容"></textarea>
+        <div class="userComToolsBar">
+            <ul class="inline">
+                <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
+                <li><a href="javascript:void(0)">表情</a></li>
+            </ul>
+        </div>
+    </div>
     <!--start center-->
     <div class="row">
         <div class="span2">
@@ -166,8 +174,8 @@ $this->pageTitle=Yii::app()->name;
                                     </div>
                                     <div class="otherUserToolBar">
                                         <span class="fromTime"><?php echo $val['weibo']['create_time'] ;?></span>
-                                        <a href="javascript:;">喜欢(<?php echo $val['weibo']['like'] ;?>)</a>
-                                        <a href="javascript:;">评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
+                                        <a href="javascript:;" uid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' class="likeButton">喜欢(<span><?php echo $val['weibo']['like'] ;?></span>)</a>
+                                        <a href="javascript:;" nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
                                         <a href="javascript:;">转发(<?php echo $val['weibo']['reposts_counts'] ;?>)</a>
                                     </div>
                                 </div>
@@ -191,15 +199,6 @@ $this->pageTitle=Yii::app()->name;
 
                                         </li>
                                     </ul>
-                                    <div class="addWrap">
-                                        <textarea class="userComTextarea" placeholder="在此输入评论内容"></textarea>
-                                        <div class="userComToolsBar">
-                                            <ul class="inline">
-                                                <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
-                                                <li><a href="javascript:void(0)">表情</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

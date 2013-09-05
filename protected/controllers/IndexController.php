@@ -37,6 +37,7 @@ class IndexController extends Controller
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js/uploadify/uploadify.css');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.SinaEmotion.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/homebase.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/dialog.js');
         $user=Yii::app()->session['user'];
         if(!($fans = Yii::app()->cache->get(self::USERKEY_PREFIX.'fans'.$user['id']))){
             $fans=AttentionListModel::getFansByUid($user['id']);
