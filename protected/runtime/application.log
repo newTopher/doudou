@@ -3972,3 +3972,972 @@ REQUEST_URI=/index-test.php/register/register?email=123456%40qq.com&password=123
 2013/08/31 04:01:23 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
 2013/08/31 04:01:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
 >>>>>>> doudou/master
+2013/08/31 14:57:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 14:57:47 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:35 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:35 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:38 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:46 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:46 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:47 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:05:47 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:05 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:06 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:06 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:08 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:08 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:06:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:07:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:07:43 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:07:46 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:07:46 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:28 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:28 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:29 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:29 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:30 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:08:30 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:19 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:19 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:20 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:09:20 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:10:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:10:08 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:17:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:21:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/08/31 15:22:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:22:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:22:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 15:22:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 15:22:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 15:22:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:22:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 15:23:48 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:23:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:23:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:23:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:23:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/31 15:23:48 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/31 15:23:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `acode`, `is_active`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/31 15:24:04 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:24:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:24:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:24:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:24:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/31 15:24:17 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:24:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:24:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:24:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:24:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE email=:email LIMIT 1
+2013/08/31 15:24:17 [trace] [system.db.ar.CActiveRecord] UserModel.insert()
+2013/08/31 15:24:17 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_user` (`email`, `password`, `acode`, `is_active`) VALUES (:yp0, :yp1, :yp2, :yp3)
+2013/08/31 15:24:22 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:24:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:24:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:24:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:24:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:24:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.update()
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.updateByPk()
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_user` SET `email`=:yp0, `password`=:yp1, `sex`=:yp2, `birthday`=:yp3, `school_id`=:yp4, `user_sign`=:yp5, `details`=:yp6, `head_img`=:yp7, `is_active`=:yp8, `username`=:yp9, `name`=:yp10, `grate`=:yp11, `followers_counts`=:yp12, `follow_me`=:yp13, `attention_counts`=:yp14, `acode`=:yp15, `tags`=:yp16, `id`=:yp17 WHERE `dod_user`.`id`=3
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:24:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:24:45 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:24:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:25:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] UserModel.update()
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] UserModel.updateByPk()
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_user` SET `email`=:yp0, `password`=:yp1, `sex`=:yp2, `birthday`=:yp3, `school_id`=:yp4, `user_sign`=:yp5, `details`=:yp6, `head_img`=:yp7, `is_active`=:yp8, `username`=:yp9, `name`=:yp10, `grate`=:yp11, `followers_counts`=:yp12, `follow_me`=:yp13, `attention_counts`=:yp14, `acode`=:yp15, `tags`=:yp16, `id`=:yp17 WHERE `dod_user`.`id`=3
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:25:09 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 15:25:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:25:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/08/31 15:25:26 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:25:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/31 15:25:26 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:25:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:25:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/31 15:25:37 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/08/31 15:25:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/08/31 15:25:38 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=3 LIMIT 1
+2013/08/31 15:25:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:25:38 [trace] [system.db.CDbConnection] Opening DB connection
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/08/31 15:25:38 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/08/31 15:25:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/01 10:04:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:47 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/01 10:04:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:44:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/02 10:45:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/02 10:45:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/02 10:45:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/02 10:45:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/02 10:45:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/02 10:45:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/02 10:45:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 03:11:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:41 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:11:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 03:45:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 03:45:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 03:45:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 03:45:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 03:45:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 03:45:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 03:45:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 06:40:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 06:40:02 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 06:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 06:40:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 06:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 06:40:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 06:40:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 09:51:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:05 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (41)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (45)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 09:51:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 09:51:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/03 09:51:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/03 09:51:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/03 09:51:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/03 09:51:20 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/03 09:51:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/03 15:15:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:15:58 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:15:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:16:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:16:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:16:00 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/03 15:16:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:39 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 01:40:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/04 06:21:43 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:21:43 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:21:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:21:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:21:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:21:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:21:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/04 06:22:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:08 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:22:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:22:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:22:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:22:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/04 06:22:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:22:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:22:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:22:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:22:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/04 06:22:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:14 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:22:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:22:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:22:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:22:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/04 06:22:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:22:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:22:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:22:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:22:16 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:22:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/04 06:23:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:23:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/04 06:23:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/04 06:23:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/04 06:23:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/04 06:23:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/04 06:23:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 03:18:50 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:50 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:52 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:18:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:19:00 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:26:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 03:26:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:26:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 03:26:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 03:26:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 03:26:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 03:26:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 03:28:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:28:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 03:48:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:48:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:48:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:48:37 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:48:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 03:48:39 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:48:39 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 03:49:46 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:49:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:49:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:49:46 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:49:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 03:50:45 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:50:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:50:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:50:45 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:50:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 03:50:46 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:50:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:50:46 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:50:46 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:50:46 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 03:50:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 03:50:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 03:50:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 03:50:47 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 03:50:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
+2013/09/05 05:14:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:14 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (23)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (40)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:14:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+in D:\doudou1\dodo\doudou\protected\models\AttentionListModel.php (32)
+in D:\doudou1\dodo\doudou\protected\controllers\IndexController.php (44)
+in D:\doudou1\dodo\doudou\index.php (13)
+2013/09/05 05:47:44 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 05:47:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 05:47:44 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 05:47:44 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 05:47:44 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id` IS NULL LIMIT 1
