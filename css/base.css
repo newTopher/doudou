@@ -351,6 +351,7 @@
     margin: 0;
     font-size: 14px;
     font-weight: normal;
+    cursor: move;
     line-height: 18px;
     background-color: #f7f7f7;
     border-bottom: 1px solid #ebebeb;

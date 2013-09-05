@@ -5,6 +5,7 @@
 	background:#fff;
 	position:absolute;
 	border: 1px solid #E8E8E8;
+    z-index: 1000;
 }
 #emotions a{
 	color: #9ABBC8;

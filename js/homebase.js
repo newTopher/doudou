@@ -168,8 +168,12 @@ $(function(){
 
     $('.commentButton').click(function(){
         var nickname = $(this).attr('nikename');
-        var dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态'});
+        var dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态',draggable:false});
         dialog.show();
+    });
+
+    $('.commentEmotion').live('click',function(){
+        $(this).SinaEmotion($(this).parent().parent());
     });
 
 

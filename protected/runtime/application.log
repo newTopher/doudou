@@ -8393,3 +8393,699 @@ in E:\Apache2.2\htdocs\doudou\index.php (13)
 2013/09/05 10:06:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
 2013/09/05 10:06:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
 2013/09/05 10:06:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 21:53:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:05 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:53:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:53:06 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:53:06 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:53:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:53:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:53:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IS NULL) ORDER BY create_time DESC
+2013/09/05 21:53:07 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:53:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:53:08 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:53:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IS NULL) ORDER BY create_time DESC
+2013/09/05 21:53:31 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/05 21:53:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:53:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:53:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:53:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/05 21:53:32 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 21:53:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/05 21:53:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:32 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:53:33 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:53:33 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:53:33 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:53:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 21:53:37 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:53:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:53:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:53:38 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:53:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:53:38 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:53:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 21:53:59 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:54:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:54:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:54:00 [trace] [system.db.ar.CActiveRecord] WeiboModel.insert()
+2013/09/05 21:54:00 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_weibo` (`uid`, `create_time`, `text`, `reposts_counts`, `comments_counts`, `pics`, `like`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2013/09/05 21:54:04 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:54:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:54:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:54:05 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:54:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:54:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:54:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 21:54:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 21:54:48 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 21:54:48 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`uid`, `wid`) VALUES (:yp0, :yp1)
+2013/09/05 21:54:48 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=13 LIMIT 1
+2013/09/05 21:54:48 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 21:54:48 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 21:54:48 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=13
+2013/09/05 21:54:49 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 21:54:50 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 21:54:50 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=1
+2013/09/05 21:54:50 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=13 LIMIT 1
+2013/09/05 21:54:50 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 21:54:50 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 21:54:50 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=13
+2013/09/05 21:55:26 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:55:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:55:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:55:27 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:55:27 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:55:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IS NULL) ORDER BY create_time DESC
+2013/09/05 21:55:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:55:57 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:55:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:55:58 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:55:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IS NULL) ORDER BY create_time DESC
+2013/09/05 21:56:07 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/05 21:56:07 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:56:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:56:08 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:56:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/05 21:56:08 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/05 21:56:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/05 21:56:08 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:56:08 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:56:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 21:56:09 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:56:09 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 21:56:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 21:56:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 21:56:32 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 21:56:32 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`uid`, `wid`) VALUES (:yp0, :yp1)
+2013/09/05 21:56:32 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=13 LIMIT 1
+2013/09/05 21:56:32 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 21:56:32 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 21:56:32 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=13
+2013/09/05 22:02:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:02:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:02:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:02:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:02:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:02:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:02:50 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:02:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:02:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:02:52 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:02:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:02:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:02:52 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:07:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:07:56 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:07:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:07:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:07:57 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:07:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:14:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:14:13 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:14:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:14:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:14:14 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:14:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:19:47 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:19:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:19:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:19:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:19:48 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:19:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:21:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:21:11 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:21:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:21:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:21:12 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:26:44 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:26:44 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:26:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:26:45 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:26:45 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:26:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:28:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:28:13 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:28:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:28:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:28:14 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:28:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:33:51 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:33:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:33:52 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:33:52 [trace] [system.db.ar.CActiveRecord] WeiboModel.insert()
+2013/09/05 22:33:52 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_weibo` (`uid`, `create_time`, `text`, `reposts_counts`, `comments_counts`, `pics`, `like`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2013/09/05 22:34:01 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:34:01 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:34:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:34:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:34:02 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:34:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:38:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:38:14 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:38:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:38:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:38:15 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:38:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:39:01 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:39:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:39:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:39:02 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:39:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:39:02 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:39:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:40:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:40:57 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:40:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:40:58 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:40:58 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:40:58 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:41:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:41:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:41:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:41:18 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:41:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:41:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:41:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:41:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:41:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:41:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:41:41 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:41:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:41:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:41:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:42:13 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:42:13 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:42:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:42:14 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:42:14 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:42:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:44:53 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:44:53 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:44:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:44:54 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:44:54 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:44:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:45:53 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:45:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 22:45:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 22:45:54 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 22:45:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 22:45:55 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/05 22:45:55 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`uid`, `wid`) VALUES (:yp0, :yp1)
+2013/09/05 22:45:55 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 22:45:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:45:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:45:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=14 LIMIT 1
+2013/09/05 22:45:55 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 22:45:55 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 22:45:55 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=14
+2013/09/05 22:46:17 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:46:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:46:18 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:46:18 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:46:18 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:46:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:47:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:47:36 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:47:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:47:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:47:37 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:47:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:48:10 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:48:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:48:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:48:11 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:48:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:48:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:48:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:48:29 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:48:30 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:48:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:48:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:48:48 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:48:48 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:48:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:48:49 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:48:49 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:48:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:50:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:50:36 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:50:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:50:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:50:37 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:50:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:51:16 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:51:17 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:51:17 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:51:17 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:51:27 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:51:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:51:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:51:28 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:51:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:51:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:51:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:52:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:52:36 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:52:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:52:37 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:52:37 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:52:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:52:47 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:52:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:52:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:52:48 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:52:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:52:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:52:48 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:54:24 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:54:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:54:25 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:54:25 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:54:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:54:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:56:21 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:56:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:56:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:56:22 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:56:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:56:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:56:39 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:56:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:56:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:56:40 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:56:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:56:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:56:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:57:06 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:57:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:57:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:57:07 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:57:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:57:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:57:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:57:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:57:31 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:57:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:57:32 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:57:32 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:57:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:58:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:58:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:58:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:58:13 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:58:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:58:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:58:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:59:30 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:59:30 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:59:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 22:59:31 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:59:31 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:59:31 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 22:59:52 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 22:59:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 22:59:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 22:59:53 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 22:59:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 22:59:53 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 22:59:53 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:20:02 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:20:02 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:20:03 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:20:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 23:20:04 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:20:04 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:20:04 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:21:11 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:21:11 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:21:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 23:21:12 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:21:12 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:21:12 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:21:17 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 23:21:18 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 23:21:18 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=2
+2013/09/05 23:21:18 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=13 LIMIT 1
+2013/09/05 23:21:18 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 23:21:18 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 23:21:18 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=13
+2013/09/05 23:21:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/05 23:21:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/05 23:21:21 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`uid`, `wid`) VALUES (:yp0, :yp1)
+2013/09/05 23:21:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=13 LIMIT 1
+2013/09/05 23:21:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/05 23:21:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/05 23:21:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=13
+2013/09/05 23:22:35 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:22:35 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:22:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 23:22:36 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:22:36 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:22:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:23:12 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:23:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:23:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:23:13 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:23:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:23:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:23:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:23:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:23:56 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:23:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 23:23:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:23:57 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:23:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/05 23:25:56 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:25:56 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:25:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/05 23:25:57 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/05 23:25:57 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/05 23:25:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC

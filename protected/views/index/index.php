@@ -121,7 +121,7 @@ $this->pageTitle=Yii::app()->name;
         <div class="userComToolsBar">
             <ul class="inline">
                 <li class="userComButtonLi"><button class="btn userComButton" type="button">回复</button></li>
-                <li><a href="javascript:void(0)">表情</a></li>
+                <li><a href="javascript:void(0)" class="commentEmotion">表情</a></li>
             </ul>
         </div>
     </div>
