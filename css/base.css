@@ -359,4 +359,18 @@
     -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
 }
-
+#commentHideBox{
+    position: relative;
+}
+#bg{
+    display: none;
+    position: absolute;
+    top: 0%;  left: 0%;
+    width: 100%;
+    height: 10000px;
+    background-color: black;
+    z-index:600;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}

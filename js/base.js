@@ -26,7 +26,8 @@ var tipMsg={
     weilikeurl:'/index-test.php/weibo/Like',
     shareurltip:'分享的url地址无效',
     pubnulltip:'你想给你爱的人和爱你的人说点什么呢',
-    uidisnull:'用户的id不能为空'
+    uidisnull:'用户的id不能为空',
+    usercomisnull:'什么都不说不行哦!'
 };
 
 var userTags={

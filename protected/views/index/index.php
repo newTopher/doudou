@@ -175,29 +175,13 @@ $this->pageTitle=Yii::app()->name;
                                     <div class="otherUserToolBar">
                                         <span class="fromTime"><?php echo $val['weibo']['create_time'] ;?></span>
                                         <a href="javascript:;" uid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' class="likeButton">喜欢(<span><?php echo $val['weibo']['like'] ;?></span>)</a>
-                                        <a href="javascript:;" nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
+                                        <a href="javascript:;" suid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' uid='<?php echo $val['user']['id']; ?>' comboxid='commentBox_<?php echo $val['weibo']['w_id'];?>' nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
                                         <a href="javascript:;">转发(<?php echo $val['weibo']['reposts_counts'] ;?>)</a>
                                     </div>
                                 </div>
                                 <div class="commentBox">
-                                    <ul class="unstyled">
-                                        <li>
-                                            <div class="comUserHeaderPic">
-                                                <img src="http://img.zealer.com/50/50/cc9cc00288b50c4f7bb5c6513433be63dc0.jpg" alt="头像">
-                                            </div>
-                                            <div class="comUserNick">
-                                                <a href="">陈晓冰</a>
-                                            </div>
-                                            <div class="userComContents">
-                                                <span>
-                                                    估计你是神了！！！
-                                                </span>
-                                            </div>
-                                            <div class="userComTime">
-                                                <span class="fromTime">3分钟前</span><a href="javascript:;">回复</a>
-                                            </div>
+                                    <ul class="unstyled" id="commentBox_<?php echo $val['weibo']['w_id'];?>">
 
-                                        </li>
                                     </ul>
                                 </div>
                             </div>

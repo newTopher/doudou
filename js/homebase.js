@@ -6,6 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function(){
+    var dialogs={
+        dialog:null
+    };
     $('#emotionAlink').SinaEmotion($('.pubTextAreaBox'));
     $('#imgUpload').click(function(event){
         $('.shareUrl').hide();
@@ -168,15 +171,50 @@ $(function(){
 
     $('.commentButton').click(function(){
         var nickname = $(this).attr('nikename');
-        var dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态',draggable:false});
-        dialog.show();
+        dialogs.dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态'});
+        dialogs.dialog.show();
+        $('.commentEmotion').click();
+        $('.commentEmotion').parent().prev().children().data('comboxid',$(this).attr('comboxid'));
+        $('.commentEmotion').parent().prev().children().data('suid',$(this).attr('suid'));
+        $('.commentEmotion').parent().prev().children().data('uid',$(this).attr('uid'));
+        $('.commentEmotion').parent().prev().children().data('wid',$(this).attr('wid'));
     });
-
     $('.commentEmotion').live('click',function(){
-        $(this).SinaEmotion($(this).parent().parent());
+        $(this).SinaEmotion($('.userComTextarea'));
     });
 
 
+    $('.userComButton').live('click',function(){
+        var usercomval = $(this).parent().parent().parent().prev().val();
+        if(usercomval ==''){
+            alert(tipMsg.usercomisnull);
+            return false;
+        }
+        var comdom = $(this).data('comboxid');
+        var suid = $(this).data('suid');
+        var uid = $(this).data('uid');
+        var wid = $(this).data('wid');
+        var userheaderimage=$('.userHeaderImage').attr('src');
+        var uname=$('#appendedInputButton').attr('uname');   //sname
+        var comhtml="<li>"+
+            "<div class='comUserHeaderPic'>"+
+            "<img src='"+userheaderimage+"' alt='头像'>"+
+            "</div>"+
+            "<div class='comUserNick'>"+
+            "<a href=''>"+uname+"</a>"+
+            "</div>"+
+            "<div class='userComContents'>"+
+            "<span>"+
+            "估计你是神了！！！"+
+            "</span>"+
+            "</div>"+
+            "<div class='userComTime'>"+
+            "<span class='fromTime'>3分钟前</span><a href='javascript:;'>回复</a>"+
+            "</div>"+
+            "</li>";
+        $('#'+comdom).append(comhtml);
+        dialogs.dialog.hide();
+    });
     /*
       @ function
      */

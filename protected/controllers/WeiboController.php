@@ -64,4 +64,8 @@ class WeiboController extends Controller{
         }
     }
 
+    public function actionComment(){
+
+    }
+
 }
