@@ -260,7 +260,6 @@
 }
 .userComButtonLi{
     float: right;
-    margin-right:133px;
 }
 .userComButton{
     width: 66px;
@@ -275,7 +274,7 @@
 }
 .uploadImageBox{
     top: 0px;
-    left: -60px;
+    left: -65px;
     position: relative;
     display: none;
 }
@@ -290,4 +289,88 @@
     height:35px;
     line-height: 25px;
     cursor: pointer;
+}
+.uploadedImageBox{
+    width:100%;
+    padding:0px 12px;
+}
+.fileUploadError{
+    display: none;
+    width: 200px;
+}
+.uploadedImages{
+    width:240px;
+    margin-bottom: 15px;
+}
+.delButtonUploadImage{
+    width:20px;
+    height:20px;
+    background: url(../images/ico_layer.png);
+    position: relative;
+    float: right;
+    left:-28px;
+    top:2px;
+}
+.shareUrl{
+    top: 0px;
+    left: -10px;
+    position: relative;
+    display: none;
+}
+.shareUrlBox{
+    padding:5px 0px 0px 5px;
+}
+.content p img{
+    padding:0px 3px;
+}
+.weiimagesBox{
+    max-width:200px;
+    max-height: 280px;
+    overflow: hidden;
+}
+.weiimagesBox img{
+    max-width:200px;
+    padding:5px;
+}
+.dialog{
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: white;
+}
+.dialog .content{
+    padding: 10px;
+}
+.bar{
+    width:auto;
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: move;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+#commentHideBox{
+    position: relative;
+}
+#bg{
+    display: none;
+    position: absolute;
+    top: 0%;  left: 0%;
+    width: 100%;
+    height: 10000px;
+    background-color: black;
+    z-index:600;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
 }

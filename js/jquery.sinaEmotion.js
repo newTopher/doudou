@@ -73,19 +73,19 @@ function AnalyticEmotion(s) {
 	$.fn.SinaEmotion = function(target){
 		var cat_current;
 		var cat_page;
-		$(this).click(function(event){
+		$(this).live('click',function(event){
 			event.stopPropagation();
 			
 			var eTop = target.offset().top + target.height() + 15;
 			var eLeft = target.offset().left - 1;
 			
 			if($('#emotions .categorys')[0]){
-				$('#emotions').css({top: eTop, left: eLeft});
+				//$('#emotions').css({top: eTop, left: eLeft});
 				$('#emotions').toggle();
 				return;
 			}
 			$('body').append('<div id="emotions"></div>');
-			$('#emotions').css({top: eTop, left: eLeft});
+			//$('#emotions').css({top: eTop, left: eLeft});
 			$('#emotions').html('<div>正在加载，请稍候...</div>');
 			$('#emotions').click(function(event){
 				event.stopPropagation();
@@ -100,10 +100,11 @@ function AnalyticEmotion(s) {
 			});
 			showCategorys();
 			showEmotions();
-			
+			$("#bg").show();
 		});
 		$('body').click(function(){
 			$('#emotions').remove();
+            $("#bg").hide();
 		});
 		$.fn.insertText = function(text){
 			this.each(function() {
@@ -157,6 +158,7 @@ function AnalyticEmotion(s) {
 			$('#emotions .container a').click(function(){
 				target.insertText($(this).attr('title'));
 				$('#emotions').remove();
+                $("#bg").hide();
 			});
 			for(var i = 1; i < emotions[category].length / 72 + 1; ++i){
 				$('#emotions .page').append($('<a href="javascript:void(0);"' + (i == page + 1?' class="current"':'') + '>' + i + '</a>'));

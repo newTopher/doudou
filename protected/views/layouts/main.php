@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <div id="bg"></div>
 	<?php echo $content; ?>
 
 

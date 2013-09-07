@@ -18,7 +18,16 @@ var tipMsg={
     loadfail:'加载失败,点击重新加载',
     nameIsNull:'姓名不能为空哦!',
     sexIsNull:'性别不可以不选的哦',
-    schoolIsNull:'您还没选您是哪所学校的呀'
+    schoolIsNull:'您还没选您是哪所学校的呀',
+    baseUrl:'http://doudou.test.local',
+    uploadphotourl:'/index-test.php/base/uploadPhoto',
+    deluploadimage:'/index-test.php/base/delUploadImage',
+    weibourl:'/index-test.php/weibo/Pub',
+    weilikeurl:'/index-test.php/weibo/Like',
+    shareurltip:'分享的url地址无效',
+    pubnulltip:'你想给你爱的人和爱你的人说点什么呢',
+    uidisnull:'用户的id不能为空',
+    usercomisnull:'什么都不说不行哦!'
 };
 
 var userTags={
