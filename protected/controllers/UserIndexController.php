@@ -22,7 +22,7 @@ class UserIndexController extends Controller{
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/cufon-replace.js');
            // $uid=Yii::app()->session['$uid'];
             $uid=4;
-            $_POST[uid]=7;
+            $_POST['uid']=7;
             $sid=6;
             $Match=UserModel::getUserById($sid);
         if($uid){
@@ -36,6 +36,11 @@ class UserIndexController extends Controller{
         }else{
             Yii::app()->runControll('Error/error/errorMsg/'.'uid或者sid不能为空');
         }
+
+           $weiboModel= new WeiboModel();
+            $weiboList=$weiboModel->getUserWeiboList(array($uid));
+            print_r($weiboList);
+
         $this->render('index',array('Mhead_img'=>$Masteruser['head_img'],'Fhead_img'=>$user['head_img'],'Match_img'=>$Match['head_img']));
     }
 

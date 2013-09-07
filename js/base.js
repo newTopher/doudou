@@ -19,7 +19,7 @@ var tipMsg={
     nameIsNull:'姓名不能为空哦!',
     sexIsNull:'性别不可以不选的哦',
     schoolIsNull:'您还没选您是哪所学校的呀',
-    baseUrl:'http://doudou.test.local',
+    baseUrl:'http://www.doudow.com',
     uploadphotourl:'/index-test.php/base/uploadPhoto',
     deluploadimage:'/index-test.php/base/delUploadImage',
     weibourl:'/index-test.php/weibo/Pub',

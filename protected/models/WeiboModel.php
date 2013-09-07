@@ -45,7 +45,7 @@ class WeiboModel extends CActiveRecord{
         $critria->order='create_time DESC';
         if(null !== ($list=self::model()->with('user')->findAll($critria))){
             $weiboList=array();
-            foreach($list as $k=>$l){
+            foreach($list as $l){
                 $larray=array();
                 $larray['weibo']=$l->attributes;
                 $larray['weibo']['create_time']=$this->formatPubTime($larray['weibo']['create_time']);
