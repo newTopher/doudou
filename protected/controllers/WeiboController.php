@@ -66,7 +66,26 @@ class WeiboController extends Controller{
     }
 
     public function actionComment(){
-
+        $wid=Yii::app()->request->getParam('wid','');
+        $uid=Yii::app()->request->getParam('uid','');
+        $parentid=Yii::app()->request->getParam('parentid','');
+        $commentContent=Yii::app()->request->getParam('comment_content','');
+        if(!empty($wid) && !empty($uid) && !empty($parentid) && !empty($commentContent)){
+            $weiboCommentModel = new WeiboCommentModel();
+            $weiboCommentModel->w_id=$wid;
+            $weiboCommentModel->uid=$uid;
+            $weiboCommentModel->comment_content=$commentContent;
+            $weiboCommentModel->parentid=$parentid;
+            if(false !== ($id = $weiboCommentModel->addComment())){
+                echo CJSON::encode(array('code'=>'0','data'=>$id,'msg'=>'success'));
+            }else{
+                echo CJSON::encode(array('code'=>'-1','msg'=>'评论失败'));
+                return false;
+            }
+        }else{
+            echo CJSON::encode(array('code'=>'-1','msg'=>'some is empty'));
+            return;
+        }
     }
 
 }

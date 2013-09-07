@@ -24,6 +24,7 @@ var tipMsg={
     deluploadimage:'/index-test.php/base/delUploadImage',
     weibourl:'/index-test.php/weibo/Pub',
     weilikeurl:'/index-test.php/weibo/Like',
+    commenturl:'/index-test.php/weibo/Comment',
     shareurltip:'分享的url地址无效',
     pubnulltip:'你想给你爱的人和爱你的人说点什么呢',
     uidisnull:'用户的id不能为空',
