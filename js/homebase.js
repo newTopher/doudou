@@ -185,17 +185,24 @@ $(function(){
 
 
     $('.userComButton').live('click',function(){
-        var usercomval = $(this).parent().parent().parent().prev().val();
+        var usercomval = AnalyticEmotion($(this).parent().parent().parent().prev().val());
         if(usercomval ==''){
             alert(tipMsg.usercomisnull);
             return false;
         }
         var comdom = $(this).data('comboxid');
-        var suid = $(this).data('suid');
+        //var suid = $(this).data('suid');
         var uid = $(this).data('uid');
         var wid = $(this).data('wid');
         var userheaderimage=$('.userHeaderImage').attr('src');
         var uname=$('#appendedInputButton').attr('uname');   //sname
+        $.post(tipMsg.baseUrl+tipMsg.commenturl,{wid:wid,uid:uid,comment_content:usercomval,parentid:0},function(data){
+            if(data.code==0){
+                alert(data.msg);
+            }else if(data.code=='-1'){
+                alert(data.msg);
+            }
+        },'json');
         var comhtml="<li>"+
             "<div class='comUserHeaderPic'>"+
             "<img src='"+userheaderimage+"' alt='头像'>"+
