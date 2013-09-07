@@ -7,7 +7,6 @@
     * To change this template use File | Settings | File Templates.
  */
 ?>
-
 <body id="page1">
 
             <div class="menu-row">
@@ -26,23 +25,22 @@
                 </div>
             </div>
             <div class="row-bot">
-            	<div class="center-shadow">
-                	<div class="carousel-container">
-                      <div id="carousel">
-                        <div class="carousel-feature">
-                          <a href="#"><img class="carousel-image" alt="" src="/images/userindex/gallery-img1.png"></a>
+                <div class="center-shadow">
+                    <div class="carousel-container">
+                        <div id="carousel">
+                            <div class="carousel-feature">
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Fhead_img?>"></a>
+                            </div>
+                            <div class="carousel-feature">
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Mhead_img?>"></a>
+                            </div>
+                            <div class="carousel-feature">
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Match_img?>"></a>
+                            </div>
                         </div>
-                        <div class="carousel-feature">
-                          <a href="#"><img class="carousel-image" alt="" src="/images/userindex/gallery-img3.png"></a>
-                        </div>
-                        <div class="carousel-feature">
-                          <a href="#"><img class="carousel-image" alt="" src="/images/userindex/gallery-img2.png"></a>
-                        </div>
-                      </div>
-    				</div>
+                    </div>
                 </div>
             </div>
-        </header>
 
         <!--==============================content================================-->
         <div id="content">
@@ -72,7 +70,7 @@
 							<div class="detail">
 								<span class="avatar">
 									<a href="#">
-									<img src="/images/userindex/gallery-img1.png">
+                                        <img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Mhead_img;?>">
 									</a>
 								</span>
 								<div class="info">
@@ -91,7 +89,7 @@
 							<div class="replies" name="rpl_active1">
 								<div class="a_reply">
 									<a href="#" class="avatar" target="_blank">
-									<img src="/images/userindex/gallery-img2.png">
+									<img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Fhead_img;?>">
 									</a>
 
 									<div class="reply_content">

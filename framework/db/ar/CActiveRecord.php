@@ -1480,10 +1480,10 @@ abstract class CActiveRecord extends CModel
 	 */
 	public function findByPk($pk,$condition='',$params=array())
 	{
-		Yii::trace(get_class($this).'.findByPk()','system.db.ar.CActiveRecord');
-		$prefix=$this->getTableAlias(true).'.';
-		$criteria=$this->getCommandBuilder()->createPkCriteria($this->getTableSchema(),$pk,$condition,$params,$prefix);
-		return $this->query($criteria);
+        Yii::trace(get_class($this).'.findByPk()','system.db.ar.CActiveRecord');
+        $prefix=$this->getTableAlias(true).'.';
+        $criteria=$this->getCommandBuilder()->createPkCriteria($this->getTableSchema(),$pk,$condition,$params,$prefix);
+        return $this->query($criteria);
 	}
 
 	/**
