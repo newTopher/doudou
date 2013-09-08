@@ -175,13 +175,31 @@ $this->pageTitle=Yii::app()->name;
                                     <div class="otherUserToolBar">
                                         <span class="fromTime"><?php echo $val['weibo']['create_time'] ;?></span>
                                         <a href="javascript:;" uid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' class="likeButton">喜欢(<span><?php echo $val['weibo']['like'] ;?></span>)</a>
-                                        <a href="javascript:;" suid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' uid='<?php echo $val['user']['id']; ?>' comboxid='commentBox_<?php echo $val['weibo']['w_id'];?>' nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
+                                        <a href="javascript:;" suid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' uid='<?php echo $user['id']; ?>' comboxid='commentBox_<?php echo $val['weibo']['w_id'];?>' nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>
+                                            评论(<span id="comment_counts_<?php echo $val['weibo']['w_id'];?>" commentcounts="comment_counts_<?php echo $val['weibo']['w_id'];?>"><?php echo $val['weibo']['comments_counts'] ;?></span>)</a>
                                         <a href="javascript:;">转发(<?php echo $val['weibo']['reposts_counts'] ;?>)</a>
                                     </div>
                                 </div>
                                 <div class="commentBox">
                                     <ul class="unstyled" id="commentBox_<?php echo $val['weibo']['w_id'];?>">
-
+                                    <?php foreach($val['comment'] as $comval): ?>
+                                        <li>
+                                            <div class='comUserHeaderPic'>
+                                                <img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$comval['user']['head_img']; ?>" alt='头像'>
+                                            </div>
+                                            <div class='comUserNick'>
+                                                <a href=''><?php echo $comval['user']['name']; ?></a>
+                                            </div>
+                                            <div class='userComContents'>
+                                                <span class='weiboCommentText'>
+                                                    <?php echo $comval['comment']['comment_content']; ?>
+                                                </span>
+                                            </div>
+                                            <div class='userComTime'>
+                                                <span class='fromTime'><?php echo $comval['comment']['create_time']; ?></span><a href='javascript:;' class="replayButton" nickname="<?php echo $comval['user']['name']; ?>" uid="<?php echo $user['id'] ;?>" wid="<?php echo $val['weibo']['w_id']; ?>" parent="<?php echo $comval['comment']['id']; ?>">回复</a>
+                                            </div>
+                                        </li>
+                                    <?php endforeach; ?>
                                     </ul>
                                 </div>
                             </div>

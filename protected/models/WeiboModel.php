@@ -26,14 +26,15 @@ class WeiboModel extends CActiveRecord{
 
     public function relations(){
         return array(
-            'user'=>array(self::BELONGS_TO,'UserModel','uid','select'=>'user.user_sign,user.name,user.id,user.head_img')
+            'user'=>array(self::BELONGS_TO,'UserModel','uid','select'=>'user.user_sign,user.name,user.id,user.head_img'),
+            'weibocomment'=>array(self::HAS_MANY,'WeiboCommentModel','w_id')
         );
     }
 
     public function addNewWeibo(){
         $this->create_time=time();
         if(false !== $this->save()){
-            return true;
+            return $this->w_id;
         }else{
             return false;
         }
@@ -48,14 +49,22 @@ class WeiboModel extends CActiveRecord{
             foreach($list as $k=>$l){
                 $larray=array();
                 $larray['weibo']=$l->attributes;
-                $larray['weibo']['create_time']=$this->formatPubTime($larray['weibo']['create_time']);
+                $larray['comment']=$this->getWeiboCommment($l->attributes['w_id']);
+                $larray['weibo']['create_time']=self::formatPubTime($larray['weibo']['create_time']);
                 $larray['user']=$l->getRelated('user')->attributes;
                 $weiboList[]=$larray;
             }
+            //print_r($weiboList);exit;
             return $weiboList;
         }else{
             return null;
         }
+    }
+
+    public function getWeiboCommment($wid){
+        $weiboCommentModel = new WeiboCommentModel();
+        $weiboCommentModel->w_id=$wid;
+        return $weiboCommentModel->getComment();
     }
 
     static public function addLikeCounts($wid){
@@ -78,7 +87,17 @@ class WeiboModel extends CActiveRecord{
         }
     }
 
-    private function formatPubTime($time){
+    static public function addCommentCounts($wid){
+        $weibo = self::model()->findByPk($wid);
+        $weibo->comments_counts+=1;
+        if($weibo->save()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    static public function formatPubTime($time){
         $subTime = time() - $time;
         switch($subTime){
             case $subTime > 0 && $subTime <60:

@@ -81,9 +81,10 @@ $(function(){
     });
 
     $('#pubButton').click(function(){
+        var uid = $('#appendedInputButton').attr('uid');
         if($('#appendedInputButton').val()==''){
             alert(tipMsg.pubnulltip);
-        }else if($('#appendedInputButton').attr('uid')==''){
+        }else if(uid==''){
             alert(tipMsg.uidisnull);
         }else{
             var imagedata = $('.divImages img').attr('imagedata');
@@ -99,9 +100,10 @@ $(function(){
             }else{
                 imghtml='';
             }
-            $.post(tipMsg.baseUrl+tipMsg.weibourl,{text:AnalyticEmotion($('#appendedInputButton').val()),pics:imagedata,uid:$('#appendedInputButton').attr('uid')},function(data){
+            $.post(tipMsg.baseUrl+tipMsg.weibourl,{text:AnalyticEmotion($('#appendedInputButton').val()),pics:imagedata,uid:uid},function(data){
                 if(data.code==0){
                     var pubText = AnalyticEmotion($('#appendedInputButton').val());
+                    var wid = data.data;
                     var htmlText="<div class='conWrap clear'>"+
                         "<div class='userHeaderPic'>"+
                         "<a href=''><img class='img-rounded' src='"+userheaderimage+"' alt='头像'></a>"+
@@ -120,22 +122,14 @@ $(function(){
                         "</div>"+
                         "<div class='otherUserToolBar'>"+
                         "<span class='fromTime'>10秒钟前</span>"+
-                        "<a href='javascript:;'>喜欢(0)</a>"+
-                        "<a href='javascript:;'>评论(0)</a>"+
-                        "<a href='javascript:;'>转发(0)</a>"+
+                        "<a href='javascript:;' uid='"+uid+"' wid='"+wid+"' class='likeButton'>喜欢(<span>0</span>)</a>"+
+                        "<a href='javascript:;' suid='"+uid+"' wid='"+wid+"' uid='"+uid+"' comboxid='commentBox_"+wid+"' nikename='"+uname+"' class='commentButton'>评论(<span>0</span>)</a>"+
+                        "<a href='javascript:;'>转发(<span>0</span>)</a>"+
                         "</div>"+
                         "</div>"+
                         "<div class='commentBox'>"+
-                        "<ul class='unstyled'>"+
+                        "<ul class='unstyled' id='commentBox_"+wid+"'>"+
                         "</ul> "+
-                        "<div class='addWrap'>"+
-                        "<textarea class='userComTextarea' placeholder='在此输入评论内容'></textarea>"+
-                        "<div class='userComToolsBar'>"+
-                        "<ul class='inline'>"+
-                        "<li class='userComButtonLi'><button class='btn userComButton' type='button'>回复</button></li>"+
-                        "<li><a href='javascript:void(0)'>表情</a></li>"+
-                        "</ul> "+
-                        "</div> "+
                         "</div>"+
                         "</div>"+
                         "</div>"+
@@ -151,7 +145,7 @@ $(function(){
         }
     });
 
-    $('.likeButton').click(function(){
+    $('.likeButton').live('click',function(){
         var uid = $(this).attr('uid');
         var wid = $(this).attr('wid');
         var thisobj = $(this);
@@ -169,7 +163,7 @@ $(function(){
         }
     });
 
-    $('.commentButton').click(function(){
+    $('.commentButton').live('click',function(){
         var nickname = $(this).attr('nikename');
         dialogs.dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'评论'+nickname+'的状态'});
         dialogs.dialog.show();
@@ -178,49 +172,62 @@ $(function(){
         $('.commentEmotion').parent().prev().children().data('suid',$(this).attr('suid'));
         $('.commentEmotion').parent().prev().children().data('uid',$(this).attr('uid'));
         $('.commentEmotion').parent().prev().children().data('wid',$(this).attr('wid'));
+        $('.commentEmotion').parent().prev().children().data('commentcounts',$(this).children().text());
+        $('.commentEmotion').parent().prev().children().data('commentcounts_id',$(this).children().attr('commentcounts'));
     });
     $('.commentEmotion').live('click',function(){
         $(this).SinaEmotion($('.userComTextarea'));
     });
 
+    $('.replayButton').live('click',function(){
+        var nickname = $(this).attr('nickname');
+        dialogs.dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'回复'+nickname+'的评论'});
+        dialogs.dialog.show();
+        $('.commentEmotion').click();
+    });
+
 
     $('.userComButton').live('click',function(){
+        var thisobj = $(this);
         var usercomval = AnalyticEmotion($(this).parent().parent().parent().prev().val());
         if(usercomval ==''){
             alert(tipMsg.usercomisnull);
             return false;
         }
         var comdom = $(this).data('comboxid');
+        var commentcountsdom = $(this).data('commentcounts_id');
         //var suid = $(this).data('suid');
         var uid = $(this).data('uid');
         var wid = $(this).data('wid');
         var userheaderimage=$('.userHeaderImage').attr('src');
         var uname=$('#appendedInputButton').attr('uname');   //sname
-        $.post(tipMsg.baseUrl+tipMsg.commenturl,{wid:wid,uid:uid,comment_content:usercomval,parentid:0},function(data){
+        $.post(tipMsg.baseUrl+tipMsg.commenturl,{wid:wid,uid:uid,comment_content:usercomval,parentid:'0'},function(data){
             if(data.code==0){
-                alert(data.msg);
+                var commentcounts = parseInt(thisobj.data('commentcounts'));
+                $('#'+commentcountsdom).text(commentcounts+1);
+                var comhtml="<li>"+
+                    "<div class='comUserHeaderPic'>"+
+                    "<img src='"+userheaderimage+"' alt='头像'>"+
+                    "</div>"+
+                    "<div class='comUserNick'>"+
+                    "<a href=''>"+uname+"</a>"+
+                    "</div>"+
+                    "<div class='userComContents'>"+
+                    "<span class='weiboCommentText'>"+
+                    usercomval+
+                    "</span>"+
+                    "</div>"+
+                    "<div class='userComTime'>"+
+                    "<span class='fromTime'>5秒钟前</span><a href='javascript:;' parent='"+data.data+"'>回复</a>"+
+                    "</div>"+
+                    "</li>";
+                $('#'+comdom).append(comhtml);
+                dialogs.dialog.hide();
             }else if(data.code=='-1'){
                 alert(data.msg);
+                return false;
             }
         },'json');
-        var comhtml="<li>"+
-            "<div class='comUserHeaderPic'>"+
-            "<img src='"+userheaderimage+"' alt='头像'>"+
-            "</div>"+
-            "<div class='comUserNick'>"+
-            "<a href=''>"+uname+"</a>"+
-            "</div>"+
-            "<div class='userComContents'>"+
-            "<span>"+
-            "估计你是神了！！！"+
-            "</span>"+
-            "</div>"+
-            "<div class='userComTime'>"+
-            "<span class='fromTime'>3分钟前</span><a href='javascript:;'>回复</a>"+
-            "</div>"+
-            "</li>";
-        $('#'+comdom).append(comhtml);
-        dialogs.dialog.hide();
     });
     /*
       @ function

@@ -41,15 +41,15 @@ class IndexController extends Controller
         $user=Yii::app()->session['user'];
         if(!($fans = Yii::app()->cache->get(self::USERKEY_PREFIX.'fans'.$user['id']))){
             $fans=AttentionListModel::getFansByUid($user['id']);
-            Yii::app()->cache->set(self::USERKEY_PREFIX.'fans'.$user['id'],$fans,60);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'fans'.$user['id'],$fans,3);
         }
         if(!($attentions = Yii::app()->cache->get(self::USERKEY_PREFIX.'attentions'.$user['id']))){
             $attentions=AttentionListModel::getAttentionByUid($user['id']);
-            Yii::app()->cache->set(self::USERKEY_PREFIX.'attentions'.$user['id'],$attentions,60);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'attentions'.$user['id'],$attentions,3);
         }
         if(!($attentionList = Yii::app()->cache->get(self::USERKEY_PREFIX.'fanslists'.$user['id']))){
             $attentionList=AttentionListModel::getUserAttentionUidList($user['id']);
-            Yii::app()->cache->set(self::USERKEY_PREFIX.'fanslists'.$user['id'],$attentionList,60);
+            Yii::app()->cache->set(self::USERKEY_PREFIX.'fanslists'.$user['id'],$attentionList,3);
         }
         $weiboModel=new WeiboModel();
         $weiboList = $weiboModel->getUserWeiboList($attentionList);
