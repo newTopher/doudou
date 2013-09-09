@@ -381,3 +381,6 @@
 .weiboCommentText img{
     padding:0px 3px;
 }
+.msign{
+    display: inline-block;
+}

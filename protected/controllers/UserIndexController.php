@@ -33,7 +33,7 @@ class UserIndexController extends Controller{
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }else{
                 $weiboList=$weiboModel->getUserWeiboList(array($_POST['uid']));
-                $MatchMessage=$this->loverMatch($uid,$_POST['id']);
+                $MatchMessage=$this->loverMatch($uid,$_POST['uid']);
                 $this->validateWeiboList($weiboList);
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }

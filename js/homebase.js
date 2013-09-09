@@ -184,6 +184,12 @@ $(function(){
         dialogs.dialog = new Dialog({type:'id',value:'commentHideBox'},{title:'回复'+nickname+'的评论'});
         dialogs.dialog.show();
         $('.commentEmotion').click();
+        $('.commentEmotion').parent().prev().children().data('comboxid',$(this).attr('comboxid'));
+        $('.commentEmotion').parent().prev().children().data('suid',$(this).attr('suid'));
+        $('.commentEmotion').parent().prev().children().data('uid',$(this).attr('uid'));
+        $('.commentEmotion').parent().prev().children().data('wid',$(this).attr('wid'));
+        $('.commentEmotion').parent().prev().children().data('nickname',nickname);
+        $('.commentEmotion').parent().prev().children().data('parentid',$(this).attr('parentid'));
     });
 
 
@@ -196,12 +202,26 @@ $(function(){
         }
         var comdom = $(this).data('comboxid');
         var commentcountsdom = $(this).data('commentcounts_id');
-        //var suid = $(this).data('suid');
+        var suid = $(this).data('suid');
         var uid = $(this).data('uid');
+        var nickname = $(this).data('nickname');
+        var parentid = $(this).data('parentid');
+        if(parentid == undefined){
+            parentid='0';
+        }
+        if(nickname == undefined){
+            nickname='';
+        }else{
+            nickname='@'+nickname;
+        }
+        if(suid == uid){
+            alert(tipMsg.notcomself);
+            return false;
+        }
         var wid = $(this).data('wid');
         var userheaderimage=$('.userHeaderImage').attr('src');
         var uname=$('#appendedInputButton').attr('uname');   //sname
-        $.post(tipMsg.baseUrl+tipMsg.commenturl,{wid:wid,uid:uid,comment_content:usercomval,parentid:'0'},function(data){
+        $.post(tipMsg.baseUrl+tipMsg.commenturl,{wid:wid,suid:suid,uid:uid,comment_content:usercomval,parentid:parentid},function(data){
             if(data.code==0){
                 var commentcounts = parseInt(thisobj.data('commentcounts'));
                 $('#'+commentcountsdom).text(commentcounts+1);
@@ -213,12 +233,12 @@ $(function(){
                     "<a href=''>"+uname+"</a>"+
                     "</div>"+
                     "<div class='userComContents'>"+
-                    "<span class='weiboCommentText'>"+
+                    "<span class='weiboCommentText'><span class='msign'>:<a href=''>"+nickname+"</a> </span>"+
                     usercomval+
                     "</span>"+
                     "</div>"+
                     "<div class='userComTime'>"+
-                    "<span class='fromTime'>5秒钟前</span><a href='javascript:;' parent='"+data.data+"'>回复</a>"+
+                    "<span class='fromTime'>5秒钟前</span><a href='javascript:;' parentid='"+data.data+"'></a>"+
                     "</div>"+
                     "</li>";
                 $('#'+comdom).append(comhtml);

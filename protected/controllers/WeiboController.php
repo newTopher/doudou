@@ -68,12 +68,14 @@ class WeiboController extends Controller{
     public function actionComment(){
         $wid=Yii::app()->request->getParam('wid','');
         $uid=Yii::app()->request->getParam('uid','');
+        $suid=Yii::app()->request->getParam('suid','');
         $parentid=Yii::app()->request->getParam('parentid','');
         $commentContent=Yii::app()->request->getParam('comment_content','');
-        if(!empty($wid) && !empty($uid) && !empty($commentContent)){
+        if(!empty($wid) && !empty($uid) && !empty($suid) && !empty($commentContent)){
             $weiboCommentModel = new WeiboCommentModel();
             $weiboCommentModel->w_id=$wid;
             $weiboCommentModel->uid=$uid;
+            $weiboCommentModel->suid=$suid;
             $weiboCommentModel->comment_content=$commentContent;
             $weiboCommentModel->parentid=$parentid;
             if(false !== ($id = $weiboCommentModel->addComment())){

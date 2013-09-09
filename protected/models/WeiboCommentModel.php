@@ -10,6 +10,7 @@ class WeiboCommentModel extends CActiveRecord{
 
     public $id;
     public $uid;
+    public $suid;
     public $w_id;
     public $comment_content;
     public $parentid;
@@ -25,6 +26,7 @@ class WeiboCommentModel extends CActiveRecord{
 
     public function relations(){
         return array(
+            'suser'=>array(self::BELONGS_TO,'UserModel','suid','select'=>'user.user_sign,user.name,user.id,user.head_img'),
             'user'=>array(self::BELONGS_TO,'UserModel','uid','select'=>'user.user_sign,user.name,user.id,user.head_img')
         );
     }
@@ -43,12 +45,13 @@ class WeiboCommentModel extends CActiveRecord{
         $critria->addCondition('w_id=:w_id');
         $critria->params[':w_id']=$this->w_id;
         $critria->order='create_time DESC';
-        if(null !== ($commentList = self::model()->with('user')->findAll($critria))){
+        if(null !== ($commentList = self::model()->with('suser')->findAll($critria))){
             $comlist=array();
             foreach($commentList as $val){
                 $cl=array();
                 $cl['comment']=$val->attributes;
                 $cl['comment']['create_time'] = WeiboModel::formatPubTime($cl['comment']['create_time']);
+                $cl['suser']=$val->getRelated('suser')->attributes;
                 $cl['user']=$val->getRelated('user')->attributes;
                 $comlist[]=$cl;
             }
