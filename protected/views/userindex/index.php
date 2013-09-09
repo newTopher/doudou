@@ -6,7 +6,7 @@
     * Time: 下午5:53
     * To change this template use File | Settings | File Templates.
  */
-
+print_r($_SESSION);
 ?>
 <body id="page1">
 
@@ -30,13 +30,13 @@
                     <div class="carousel-container">
                         <div id="carousel">
                             <div class="carousel-feature">
-                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Fhead_img?>"></a>
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
-                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Mhead_img?>"></a>
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
-                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$Match_img?>"></a>
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
                             </div>
                         </div>
                     </div>
@@ -48,8 +48,7 @@
             <div class="main">
 
 <!--==============================w_blog=================================-->
-                <?php print_r($weiboList);?>
-                <?php foreach($weiboList as $key=>$val):?>
+                <?php $i=0; foreach($weiboList as $key=>$val):$i=$i+1;?>
                     <div class="w_blog">
 
 							<div class="blog_content">
@@ -60,12 +59,12 @@
                                             <div class="share-video">
                                                 <a href="#"></a>
 									</div>
-									<p class="main_text"><a href="#">日常生活百科</a><?php echo $val['weibo']['text'];?></p>
+									<p class="main_text"><a href="#">日常生活百科<?php echo $i;?></a><?php echo $val['weibo']['text'];?></p>
 								</div>
 							</div>
 
 							<div class="legend" >
-								<a href="javascript:;" class="replied" name="reply_2" onclick="active(this);">回复</a>
+								<a href="javascript:;" class="replied" name="<?php echo $i;?>" onclick="active(this);">回复</a>
 								<a href="javascript:;" class="shared">共享</a>
 							</div>
 
@@ -88,7 +87,7 @@
 								</div>
 							</div>
 
-							<div class="replies" name="rpl_active2">
+							<div class="<?php echo 'replies_'.$i;?>" name="rpl_active2" style="display:none;">
 								<div class="a_reply">
 									<a href="#" class="avatar" target="_blank">
 									<img src="/images/userindex/gallery-img2.png">
@@ -100,10 +99,12 @@
 											<span class="time">2013/1/28</span>
 											<div class="action">
                                             <a href="javascript:;">回复</a><a href="javascript:;">赞</a>
+
                                         </div>
 										</div>
 									</div>
 								</div>
+                                <textarea class="reply_content" placeholder="在此输入评论内容"></textarea>
 							</div>
 
 				</div>
