@@ -95,5 +95,4 @@ class WeiboModel extends CActiveRecord{
         }
     }
 
-
 }
