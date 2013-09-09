@@ -70,13 +70,13 @@ abstract class CActiveRecord extends CModel
 	 * Do NOT override the constructor unless it is absolutely necessary!
 	 */
 	public function __construct($scenario='insert')
-	{
-		if($scenario===null) // internally used by populateRecord() and model()
-			return;
+    {
+        if($scenario===null) // internally used by populateRecord() and model()
+            return;
 
-		$this->setScenario($scenario);
-		$this->setIsNewRecord(true);
-		$this->_attributes=$this->getMetaData()->attributeDefaults;
+        $this->setScenario($scenario);
+        $this->setIsNewRecord(true);
+        $this->_attributes=$this->getMetaData()->attributeDefaults;
 
 		$this->init();
 
@@ -1480,10 +1480,10 @@ abstract class CActiveRecord extends CModel
 	 */
 	public function findByPk($pk,$condition='',$params=array())
 	{
-		Yii::trace(get_class($this).'.findByPk()','system.db.ar.CActiveRecord');
-		$prefix=$this->getTableAlias(true).'.';
-		$criteria=$this->getCommandBuilder()->createPkCriteria($this->getTableSchema(),$pk,$condition,$params,$prefix);
-		return $this->query($criteria);
+        Yii::trace(get_class($this).'.findByPk()','system.db.ar.CActiveRecord');
+        $prefix=$this->getTableAlias(true).'.';
+        $criteria=$this->getCommandBuilder()->createPkCriteria($this->getTableSchema(),$pk,$condition,$params,$prefix);
+        return $this->query($criteria);
 	}
 
 	/**

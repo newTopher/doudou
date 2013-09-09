@@ -306,8 +306,8 @@ class YiiBase
 	public static function t($category,$message,$params=array(),$source=null,$language=null)
 	{
 		if(self::$_app!==null)
-		{
-			if($source===null)
+            {
+                if($source===null)
 				$source=($category==='yii'||$category==='zii')?'coreMessages':'messages';
 			if(($source=self::$_app->getComponent($source))!==null)
 				$message=$source->translate($category,$message,$language);

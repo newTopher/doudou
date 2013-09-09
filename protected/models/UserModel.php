@@ -60,9 +60,7 @@ class UserModel extends CActiveRecord{
         }else{
             return false;
         }
+
     }
-
-
-
 
 }

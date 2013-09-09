@@ -39,7 +39,7 @@ $this->pageTitle=Yii::app()->name;
             <span class="headerBox">
                 <?php if($user['head_img']==''): ?>
                     <?php if($user['sex']==0):?>
-                      <div>
+                        <div>
                           <span class="uploadHeader"></span>
                           <img class="img-rounded userHeaderImage" src="<?php echo Yii::app()->request->baseUrl.'/images/base/defaultheaderman.jpg' ;?>">
                       </div>
