@@ -21,19 +21,18 @@ class UserIndexController extends Controller{
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/w-blog.js');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/cufon-replace.js');
             $uid=Yii::app()->session['user']['id'];
-        echo $uid;
         if(isset($uid)){
             //$sid=5;
-            $_POST['uid']=5;
+            $postuid = Yii::app()->request->getParam('uid','5');
             $weiboModel= new WeiboModel();
-            if($uid==$_POST['uid']){
+            if($uid==$postuid){
                 $MatchMessage=$this->loverMatch($uid,null);
                 $weiboList=$weiboModel->getUserWeiboList(array($uid));
                 $this->validateWeiboList($weiboList);
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }else{
-                $weiboList=$weiboModel->getUserWeiboList(array($_POST['uid']));
-                $MatchMessage=$this->loverMatch($uid,$_POST['uid']);
+                $weiboList=$weiboModel->getUserWeiboList(array($postuid));
+                $MatchMessage=$this->loverMatch($uid,$postuid);
                 $this->validateWeiboList($weiboList);
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }

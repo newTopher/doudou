@@ -22,6 +22,7 @@ var tipMsg={
     baseUrl:'http://doudou.test.local',
     uploadphotourl:'/index-test.php/base/uploadPhoto',
     deluploadimage:'/index-test.php/base/delUploadImage',
+    userindex:'/index-test.php/userindex/index?uid=',
     weibourl:'/index-test.php/weibo/Pub',
     weilikeurl:'/index-test.php/weibo/Like',
     commenturl:'/index-test.php/weibo/Comment',

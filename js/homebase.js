@@ -106,12 +106,12 @@ $(function(){
                     var wid = data.data;
                     var htmlText="<div class='conWrap clear'>"+
                         "<div class='userHeaderPic'>"+
-                        "<a href=''><img class='img-rounded' src='"+userheaderimage+"' alt='头像'></a>"+
+                        "<a class='userShortInfo' href='"+tipMsg.baseUrl+tipMsg.userindex+uid+"'><img class='img-rounded' src='"+userheaderimage+"' alt='头像'></a>"+
                         "</div>"+
                         "<div class='conText'>"+
                         "<div class='tAreaBox'>"+
                         "<div class='userLitleInfo'>"+
-                        "<span class='mb_name'><a href=''>"+uname+"</a></span>"+
+                        "<span class='mb_name'><a class='userShortInfo' href='"+tipMsg.baseUrl+tipMsg.userindex+uid+"'>"+uname+"</a></span>"+
                         "<span class='sign'>my sign is for you !!!</span>"+
                         "</div>"+
                         "<div class='ps'>"+
@@ -227,13 +227,13 @@ $(function(){
                 $('#'+commentcountsdom).text(commentcounts+1);
                 var comhtml="<li>"+
                     "<div class='comUserHeaderPic'>"+
-                    "<img src='"+userheaderimage+"' alt='头像'>"+
+                    "<a class='userShortInfo' href='"+tipMsg.baseUrl+tipMsg.userindex+uid+"'><img src='"+userheaderimage+"' alt='头像'>"+
                     "</div>"+
                     "<div class='comUserNick'>"+
-                    "<a href=''>"+uname+"</a>"+
+                    "<a class='userShortInfo' href='"+tipMsg.baseUrl+tipMsg.userindex+uid+"'>"+uname+"</a>"+
                     "</div>"+
                     "<div class='userComContents'>"+
-                    "<span class='weiboCommentText'><span class='msign'>:<a href=''>"+nickname+"</a> </span>"+
+                    "<span class='weiboCommentText'><span class='msign'>:<a class='userShortInfo' href='"+tipMsg.baseUrl+tipMsg.userindex+suid+"'>"+nickname+"</a> </span>"+
                     usercomval+
                     "</span>"+
                     "</div>"+
@@ -252,6 +252,17 @@ $(function(){
     /*
       @ function
      */
+    $('.userShortInfo').live('mouseenter',function(event){
+        var mx = event.clientX+'px';
+        var my =event.clientY+'px';
+        var boxobj = $('.userinfoBox');
+        boxobj.css({left:mx,top:my});
+        boxobj.show();
+    });
+
+    $('.userShortInfo').live('mouseleave',function(event){
+        boxobj.hide();
+    });
 
 
 
