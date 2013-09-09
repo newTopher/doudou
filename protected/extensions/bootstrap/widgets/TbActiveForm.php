@@ -476,14 +476,14 @@ class TbActiveForm extends CActiveForm
 	}
 
 	/**
-	 * Creates an input row of a specific type.
-	 * @param string $type the input type
-	 * @param CModel $model the data model
-	 * @param string $attribute the attribute
-	 * @param array $data the data for list inputs
-	 * @param array $htmlOptions additional HTML attributes
-	 * @return string the generated row
-	 */
+* Creates an input row of a specific type.
+* @param string $type the input type
+* @param CModel $model the data model
+* @param string $attribute the attribute
+* @param array $data the data for list inputs
+* @param array $htmlOptions additional HTML attributes
+* @return string the generated row
+*/
 	public function inputRow($type, $model, $attribute, $data = null, $htmlOptions = array())
 	{
 		ob_start();

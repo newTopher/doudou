@@ -23,7 +23,8 @@ class WeiboController extends Controller{
             $weiboModel->text=$text;
             $weiboModel->uid=$uid;
             if($pics != ''){
-                $weiboModel->pics = explode('/',$pics)[1];
+                $picArr=explode('/',$pics)[1];
+                $weiboModel->pics = $picArr[1];
             }else{
                 $weiboModel->pics='';
             }

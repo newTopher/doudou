@@ -8,11 +8,8 @@
  */
 class ErrorController extends Controller{
     public function actionError(){
-        echo Yii::t('error',Yii::app()->request->getParam('errorMsg'));
-        exit;
+            echo Yii::t('error',Yii::app()->request->getParam('errorMsg'));
+            exit;
     }
 
-    public function test(){
-
-    }
 }

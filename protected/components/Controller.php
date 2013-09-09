@@ -13,6 +13,7 @@ class Controller extends CController
     const REG_TIP_BODY='恭喜您注册成功，我们给您邮箱里面发送了一封邮件,请您激活...';
     const REG_SECEND_TIP_BODY='我们又给您邮箱里面发送了一封邮件,请您激活...';
     const REG_FROM_EMAIL='772232953@qq.com';
+    const USERKEY_PREFIX='ddkeys_';
 	public $layout='//layouts/column1';
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
@@ -54,7 +55,4 @@ class Controller extends CController
         }
     }
 
-    public function generateNewImageName(){
-        return md5(substr(time(),5));
-    }
 }

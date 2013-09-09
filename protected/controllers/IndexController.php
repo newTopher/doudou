@@ -5,7 +5,6 @@ class IndexController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
-    const USERKEY_PREFIX='ddkeys_';
 
 	public function actions()
 	{
@@ -76,7 +75,7 @@ class IndexController extends Controller
 	}
 
 	/**
-	 * Displays the contact page
+     * Displays the contact page
 	 */
 	public function actionContact()
 	{

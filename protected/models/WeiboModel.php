@@ -46,7 +46,7 @@ class WeiboModel extends CActiveRecord{
         $critria->order='create_time DESC';
         if(null !== ($list=self::model()->with('user')->findAll($critria))){
             $weiboList=array();
-            foreach($list as $k=>$l){
+            foreach($list as $l){
                 $larray=array();
                 $larray['weibo']=$l->attributes;
                 $larray['comment']=$this->getWeiboCommment($l->attributes['w_id']);
@@ -113,6 +113,5 @@ class WeiboModel extends CActiveRecord{
                 return date("Y-m-d H:i",$time);
         }
     }
-
 
 }
