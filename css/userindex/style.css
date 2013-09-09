@@ -312,7 +312,6 @@ h1 a {text-decoration:none}
 .replies{
 	float:left;
 	width:100%;
-	display:none;
 }
 .a_reply{
 	border-top:1px solid #D1D1D1;
