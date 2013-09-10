@@ -46,21 +46,22 @@ $(document).ready(function(){
 		i++;
 		next=next.next();
 	}
+
+    $('.replied').click(function(event){
+        var reply_name=$(this).attr("name");
+        var replies="replies_"+reply_name;
+        var active_obj=$('.'+replies);
+        var status= active_obj.css("display");
+        if(status=="block"){
+            active_obj.css("display","none");
+        }else{
+            active_obj.css("display","block");
+        }
+        event.stopPropagation();
+    });
 	
 });
 /***********reply********************/
-	function active(obj){
-		var reply_name=$(obj).attr("name");
-		var reply_active="reply_active"+reply_name;
-        var replies="replies_"+reply_name;
-		var active_obj=$('.'+replies);
-        var status= active_obj.css("display");
-       if(status=="block"){
-           active_obj.css("display","none");
-       }else{
-           active_obj.css("display","block");
-       }
-	}
 
 /*---------------------------------*/
 $(function(){
@@ -74,21 +75,45 @@ $(function(){
 		}
 	);
 	
-		$(".comment-box textarea").click(
-			function(){		
-			$(".feed-comment .avatar").css("display","block");
-			$(".feed-comment .action").css("display","block");
-			$(this).css({width:"320px",height:"50px",padding:"3px",fontSize:"12px",overflow:"auto",wordWrap:"wordBreak",wordBreak:"breakAll"})
-				}
-		);	
-		$(".comment-box textarea").blur(
-			function(){
+		$(".comment-box textarea").click(function(event){
+                $(".feed-comment .avatar").css("display","block");
+                $(".feed-comment .action").css("display","block");
+                $(this).css({width:"320px",height:"50px",padding:"3px",fontSize:"12px",overflow:"auto",wordWrap:"wordBreak",wordBreak:"breakAll"})
+                event.stopPropagation();
+            }
+		);
+
+        $(document).click(
+            function(){
+                $('.feed-comment textarea').show();
+                $('.feed-comment textarea').css({width:"100%",height:"31px",padding:"2px",fontSize:"12px",overflow:"auto",wordWrap:"wordBreak",wordBreak:"breakAll"})
+                $(".feed-comment .avatar").hide();
+                $('.feed-comment .action').hide();
+
+            }
+        )
+        $('.action').click(
+            function(event){
+               event.stopPropagation();
+            }
+        );
+        $(".feed-comment .avatar").click(
+            function(event){
+                event.stopPropagation();
+            }
+        );
+
+
+
+
+
+		/*function(){
 			$(".feed-comment .action").css("display","none");
 			$(".feed-comment .avatar").css("display","none");
 			$(this).css({width:"100%",height:"31px",padding:"3px",fontSize:"12px",overflow:"auto",wordWrap:"wordBreak",wordBreak:"breakAll"})
-				
-		}
-		);
+
+		}*/
+
 	
 	
 });

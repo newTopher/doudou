@@ -21,7 +21,6 @@ class UserIndexController extends Controller{
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/w-blog.js');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/cufon-replace.js');
             $uid=Yii::app()->session['user']['id'];
-        echo $uid;
         if(isset($uid)){
             //$sid=5;
             $_POST['uid']=5;

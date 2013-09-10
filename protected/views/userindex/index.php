@@ -6,7 +6,6 @@
     * Time: 下午5:53
     * To change this template use File | Settings | File Templates.
  */
-print_r($_SESSION);
 ?>
 <body id="page1">
 
@@ -64,7 +63,7 @@ print_r($_SESSION);
 							</div>
 
 							<div class="legend" >
-								<a href="javascript:;" class="replied" name="<?php echo $i;?>" onclick="active(this);">回复</a>
+								<a href="javascript:;" class="replied" name="<?php echo $i;?>">回复</a>
 								<a href="javascript:;" class="shared">共享</a>
 							</div>
 
@@ -104,9 +103,32 @@ print_r($_SESSION);
 										</div>
 									</div>
 								</div>
-                                <textarea class="reply_content" placeholder="在此输入评论内容"></textarea>
+                                <div class="feed-comment">
+									<span class="avatar">
+										<img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>">
+									</span>
+                                    <div class="comment-box">
+                                        <textarea data-fid="111"  placeholder="评论...."></textarea>
+                                        <div class="action">
+                                            <div class="action-l">
+                                                <a href="#nogo" onclick="return false;"class="emotion">表情
+                                                    <span class="tip"></span>
+                                                    <span class="arrow"></span>
+                                                </a>
+                                                <a href="#nogo" onclick="return false;" class="mention">
+                                                </a>
+												<span class="share">
+													<input id="shareThis_ID_" type="checkbox">
+													<label for="shareThis_ID_">同时分享</label>
+												</span>
+                                            </div>
+                                            <div class="action-r">
+                                                <input type="submit" value="回复" href="#nogo" onclick="return false;" class="submit submit-disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 							</div>
-
 				</div>
                 <?php endforeach;?>
 <!--==============================w_blog==END===============================-->
