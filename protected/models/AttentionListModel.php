@@ -41,7 +41,7 @@ class AttentionListModel extends CActiveRecord{
         if(null !== ($attentionList=self::model()->findAll('marster_uid=:marster_uid',array(':marster_uid'=>$uid)))){
             $ids=array($uid);
             foreach($attentionList as $list){
-                $ids[]=$list->attributes['id'];
+                $ids[]=$list->attributes['follower_uid'];
             }
             return $ids;
         }else{

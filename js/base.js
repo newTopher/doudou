@@ -19,16 +19,18 @@ var tipMsg={
     nameIsNull:'姓名不能为空哦!',
     sexIsNull:'性别不可以不选的哦',
     schoolIsNull:'您还没选您是哪所学校的呀',
-    baseUrl:'http://www.doudow.com',
+    baseUrl:'http://doudou.test.local',
     uploadphotourl:'/index-test.php/base/uploadPhoto',
     deluploadimage:'/index-test.php/base/delUploadImage',
+    userindex:'/index-test.php/userindex/index?uid=',
     weibourl:'/index-test.php/weibo/Pub',
     weilikeurl:'/index-test.php/weibo/Like',
     commenturl:'/index-test.php/weibo/Comment',
     shareurltip:'分享的url地址无效',
     pubnulltip:'你想给你爱的人和爱你的人说点什么呢',
     uidisnull:'用户的id不能为空',
-    usercomisnull:'什么都不说不行哦!'
+    usercomisnull:'什么都不说不行哦!',
+    notcomself:'自己和自己说没意思哦！'
 };
 
 var userTags={

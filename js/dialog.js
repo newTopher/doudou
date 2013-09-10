@@ -220,11 +220,11 @@ function Dialog(content, options)
         if(undefined != options.beforeHide && !options.beforeHide())
         {   return;  }
 
-        dialog.fadeOut('slow',function(){
+        dialog.fadeOut('fast',function(){
             if(undefined != options.afterHide){   options.afterHide(); }
         });
         if(options.modal)
-        {   $('#' + overlayId).fadeOut('slow');   }
+        {   $('#' + overlayId).fadeOut('fast');   }
 
         isShow = false;
     }
@@ -239,13 +239,13 @@ function Dialog(content, options)
         if(undefined != options.beforeClose && !options.beforeClose())
         {   return;  }
 
-        dialog.fadeOut('slow', function(){
+        dialog.fadeOut('fast', function(){
             $(this).remove();
             isShow = false;
             if(undefined != options.afterClose){   options.afterClose(); }
         });
         if(options.modal)
-        {   $('#'+overlayId).fadeOut('slow', function(){$(this).remove();}); }
+        {   $('#'+overlayId).fadeOut('fast', function(){$(this).remove();}); }
         clearTimeout(timeId);
     }
 
