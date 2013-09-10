@@ -252,17 +252,59 @@ $(function(){
     /*
       @ function
      */
-    $('.userShortInfo').live('mouseenter',function(event){
-        var mx = event.clientX+'px';
-        var my =event.clientY+'px';
-        var boxobj = $('.userinfoBox');
-        boxobj.css({left:mx,top:my});
-        boxobj.show();
+    $('.userShortInfo').each(function(){
+        $(this).qtip({
+            content: {
+                // 设置您要使用的文字图像的HTML字符串，正确的src URL加载图像
+                text: 'loading....',
+                url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid'),
+                 // 使用的URL加载的每个元素的rel属性
+                title:{
+                    text: '个人信息'// 给工具提示使用每个元素的文本标题
+                    //button: '关闭' // 在标题中显示关闭文字按钮
+                }
+            },
+            position: {
+                my: 'top left',
+                at: 'bottom right',
+
+                adjust: {
+                    screen: true, // 在任何时候都保持提示屏幕上的
+                    x: 0, y: 0,
+                    mouse: true,
+                    resize: true,
+                    method: 'flip flip'
+                }
+            },
+            show: {
+                when: 'mouseover', //或click
+                solo: true // 一次只显示一个工具提示
+            },
+            hide: {
+                target:false,
+                event:'mouseleave',
+                fixed:true,
+                delay:300
+            },
+            style: {
+                tip: {
+                    corner: true,
+                    mimic: false,
+                    width: 5,
+                    height: 5,
+                    border: true,
+                    offset: 0
+                }, // 设置一个语音气泡提示在指定工具提示角落的工具提示
+                border: {
+                    width: 0,
+                    radius: 4
+                },
+                name: 'light', // 使用默认的淡样式
+                width: 300 // 设置提示的宽度
+            }
+        })
     });
 
-    $('.userShortInfo').live('mouseleave',function(event){
-        boxobj.hide();
-    });
 
 
 

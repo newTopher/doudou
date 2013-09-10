@@ -159,14 +159,14 @@ $this->pageTitle=Yii::app()->name;
                     <?php foreach($weiboList as $key => $val): ?>
                         <div class="conWrap clear">
                             <div class="userHeaderPic">
-                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$val['user']['id']; ?>">
+                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$val['user']['id']; ?>" relid="<?php echo $val['user']['id']; ?>">
                                 <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$val['user']['head_img']; ?>" alt="头像">
                                 </a>
                             </div>
                             <div class="conText">
                                 <div class="tAreaBox">
                                     <div class="userLitleInfo">
-                                        <span class="mb_name"><a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl."/index-test.php/userindex/index?uid=".$val['user']['id']; ?>"><?php echo $val['user']['name'] ;?></a></span>
+                                        <span class="mb_name"><a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl."/index-test.php/userindex/index?uid=".$val['user']['id']; ?>" relid="<?php echo $val['user']['id']; ?>"><?php echo $val['user']['name'] ;?></a></span>
                                         <span class="sign">  <?php echo $val['user']['user_sign'] ;?></span>
                                     </div>
                                     <div class="ps">
@@ -194,15 +194,15 @@ $this->pageTitle=Yii::app()->name;
                                     <?php foreach($val['comment'] as $comval): ?>
                                         <li>
                                             <div class='comUserHeaderPic'>
-                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>">
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>" relid="<?php echo $comval['suser']['id']; ?>">
                                                 <img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$comval['suser']['head_img']; ?>" alt='头像'>
                                                 </a>
                                             </div>
                                             <div class='comUserNick'>
-                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>"><?php echo $comval['suser']['name']; ?></a>
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>" relid="<?php echo $comval['suser']['id']; ?>"><?php echo $comval['suser']['name']; ?></a>
                                             </div>
                                             <div class='userComContents'>
-                                                <span class="msign">:<a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['user']['id']; ?>">
+                                                <span class="msign">:<a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['user']['id']; ?>" relid="<?php echo $comval['user']['id']; ?>">
                                                         <?php if($comval['comment']['parentid']): ?>
                                                             <?php echo '@'.$comval['user']['name']; ?>
                                                         <?php endif; ?>

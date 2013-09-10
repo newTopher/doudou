@@ -387,5 +387,68 @@
 .userinfoBox{
     width:300px;
     height:300px;
-    position: absolute;
+    position: fixed;
+}
+.userinfoboxcontent{
+    padding:2px;
+}
+.name_card {
+    background: url("http://img.t.sinajs.cn/t5/style/images/common/footer_bg.png?id=1345196970876") no-repeat -230px bottom;
+    _background: white;
+}
+.name_card .name {
+    zoom: 1;
+}
+.name_card .name dt, .name_card .name dd, .name_card .info dt, .name_card .info dd {
+    float: left;
+    display: inline;
+}
+.name_card .name dt img {
+    height: 50px;
+    display: block;
+    border-radius: 2px;
+}
+.name_card .name dd {
+    margin: -4px 0 0 10px;
+    line-height: 20px;
+}
+.name_card .name dd p {
+    width: 200px;
+    word-wrap: break-word;
+}
+.name_card .name dd div {
+    width: 200px;
+}
+.name_card .userdata {
+    width: 200px;
+}
+.name_card .userdata li {
+    float: left;
+}
+.name_card .userdata li.W_vline {
+    margin: 0 8px;
+}
+.name_card .info {
+    margin: 0 20px 0px;
+    line-height: 18px;
+    width: 280px;
+}
+.name_card .info dd {
+    width: 220px;
+    margin-bottom: 2px;
+    word-wrap: break-word;
+}
+.name_card .links {
+    margin: 0;
+    padding: 6px 20px 3px;
+    overflow: hidden;
+}
+.name_card .links p .W_chat_stat_online {
+    margin-right: 5px;
+    background-color: #8FDC00;
+    border-color: #48C000;
+}
+.name_card .links .W_btn_c {
+    float: right;
+    display: inline;
 }
