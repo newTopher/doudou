@@ -125,6 +125,13 @@ $this->pageTitle=Yii::app()->name;
             </ul>
         </div>
     </div>
+
+    <div class="popover fade bottom in userinfoBox">
+        <div class="arrow"></div>
+        <div class="popover-content">
+
+        </div>
+    </div>
     <!--start center-->
     <div class="row">
         <div class="span2">
@@ -152,12 +159,14 @@ $this->pageTitle=Yii::app()->name;
                     <?php foreach($weiboList as $key => $val): ?>
                         <div class="conWrap clear">
                             <div class="userHeaderPic">
+                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$val['user']['id']; ?>">
                                 <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$val['user']['head_img']; ?>" alt="头像">
+                                </a>
                             </div>
                             <div class="conText">
                                 <div class="tAreaBox">
                                     <div class="userLitleInfo">
-                                        <span class="mb_name"><a href=""><?php echo $val['user']['name'] ;?></a></span>
+                                        <span class="mb_name"><a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl."/index-test.php/userindex/index?uid=".$val['user']['id']; ?>"><?php echo $val['user']['name'] ;?></a></span>
                                         <span class="sign">  <?php echo $val['user']['user_sign'] ;?></span>
                                     </div>
                                     <div class="ps">
@@ -175,13 +184,43 @@ $this->pageTitle=Yii::app()->name;
                                     <div class="otherUserToolBar">
                                         <span class="fromTime"><?php echo $val['weibo']['create_time'] ;?></span>
                                         <a href="javascript:;" uid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' class="likeButton">喜欢(<span><?php echo $val['weibo']['like'] ;?></span>)</a>
-                                        <a href="javascript:;" suid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' uid='<?php echo $val['user']['id']; ?>' comboxid='commentBox_<?php echo $val['weibo']['w_id'];?>' nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>评论(<?php echo $val['weibo']['comments_counts'] ;?>)</a>
+                                        <a href="javascript:;" suid='<?php echo $user['id'];?>' wid='<?php echo $val['weibo']['w_id'];?>' uid='<?php echo $val['user']['id']; ?>' comboxid='commentBox_<?php echo $val['weibo']['w_id'];?>' nikename="<?php echo $val['user']['name'] ;?>" class='commentButton'>
+                                            评论(<span id="comment_counts_<?php echo $val['weibo']['w_id'];?>" commentcounts="comment_counts_<?php echo $val['weibo']['w_id'];?>"><?php echo $val['weibo']['comments_counts'] ;?></span>)</a>
                                         <a href="javascript:;">转发(<?php echo $val['weibo']['reposts_counts'] ;?>)</a>
                                     </div>
                                 </div>
                                 <div class="commentBox">
                                     <ul class="unstyled" id="commentBox_<?php echo $val['weibo']['w_id'];?>">
-
+                                    <?php foreach($val['comment'] as $comval): ?>
+                                        <li>
+                                            <div class='comUserHeaderPic'>
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>">
+                                                <img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$comval['suser']['head_img']; ?>" alt='头像'>
+                                                </a>
+                                            </div>
+                                            <div class='comUserNick'>
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>"><?php echo $comval['suser']['name']; ?></a>
+                                            </div>
+                                            <div class='userComContents'>
+                                                <span class="msign">:<a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['user']['id']; ?>">
+                                                        <?php if($comval['comment']['parentid']): ?>
+                                                            <?php echo '@'.$comval['user']['name']; ?>
+                                                        <?php endif; ?>
+                                                    </a></span>
+                                                <span class='weiboCommentText'>
+                                                    <?php echo $comval['comment']['comment_content']; ?>
+                                                </span>
+                                            </div>
+                                            <div class='userComTime'>
+                                                <span class='fromTime'><?php echo $comval['comment']['create_time']; ?></span>
+                                                <a href='javascript:;' class="replayButton" nickname="<?php echo $comval['suser']['name']; ?>" uid="<?php echo $comval['suser']['id'] ;?>" suid="<?php echo $user['id'] ;?>" wid="<?php echo $val['weibo']['w_id']; ?>" parentid="<?php echo $comval['comment']['id']; ?>" comboxid="commentBox_<?php echo $val['weibo']['w_id'];?>">
+                                                <?php if($comval['suser']['id'] != $user['id']):?>
+                                                    回复
+                                                <?php endif; ?>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    <?php endforeach; ?>
                                     </ul>
                                 </div>
                             </div>

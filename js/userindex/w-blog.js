@@ -50,27 +50,16 @@ $(document).ready(function(){
 });
 /***********reply********************/
 	function active(obj){
-		var rpl_name=$(obj).attr("name");
-		var arr=rpl_name.split("_");
-		var rpl_active="rpl_active"+arr[1];	
-		var active_arr=[];
-		var active_obj=$(".replies");
-		for(i=0;i<active_obj.length;i++){
-			active_arr=$(active_obj.get(i)).attr("name");
-			if(active_arr==rpl_active){	
-				var rpl_status=$(active_obj.get(i)).css("display");
-				rpl_status=rpl_status.toString();
-					var none="none";
-					var block="block";
-				if(rpl_status==none){
-					$(active_obj.get(i)).css("display","block");
-				}
-				if(rpl_status==block){
-					$(active_obj.get(i)).css("display","none");
-				}
-				break;
-			}			
-		}
+		var reply_name=$(obj).attr("name");
+		var reply_active="reply_active"+reply_name;
+        var replies="replies_"+reply_name;
+		var active_obj=$('.'+replies);
+        var status= active_obj.css("display");
+       if(status=="block"){
+           active_obj.css("display","none");
+       }else{
+           active_obj.css("display","block");
+       }
 	}
 
 /*---------------------------------*/

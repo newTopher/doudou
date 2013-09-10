@@ -12,7 +12,4 @@ class ErrorController extends Controller{
             exit;
     }
 
-    public function test(){
-
-    }
 }

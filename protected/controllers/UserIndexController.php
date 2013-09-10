@@ -20,23 +20,39 @@ class UserIndexController extends Controller{
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/jquery.featureCarousel.js');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/w-blog.js');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/cufon-replace.js');
-           // $uid=Yii::app()->session['$uid'];
-            $uid=4;
-            $_POST[uid]=7;
-            $sid=6;
-            $Match=UserModel::getUserById($sid);
-        if($uid){
-            if($uid==$_POST[uid]){
-                $Masteruser=UserModel::getUserById($uid);
-                $user=$Masteruser;
+            $uid=Yii::app()->session['user']['id'];
+        if(isset($uid)){
+            //$sid=5;
+            $postuid = Yii::app()->request->getParam('uid','5');
+            $weiboModel= new WeiboModel();
+            if($uid==$postuid){
+                $MatchMessage=$this->loverMatch($uid,null);
+                $weiboList=$weiboModel->getUserWeiboList(array($uid));
+                $this->validateWeiboList($weiboList);
+                $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }else{
-                $Masteruser=UserModel::getUserById($_POST[uid]);
-                $user=UserModel::getUserById($uid);
+                $weiboList=$weiboModel->getUserWeiboList(array($postuid));
+                $MatchMessage=$this->loverMatch($uid,$postuid);
+                $this->validateWeiboList($weiboList);
+                $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }
         }else{
-            Yii::app()->runControll('Error/error/errorMsg/'.'uid或者sid不能为空');
+            Yii::app()->runController('Error/error/errorMsg/'.'uid或者sid不能为空');
         }
-        $this->render('index',array('Mhead_img'=>$Masteruser['head_img'],'Fhead_img'=>$user['head_img'],'Match_img'=>$Match['head_img']));
+
+
     }
 
+    private function validateWeiboList($weiboList){
+        if(isset($weiboList)){
+            return $weiboList;
+        }else{
+            $error="您还没有发布微博信息哦，赶快去发布吧！";
+        }
+    }
+    public function loverMatch($uid,$Matchid){
+        
+
+    }
 }
+

@@ -23,12 +23,13 @@ class WeiboController extends Controller{
             $weiboModel->text=$text;
             $weiboModel->uid=$uid;
             if($pics != ''){
-                $weiboModel->pics = explode('/',$pics)[1];
+                $picArr=explode('/',$pics)[1];
+                $weiboModel->pics = $picArr[1];
             }else{
                 $weiboModel->pics='';
             }
-            if($weiboModel->addNewWeibo()){
-                echo CJSON::encode(array('code'=>'0','msg'=>'success'));
+            if(false !== ($wid=$weiboModel->addNewWeibo())){
+                echo CJSON::encode(array('code'=>'0','data'=>$wid,'msg'=>'success'));
             }else{
                 echo CJSON::encode(array('code'=>'-1','msg'=>'微博发布失败'));
                 return false;
@@ -67,19 +68,25 @@ class WeiboController extends Controller{
     public function actionComment(){
         $wid=Yii::app()->request->getParam('wid','');
         $uid=Yii::app()->request->getParam('uid','');
+        $suid=Yii::app()->request->getParam('suid','');
         $parentid=Yii::app()->request->getParam('parentid','');
         $commentContent=Yii::app()->request->getParam('comment_content','');
-        if(!empty($wid) && !empty($uid) && !empty($parentid) && !empty($commentContent)){
+        if(!empty($wid) && !empty($uid) && !empty($suid) && !empty($commentContent)){
             $weiboCommentModel = new WeiboCommentModel();
             $weiboCommentModel->w_id=$wid;
             $weiboCommentModel->uid=$uid;
+            $weiboCommentModel->suid=$suid;
             $weiboCommentModel->comment_content=$commentContent;
             $weiboCommentModel->parentid=$parentid;
             if(false !== ($id = $weiboCommentModel->addComment())){
-                echo CJSON::encode(array('code'=>'0','data'=>$id,'msg'=>'success'));
+                if(WeiboModel::addCommentCounts($weiboCommentModel->w_id)){
+                    echo CJSON::encode(array('code'=>'0','data'=>$id,'msg'=>'success'));
+                }else{
+                    echo CJSON::encode(array('code'=>'-1','msg'=>'评论次数增加失败'));
+                }
             }else{
                 echo CJSON::encode(array('code'=>'-1','msg'=>'评论失败'));
-                return false;
+                return;
             }
         }else{
             echo CJSON::encode(array('code'=>'-1','msg'=>'some is empty'));
