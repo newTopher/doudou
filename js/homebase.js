@@ -251,29 +251,36 @@ $(function(){
     });
     /*
       @ function
+     url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid')
      */
     $('.userShortInfo').each(function(){
         $(this).qtip({
             content: {
                 // 设置您要使用的文字图像的HTML字符串，正确的src URL加载图像
                 text: 'loading....',
-                url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid'),
-                 // 使用的URL加载的每个元素的rel属性
-                title:{
-                    text: '个人信息'// 给工具提示使用每个元素的文本标题
-                    //button: '关闭' // 在标题中显示关闭文字按钮
+                ajax:{
+                    url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid'),
+                    dataType:'json',
+                    success:function(data,status){
+                        if(status == 'success'){
+                            if(data.code==0){
+
+                            }else{
+
+                            }
+                        }
+                    }
                 }
             },
             position: {
                 my: 'top left',
                 at: 'bottom right',
-
                 adjust: {
                     screen: true, // 在任何时候都保持提示屏幕上的
                     x: 0, y: 0,
                     mouse: true,
                     resize: true,
-                    method: 'flip flip'
+                    method: 'shift'
                 }
             },
             show: {
@@ -299,7 +306,7 @@ $(function(){
                     width: 0,
                     radius: 4
                 },
-                name: 'light', // 使用默认的淡样式
+                classes: 'Light', // 使用默认的淡样式
                 width: 300 // 设置提示的宽度
             }
         })

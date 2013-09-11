@@ -393,8 +393,7 @@
     padding:2px;
 }
 .name_card {
-    background: url("http://img.t.sinajs.cn/t5/style/images/common/footer_bg.png?id=1345196970876") no-repeat -230px bottom;
-    _background: white;
+    background:white;
 }
 .name_card .name {
     zoom: 1;

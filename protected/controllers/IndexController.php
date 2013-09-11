@@ -30,12 +30,13 @@ class IndexController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/uploadify/insertAtCaret.js');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/uploadify/jquery.uploadify.js');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js/jquery.qtip.min.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/jquery.sinaEmotion.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js/uploadify/uploadify.css');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.qtip.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/uploadify/insertAtCaret.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/uploadify/jquery.uploadify.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.SinaEmotion.js');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.qtip.min.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/homebase.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/dialog.js');
         $user=Yii::app()->session['user'];

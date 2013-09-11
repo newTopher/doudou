@@ -97,49 +97,7 @@ class WeiboController extends Controller{
     public function actionAjaxgetUser(){
         $uid=Yii::app()->request->getParam('uid','');
         if(($user = UserModel::getUserById($uid))){
-            echo <<<eof
-<div class="userinfoboxcontent">
-    <div class="name_card">
-        <dl class="name clearfix">
-            <dt><a href="http://www.jsfoot.com/"><img class="picborder_r" alt="猫头鹰" src="images/0.jpg" /></a></dt>
-            <dd>
-                <p>
-                    <a href="http://www.jsfoot.com/">朱韬奋</a>
-                </p>
-                <p class="address">北京大学 </p>
-                <div>
-                    <ul class="userdata clearfix">
-                        <li><a href="http://www.jsfoot.com/">关注</a> 1095</li>
-                        <li class="W_vline">|</li>
-                        <li><a href="http://www.jsfoot.com/">粉丝</a> 963万</li>
-                    </ul>
-                </div>
-            </dd>
-        </dl>
-        <dl class="info clearfix">
-            <dt>个性签名：</dt>
-            <dd>微博搞笑中心！每天搜罗最搞笑最好玩的微博。关注我，获得每日新鲜笑料...</dd>
-        </dl>
-        <div class="links clearfix">
-            <p>
-                <span class="W_chat_stat W_chat_stat_online"></span>
-                <a href="javascript:;">聊天</a>
-                <span class="W_vline">|</span>
-                <span><a href="javascript:void(0);">求关注</a></span>
-                <span class="W_vline">|</span>
-                <span><a href="javascript:;">设置分组</a></span>
-            </p>
-            <div class="W_btn_c">
-                已关注
-                <em class="W_vline">|</em>
-                <a class="W_linkb" href="javascript:;"><em>取消</em></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-eof;
-
+            echo CJSON::encode(array('code'=>'0','msg'=>'successs'));
         }else{
             return;
         }
