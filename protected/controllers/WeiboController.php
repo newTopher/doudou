@@ -97,7 +97,21 @@ class WeiboController extends Controller{
     public function actionAjaxgetUser(){
         $uid=Yii::app()->request->getParam('uid','');
         if(($user = UserModel::getUserById($uid))){
-            echo CJSON::encode(array('code'=>'0','msg'=>'successs'));
+            $ta='她';
+            if($user['sex']==1){
+                $ta = '他';
+            }
+            echo "
+<div class='userinfoboxcontent'>
+    <div class='usertopinfobox'>
+        <span class='uheaderbox'><img src='".Yii::app()->request->hostInfo.'/uploads/userheadimage/'.$user['head_img']."'></span>
+        <p class='usershortinfo'>
+          <a href='".Yii::app()->request->hostInfo.'/userindex/index?uid='.$user['id']."'>看看".$ta."</a>  湖南大学".$user['grate']."级
+          爱慕<a href=''>12</a> | 喜欢<a href=''>45</a>   <a href=''>关注</a>   <a href=''>送花</a>
+        </p>
+    </div>
+</div>
+";
         }else{
             return;
         }
