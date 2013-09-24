@@ -409,4 +409,61 @@
     color: white;
     padding:2px 5px;
 }
+.usershortinfo a{
+    color:white;
+}
+.attentionsUserlist{
+    padding:5px;
+}
+.attentionsUserlist ul li{
+    list-style-type: none;
+    width:215px;
+    height:80px;
+    padding:15px;
+    float: left;
+}
+.imageList{
+    display: block;
+    width:80px;
+    height:80px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+.rightUserInfo{
+    float: right;
+    width:125px;
+    height: 80px;
+}
+.rightUserInfo span{
+    display: block;
+}
+.schoolinfo{
+    font-size: 12px;
+    white-space:nowrap;
+}
+.usernameinfo{
+    font-weight: bold;
+    font-size: 16px;
+}
+.userlikeButton{
+    margin-top: 5px;
+}
+.phoneindex{
+    padding-top:15px;
+    padding-left:50px;
+}
+.photobar{
+    width:790px;
+    height:30px;
+    padding-bottom: 25px;
+}
+.photobar button{
+    margin-right: 10px;
+}
+.photolistbox{
+    width: 790px;
+    height:300px;
+    background-color: red;
+}
 

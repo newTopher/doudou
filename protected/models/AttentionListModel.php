@@ -38,6 +38,18 @@ class AttentionListModel extends CActiveRecord{
     }
 
     static public function getUserAttentionUidList($uid){
+        if(null !== ($attentionList=self::model()->findAll('follower_uid=:follower_uid',array(':follower_uid'=>$uid)))){
+            $ids=array($uid);
+            foreach($attentionList as $list){
+                $ids[]=$list->attributes['marster_uid'];
+            }
+            return $ids;
+        }else{
+            return array($uid);
+        }
+    }
+
+    static public function getUserFollowerUidList($uid){
         if(null !== ($attentionList=self::model()->findAll('marster_uid=:marster_uid',array(':marster_uid'=>$uid)))){
             $ids=array($uid);
             foreach($attentionList as $list){
@@ -47,5 +59,9 @@ class AttentionListModel extends CActiveRecord{
         }else{
             return array($uid);
         }
+    }
+
+    public function getAttentionUserList(){
+
     }
 }
