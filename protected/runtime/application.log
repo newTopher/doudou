@@ -11071,3 +11071,539 @@ in E:\Apache2.2\htdocs\doudou\index.php (13)
 2013/09/07 23:15:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
 2013/09/07 23:15:04 [trace] [system.db.ar.CActiveRecord] WeiboModel.insert()
 2013/09/07 23:15:04 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_weibo` (`uid`, `create_time`, `text`, `reposts_counts`, `comments_counts`, `pics`, `like`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2013/09/10 02:27:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:27:42 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:27:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/10 02:27:42 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:27:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:27:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:27:43 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/10 02:27:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:27:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:27:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IS NULL) ORDER BY create_time DESC
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] UserModel.find()
+2013/09/10 02:40:05 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE LOWER(email)=? LIMIT 1
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] UserModel.findByPk()
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_user` `t` WHERE `t`.`id`=1 LIMIT 1
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:05 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:05 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/10 02:40:05 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibocomment`
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibocomment`
+2013/09/10 02:40:06 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:06 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:06 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:06 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:06 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:10 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibocomment`
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibocomment`
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:10 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:15 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibocomment`
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibocomment`
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:15 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:20 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:20 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:20 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=14
+2013/09/10 02:40:20 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:20 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:20 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:20 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=15
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=16
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:21 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=17
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:21 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=18
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=19
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:22 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:22 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=20
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=21
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=22
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:23 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:23 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:23 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=23
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=24
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:24 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=25
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:24 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:24 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=26
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=27
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:25 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] LikeModel.insert()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `dod_like` (`wid`, `uid`) VALUES (:yp0, :yp1)
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:25 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:25 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:26 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_like`
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_like`
+2013/09/10 02:40:26 [trace] [system.db.ar.CActiveRecord] LikeModel.findByAttributes()
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_like` `t` WHERE `t`.`wid`=:yp0 AND `t`.`uid`=:yp1 LIMIT 1
+2013/09/10 02:40:26 [trace] [system.db.ar.CActiveRecord] LikeModel.deleteByPk()
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM `dod_like` WHERE `dod_like`.`id`=28
+2013/09/10 02:40:26 [trace] [system.db.ar.CActiveRecord] WeiboModel.findByPk()
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_weibo` `t` WHERE `t`.`w_id`=5 LIMIT 1
+2013/09/10 02:40:26 [trace] [system.db.ar.CActiveRecord] WeiboModel.update()
+2013/09/10 02:40:26 [trace] [system.db.ar.CActiveRecord] WeiboModel.updateByPk()
+2013/09/10 02:40:26 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `dod_weibo` SET `w_id`=:yp0, `other_attr`=:yp1, `source`=:yp2, `retweeted_status`=:yp3, `uid`=:yp4, `create_time`=:yp5, `text`=:yp6, `reposts_counts`=:yp7, `comments_counts`=:yp8, `pics`=:yp9, `like`=:yp10 WHERE `dod_weibo`.`w_id`=5
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:40 [trace] [system.db.CDbConnection] Opening DB connection
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_attentionlist`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_attentionlist`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.count()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `dod_attentionlist` `t` WHERE follower_uid=:follower_uid
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] AttentionListModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `dod_attentionlist` `t` WHERE marster_uid=:marster_uid
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibo`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibo`
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_user`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_user`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`w_id` AS `t0_c0`, `t`.`uid` AS `t0_c1`, `t`.`create_time` AS `t0_c2`, `t`.`text` AS `t0_c3`, `t`.`reposts_counts` AS `t0_c4`, `t`.`comments_counts` AS `t0_c5`, `t`.`pics` AS `t0_c6`, `t`.`other_attr` AS `t0_c7`, `t`.`source` AS `t0_c8`, `t`.`retweeted_status` AS `t0_c9`, `t`.`like` AS `t0_c10`, `user`.`user_sign` AS `t1_c6`, `user`.`name` AS `t1_c11`, `user`.`id` AS `t1_c0`, `user`.`head_img` AS `t1_c8` FROM `dod_weibo` `t`  LEFT OUTER JOIN `dod_user` `user` ON (`t`.`uid`=`user`.`id`)  WHERE (uid IN (:ycp0, :ycp1, :ycp2, :ycp3)) ORDER BY create_time DESC
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `dod_weibocomment`
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `dod_weibocomment`
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
+2013/09/10 02:40:40 [trace] [system.db.ar.CActiveRecord] WeiboCommentModel.findAll()
+2013/09/10 02:40:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`w_id` AS `t0_c1`, `t`.`uid` AS `t0_c2`, `t`.`create_time` AS `t0_c3`, `t`.`comment_content` AS `t0_c4`, `t`.`suid` AS `t0_c5`, `suser`.`user_sign` AS `t1_c6`, `suser`.`name` AS `t1_c11`, `suser`.`id` AS `t1_c0`, `suser`.`head_img` AS `t1_c8` FROM `dod_weibocomment` `t`  LEFT OUTER JOIN `dod_user` `suser` ON (`t`.`suid`=`suser`.`id`)  WHERE (w_id=:w_id) ORDER BY create_time DESC
