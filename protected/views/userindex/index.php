@@ -43,13 +43,13 @@
             </div>
 
         <!--==============================content================================-->
-        <div id="content">
-            <div class="main">
+     <div id="content">
+        <div class="main">
+
 
 <!--==============================w_blog=================================-->
                 <?php $i=0; foreach($weiboList as $key=>$val):$i=$i+1;?>
                     <div class="w_blog">
-
 							<div class="blog_content">
                                         <div class="content_main">
                                             <h2>转自：人人网</h2>
@@ -98,36 +98,35 @@
 											<span class="time">2013/1/28</span>
 											<div class="action">
                                             <a href="javascript:;">回复</a><a href="javascript:;">赞</a>
-
-                                        </div>
+                                            </div>
 										</div>
 									</div>
 								</div>
+
                                 <div class="feed-comment">
-									<span class="avatar">
+									<span class="avatar" name="<?php echo $i;?>" style="display:none;">
 										<img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>">
 									</span>
-                                    <div class="comment-box">
-                                        <textarea data-fid="111"  placeholder="评论...."></textarea>
-                                        <div class="action">
-                                            <div class="action-l">
-                                                <a href="#nogo" onclick="return false;"class="emotion">表情
-                                                    <span class="tip"></span>
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <a href="#nogo" onclick="return false;" class="mention">
-                                                </a>
-												<span class="share">
-													<input id="shareThis_ID_" type="checkbox">
-													<label for="shareThis_ID_">同时分享</label>
-												</span>
-                                            </div>
-                                            <div class="action-r">
-                                                <input type="submit" value="回复" href="#nogo" onclick="return false;" class="submit submit-disabled">
-                                            </div>
-                                        </div>
+                                <div class="comment-box">
+                                    <textarea data-fid="111"  placeholder="评论...." class="text-area"></textarea>
+                                </div>
+                                <div class="action">
+                                    <div class="action-l">
+                                        <a href="#nogo" onclick="return false;"class="emotion">表情
+                                             <span class="tip"></span>
+                                             <span class="arrow"></span>
+                                        </a>
+                                        <a href="#nogo" onclick="return false;" class="mention"></a>
+											<span class="share">
+												<input id="shareThis_ID_" type="checkbox">
+												<label for="shareThis_ID_">同时分享</label>
+											</span>
+                                    </div>
+                                    <div class="action-r">
+                                        <input type="submit" value="回复" href="#nogo" class="submit-disabled submit" name="<?php echo $i;?>">
                                     </div>
                                 </div>
+                            </div>
 							</div>
 				</div>
                 <?php endforeach;?>

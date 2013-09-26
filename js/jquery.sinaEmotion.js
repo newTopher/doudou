@@ -78,13 +78,12 @@ function AnalyticEmotion(s) {
 		var cat_page;
 		$(this).live('click',function(event){
 			event.stopPropagation();
-			
 			var eTop = target.offset().top + target.height() + 15;
 			var eLeft = target.offset().left - 1;
-			
-			if($('#emotions .categorys')[0]){
-				//$('#emotions').css({top: eTop, left: eLeft});
-				$('#emotions').toggle();
+
+                if($('#emotions .categorys')[0]){
+                    //$('#emotions').css({top: eTop, left: eLeft});
+                    $('#emotions').toggle();
 				return;
 			}
 			$('body').append('<div id="emotions"></div>');
