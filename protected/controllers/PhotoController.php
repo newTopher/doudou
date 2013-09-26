@@ -10,7 +10,15 @@ class PhotoController extends Controller{
 
     public function actionIndex(){
         $user = Yii::app()->session['user'];
+
         $this->render('photoindex',array(
+            'user'=>$user
+        ));
+    }
+
+    public function actionPhotos(){
+        $user = Yii::app()->session['user'];
+        $this->render('photos',array(
             'user'=>$user
         ));
     }

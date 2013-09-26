@@ -48,7 +48,18 @@
                     </div>
 
                     <div class="photolistbox">
-
+                        <li class="unstyled">
+                            <a href="<?php echo Yii::app()->createUrl('Photo/Photos'); ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/uploads/20130926/psb.png'; ?>" class="img-polaroid"></a>
+                            <span class="photoTitle"><a href=""> 贴图相册(52张)</a></span>
+                        </li>
+                        <li class="unstyled">
+                            <a href="<?php echo Yii::app()->createUrl('Photo/Photos'); ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/uploads/20130926/psb.png'; ?>" class="img-polaroid"></a>
+                            <span class="photoTitle"><a href=""> 封面相册(32张)</a></span>
+                        </li>
+                        <li class="unstyled">
+                            <a href="<?php echo Yii::app()->createUrl('Photo/Photos'); ?>"><img src="<?php echo Yii::app()->request->baseUrl.'/uploads/20130926/psb.png'; ?>" class="img-polaroid"></a>
+                            <span class="photoTitle"><a href=""> 相册(36张)</a></span>
+                        </li>
                     </div>
                 </div>
             </div>

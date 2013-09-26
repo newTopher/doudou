@@ -464,6 +464,41 @@
 .photolistbox{
     width: 790px;
     height:300px;
-    background-color: red;
+}
+.photolistbox li{
+    width:180px;
+    height: 140px;
+    padding: 5px;
+    float: left;
+    list-style-type: none;
+}
+.photolistbox li img{
+    width:170px;
+    height:130px;
+    border: none;
+}
+.photoTitle{
+    text-align: left;
+    margin-top:5px;
+    width:170px;
+    height:50px;
+    display: block;
+}
+
+.photoslist{
+    width: 790px;
+    height:300px;
+}
+.photoslist li{
+    width:180px;
+    height: 150px;
+    padding: 2px;
+    float: left;
+    list-style-type: none;
+}
+.photoslist li img{
+    width:180px;
+    height:150px;
+    border: none;
 }
 
