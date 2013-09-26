@@ -1,8 +1,4 @@
 /*--------------w_blog----------------------*/
-function getTime(){
-    var date=new Date();
-
-}
 $(function(){
 	var div=$("#content .main .w_blog");
 	var len=div.length;
@@ -54,15 +50,19 @@ $(function(){
         var reply_name=$(this).attr("name");
         var replies="replies_"+reply_name;
         var active_obj=$('.'+replies);
+        $s=active_obj.attr("data");
         var status= active_obj.css("display");
-        if(status=="block"){
-            active_obj.hide();
+        if($s=="Y"){
+            if(status=="block"){
+                active_obj.hide();
+            }else{
+                active_obj.show();
+            }
+            $(this).children(".avatar").hide();
+            event.stopPropagation();
         }else{
-            active_obj.show();
+            active_obj.hide();
         }
-        $(this).children(".avatar").hide();
-        event.stopPropagation();
-
     });
     $(".a_reply").hover(
         function(){
@@ -111,7 +111,10 @@ $(function(){
             var commentData=$(this).parent().parent().parent().find(".comment-box textarea").val();
             if(commentData){
                 if( $(this).attr('class')=="submit"&&$(".submit").attr("id")==$(this).attr("id")){
-                    $.post(tipMsg.baseUrl+tipMsg.commenturl,{data:commentData},function(){
+                    $replies =  $(this).parent().parent().parent().parent();
+                    var w_id=$replies.attr("data");
+                    var uid=$
+                    $.post(tipMsg.baseUrl+tipMsg.commenturl,{data:commentData,w_id:w_id},function(){
                         if(data.code==1){
                             var htmlText="<div class='a_reply'>"+
                                 "<a href='#' class='avatar' target='_blank'>"+
@@ -120,14 +123,14 @@ $(function(){
                                 "<div class='reply_content'>"+
                                 "<p class='text'>"+"<a href='#' class='name'>"+"cz_keller"+"</a>"+commentData+"</p>"+
                                 "<div class='bottom_bar'>"+
-                                "<span class='time'>"+"2013/1/28"+"</span>"+
+                                "<span class='time'>"+"五秒钟以前"+"</span>"+
                                 "<div class='action'>"+
                                 "<a href='javascript:;'>"+"回复"+"</a>"+"<a href='javascript:;'>"+"赞"+"</a>"+
                                 "</div>"+
                                 "</div>"+
                                 "</div>"+
                                 "</div>"
-                            $replies =  $(this).parent().parent().parent().parent();
+
                             $replies.children().last().prev().after(htmlText);
                             $(this).removeClass("submit").addClass("submit-disabled");
                             $(this).parent().parent().parent().find(".comment-box textarea").val("");

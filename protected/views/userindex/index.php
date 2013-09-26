@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: Administrator
-    * Date: 13-9-1
-    * Time: 下午5:53
-    * To change this template use File | Settings | File Templates.
- */
-?>
 <body id="page1">
 
             <div class="menu-row">
@@ -32,7 +23,7 @@
                                 <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
-                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$weiboList[0]['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
                                 <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
@@ -48,8 +39,16 @@
 
 
 <!--==============================w_blog=================================-->
-                <?php $i=0; foreach($weiboList as $key=>$val):$i=$i+1;?>
-                    <div class="w_blog">
+                <?php $i=0; foreach($weiboList as $key=>$val): $i=$i+1;?>
+            <?php
+            if( $val['comment']==null){
+                $isSetComment="N";
+                $val['comment']['comment_conteng']=null;
+            }else{
+                $isSetComment="Y";
+            }
+            ?>
+                    <div class="w_blog" data="<?php echo $w_id=$val['weibo']['w_id'];?>">
 							<div class="blog_content">
                                         <div class="content_main">
                                             <h2>转自：人人网</h2>
@@ -58,7 +57,7 @@
                                             <div class="share-video">
                                                 <a href="#"></a>
 									</div>
-									<p class="main_text"><a href="#">日常生活百科<?php echo $i;?></a><?php echo $val['weibo']['text'];?></p>
+									<p class="main_text"><a href="#">日常生活百科</a><?php echo $val['weibo']['text'];?></p>
 								</div>
 							</div>
 
@@ -85,15 +84,14 @@
 									</p>
 								</div>
 							</div>
-
-							<div class="<?php echo 'replies_'.$i;?>" name="rpl_active2" style="display:none;">
+							<div class="<?php echo 'replies_'.$i;?>" name="rpl_active2" style="display:none;" data="<?echo $isSetComment;?>">
 								<div class="a_reply">
 									<a href="#" class="avatar" target="_blank">
 									<img src="/images/userindex/gallery-img2.png">
 									</a>
 
 									<div class="reply_content">
-										<p class="text"><a href="#" class="name">cz_keller</a>":HELLO WORLD"</p>
+										<p class="text"><a href="#" class="name" name="<?php echo 1;?>">cz_keller</a><?php $val['comment']['comment_content'];?></p>
 										<div class="bottom_bar">
 											<span class="time">2013/1/28</span>
 											<div class="action">

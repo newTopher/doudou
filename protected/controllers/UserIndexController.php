@@ -23,19 +23,21 @@ class UserIndexController extends Controller{
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.sinaEmotion.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/userindex/w-blog.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/base.js');
-        $uid=Yii::app()->session['user']['id'];
-        if(isset($uid)){
-            //$sid=5;
-            $postuid = Yii::app()->request->getParam('uid','1');
+        $sid=Yii::app()->session['user']['id'];
+        if(isset($sid)){
+            $uid = Yii::app()->request->getParam('uid',$sid);
             $weiboModel= new WeiboModel();
-            if($uid==$postuid){
-                $MatchMessage=$this->loverMatch($uid,null);
-                $weiboList=$weiboModel->getUserWeiboList(array($uid));
+
+            if($sid==$uid){
+                $MatchMessage=$this->loverMatch($sid,null);
+                $weiboList=$weiboModel->getUserWeiboList(array($sid));
                 $this->validateWeiboList($weiboList);
+                echo $weiboList[0]['user']['head_img'];
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
+
             }else{
-                $weiboList=$weiboModel->getUserWeiboList(array($postuid));
-                $MatchMessage=$this->loverMatch($uid,$postuid);
+                $weiboList=$weiboModel->getUserWeiboList(array($uid));
+                $MatchMessage=$this->loverMatch($uid,$uid);
                 $this->validateWeiboList($weiboList);
                 $this->render('index',array('MatchMessage'=>$MatchMessage,'weiboList'=>$weiboList));
             }
@@ -53,11 +55,13 @@ class UserIndexController extends Controller{
            return $error="您还没有发布微博信息哦，赶快去发布吧！";
         }
     }
-    public function loverMatch($uid,$Matchid){
-        
+    public function loverMatch($sid,$Matchid){
 
     }
-    public function commentSubmit(){
+    public function actionCommentSubmit(){
+
+        $comment=$_POST["commentData"];
+
 
     }
 }
