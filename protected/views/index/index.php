@@ -3,34 +3,6 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<div class="navbar navbar-inverse navbar-fixed-top" xmlns="http://www.w3.org/1999/html"
-     xmlns="http://www.w3.org/1999/html">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">兜兜网</a>
-            <div class="nav-collapse collapse">
-                <p class="navbar-text pull-right">
-                    <?php if(!Yii::app()->user->isGuest): ?>
-                        <a href="<?php echo Yii::app()->createUrl('index/logout'); ?>" class="navbar-link"><?php echo Yii::app()->user->name.'('.$user['name'].')'; ?></a>
-                    <?php elseif(Yii::app()->user->isGuest): ?>
-                        <a href="<?php echo Yii::app()->createUrl('login/login'); ?>" class="navbar-link">登陆</a>
-                    <?php endif; ?>
-
-                </p>
-                <ul class="nav">
-                    <li class="active"><a href="#">个人中心</a></li>
-                    <li><a href="#about">找人</a></li>
-                    <li><a href="#about">照片</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div>
-</div>
 
 <div class="container">
     <!--start top-->
@@ -58,8 +30,8 @@ $this->pageTitle=Yii::app()->name;
             <div class="userBaseInfoBox">
                 <div class="userBaseInfoBox-Top">
                     <ul class="inline">
-                        <li><i class="icon-envelope"></i><span class="infoTips">有眼缘的</span><a href=""><?php if($attentions==null){echo '0';}else{echo $attentions;}; ?></a></li>
-                        <li><i class="icon-envelope"></i><span class="infoTips">爱慕我的</span><a href=""><?php if($fans==null){echo '0';}else{echo $fans;}; ?></a></li>
+                        <li><i class="icon-envelope"></i><span class="infoTips">有眼缘的</span><a href="<?php echo Yii::app()->createUrl('userRelation/Attentions');  ?>"><?php if($attentions==null){echo '0';}else{echo $attentions;}; ?></a></li>
+                        <li><i class="icon-envelope"></i><span class="infoTips">爱慕我的</span><a href="<?php echo Yii::app()->createUrl('userRelation/Followers');  ?>"><?php if($fans==null){echo '0';}else{echo $fans;}; ?></a></li>
                         <li><i class="icon-envelope"></i><span class="infoTips">收到的求爱</span><a href="">235</a></li>
                         <li><i class="icon-envelope"></i><span class="infoTips">收到的鲜花</span><a href="">235</a></li>
                     </ul>
@@ -137,7 +109,8 @@ $this->pageTitle=Yii::app()->name;
         <div class="span2">
             <div class="userLeftBar">
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="">我的照片</a></li>
+                    <li class="active"><a href="<?php echo Yii::app()->createUrl('Index/Index'); ?>">我的主页</a></li>
+                    <li><a href="<?php echo Yii::app()->createUrl('Photo/Index'); ?>">我的照片</a></li>
                     <li><a href="">玩得好的</a></li>
                     <li><a href="">大家在玩</a></li>
                     <li><a href="">牵线搭桥</a></li>
@@ -159,14 +132,14 @@ $this->pageTitle=Yii::app()->name;
                     <?php foreach($weiboList as $key => $val): ?>
                         <div class="conWrap clear">
                             <div class="userHeaderPic">
-                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$val['user']['id']; ?>">
+                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$val['user']['id']; ?>" relid="<?php echo $val['user']['id']; ?>">
                                 <img class="img-rounded" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$val['user']['head_img']; ?>" alt="头像">
                                 </a>
                             </div>
                             <div class="conText">
                                 <div class="tAreaBox">
                                     <div class="userLitleInfo">
-                                        <span class="mb_name"><a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl."/index-test.php/userindex/index?uid=".$val['user']['id']; ?>"><?php echo $val['user']['name'] ;?></a></span>
+                                        <span class="mb_name"><a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl."/index-test.php/userindex/index?uid=".$val['user']['id']; ?>" relid="<?php echo $val['user']['id']; ?>"><?php echo $val['user']['name'] ;?></a></span>
                                         <span class="sign">  <?php echo $val['user']['user_sign'] ;?></span>
                                     </div>
                                     <div class="ps">
@@ -194,15 +167,15 @@ $this->pageTitle=Yii::app()->name;
                                     <?php foreach($val['comment'] as $comval): ?>
                                         <li>
                                             <div class='comUserHeaderPic'>
-                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>">
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>" relid="<?php echo $comval['suser']['id']; ?>">
                                                 <img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$comval['suser']['head_img']; ?>" alt='头像'>
                                                 </a>
                                             </div>
                                             <div class='comUserNick'>
-                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>"><?php echo $comval['suser']['name']; ?></a>
+                                                <a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['suser']['id']; ?>" relid="<?php echo $comval['suser']['id']; ?>"><?php echo $comval['suser']['name']; ?></a>
                                             </div>
                                             <div class='userComContents'>
-                                                <span class="msign">:<a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['user']['id']; ?>">
+                                                <span class="msign">:<a class='userShortInfo' href="<?php echo Yii::app()->request->baseUrl.'/index-test.php/userindex/index?uid='.$comval['user']['id']; ?>" relid="<?php echo $comval['user']['id']; ?>">
                                                         <?php if($comval['comment']['parentid']): ?>
                                                             <?php echo '@'.$comval['user']['name']; ?>
                                                         <?php endif; ?>

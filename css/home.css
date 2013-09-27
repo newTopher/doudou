@@ -1,0 +1,59 @@
+li{
+    list-style-type: none;
+}
+#indexHeader {
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.navigation {
+    height: 46px;
+    background-color: #3ed4e5;
+}
+.nav-content {
+    width: 980px;
+    margin: 0 auto;
+}
+.nav-content .main-nav {
+    margin: 0 0 0 305px;
+    height: 46px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    _margin-top: -36px;
+}
+.nav-content .main-nav li {
+    float: left;
+    display: inline;
+    margin-right: 30px;
+}
+.nav-content .main-nav a {
+    display: block;
+    padding: 10px 6px;
+    color: #fff;
+}
+.logoBox{
+    float: left;
+    width: 143px;
+    height: 116px;
+    background: url("../images/home/logol.png");
+    z-index: 5;
+    position: relative;
+}
+.indexmMain{
+    width: 980px;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 10px;
+    position: relative;
+}
+.indexMainTop{
+    width: 980px;
+    height: 300px;
+    background: #8fbc8f;
+}
+.indexMainCenter{
+    width: 980px;
+    height: 500px;
+    background: #cd5c5c;
+    margin-top: 5px;
+}

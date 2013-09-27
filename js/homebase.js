@@ -251,18 +251,60 @@ $(function(){
     });
     /*
       @ function
+     url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid')
      */
-    $('.userShortInfo').live('mouseenter',function(event){
-        var mx = event.clientX+'px';
-        var my =event.clientY+'px';
-        var boxobj = $('.userinfoBox');
-        boxobj.css({left:mx,top:my});
-        boxobj.show();
+    $('.userShortInfo').each(function(){
+        $(this).qtip({
+            content: {
+                // 设置您要使用的文字图像的HTML字符串，正确的src URL加载图像
+                text: '加载中....',
+                url: tipMsg.baseUrl+tipMsg.ajaxgetuserurl+'?uid='+$(this).attr('relid'),
+                title:{
+                    text: $(this).attr("title"), // 给工具提示使用每个元素的文本标题
+                    button: '关闭' // 在标题中显示关闭文字按钮
+                }
+            },
+            position: {
+                my: 'top left',
+                at: 'bottom left',
+                adjust: {
+                    screen: true, // 在任何时候都保持提示屏幕上的
+                    x: 0, y: 0,
+                    mouse: true,
+                    resize: true,
+                    method: 'none'
+                }
+            },
+            show: {
+                when: 'mouseenter', //或click
+                solo: true, // 一次只显示一个工具提示
+                target:true,
+                fixed:false
+            },
+            hide: {
+                event:'mouseleave',
+                delay:300,
+                fixed: true
+            },
+            style: {
+                tip: {
+                    corner: true,
+                    mimic: false,
+                    width: 0,
+                    height: 0,
+                    border: true,
+                    offset: 0
+                }, // 设置一个语音气泡提示在指定工具提示角落的工具提示
+                border: {
+                    width: 0,
+                    radius: 4
+                },
+                name: 'light', // 使用默认的淡样式
+                width: 200 // 设置提示的宽度
+            }
+        })
     });
 
-    $('.userShortInfo').live('mouseleave',function(event){
-        boxobj.hide();
-    });
 
 
 

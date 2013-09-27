@@ -23,6 +23,21 @@ class UserModel extends CActiveRecord{
         );
     }
 
+    public static function getUsersByIdList($idarray){
+        $criteria = new CDbCriteria();
+        $criteria->select='id,email,sex,birthday,school_id,user_sign,details,head_img,username,name,grate,followers_counts,follow_me,attention_counts,tags,school_name';
+        $criteria->addInCondition('id',$idarray);
+        $users=array();
+        if(null !== ($list=self::model()->findAll($criteria))){
+            foreach($list as $val){
+                $users[]=$val->attributes;
+            }
+            return $users;
+        }else{
+            return null;
+        }
+    }
+
     public static function validEmail($email){
         return self::model()->find('email=:email',array(':email'=>$email));
     }
