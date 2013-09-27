@@ -298,7 +298,7 @@ h1 a {text-decoration:none}
 	text-decoration:underline;
 	color:#035484;
 }
-.main .action{
+.main .actions{
 	color:#AAA;
 }
 .time{
@@ -355,7 +355,7 @@ h1 a {text-decoration:none}
 }
 .bottom_bar .action a{
 	color:#369;
-	padding:10px;
+	padding-left:10px;
 	float:right;
 	font-size:12px;
 }
@@ -375,11 +375,8 @@ h1 a {text-decoration:none}
 	box-shadow:0 1px 0 0 #FFF inset;
 	border-radius:0 0 3px 3px;
 }
-.feed-comment .avatar{
-	display:none;
-}
 .comment-box{
-	margin:10px 20px;
+	margin:10px 20px 0 20px;
 }
 .comment-box textarea{
 	resize:none;
@@ -393,13 +390,14 @@ h1 a {text-decoration:none}
 	line-height:23px;
 	background-color:#FFF;
 	color:#888;
+    margin-bottom:10px;
 }
-.comment-box .action{
-	display:none;
-	padding-top:10px;
+.feed-comment .action{
+	display:block;
 	overflow:hidden;
-	height:28px;
+	height:20px;
 	margin-left:40px;
+    margin-bottom:10px;
 }
 .action-l{
 	padding-top:5px;
@@ -407,16 +405,16 @@ h1 a {text-decoration:none}
 	float:left;
 }
 .emotion{
-	background:url(../../images/userindex/re-icons.png) no-repeat scroll 0 0;
-	display:block;
-	float:left;
-	height:14px;
-	margin-right:20px;
-	outline:0 none;
-	position:relative;
-	text-indent:-9999em;
-	width:14px;
-	z-index:2;
+    background:url(../../images/userindex/re-icons.png) no-repeat scroll 0 0;
+    display:block;
+    float:left;
+    height:14px;
+    margin-right:20px;
+    outline:0 none;
+    position:relative;
+    text-indent:-9999em;
+    width:14px;
+    z-index:2;
 }
 .mention{
 	background:url(../../images/userindex/re-icons.png) no-repeat scroll 0 -14px;
@@ -453,14 +451,24 @@ h1 a {text-decoration:none}
 .action-r .submit-disabled:hover{
 	color:#dedfde;
 }
+.action-r .submit{
+    background:url(../../images/userindex/tl-re-btn.png)0px -1px no-repeat;
+    color:#dedfde;
+    cursor:pointer;
+    margin-right:10px;
+    border:none;
+    box-shadow:none;
+}
 .action-r .submit-disabled{
-	background:url(../../images/userindex/tl-re-btn.png)-55px 0 no-repeat;
+	background:url(../../images/userindex/tl-re-btn.png)-56px -1px no-repeat;
 	color:#dedfde;
 	cursor:default;
 	margin-right:10px;
 	border:none;
 	box-shadow:none;
 }
+
+
 /***** contact form *****/
 
 #contact-form {width:580px}

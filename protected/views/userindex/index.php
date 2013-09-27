@@ -1,13 +1,3 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: Administrator
-    * Date: 13-9-1
-    * Time: 下午5:53
-    * To change this template use File | Settings | File Templates.
- */
-print_r($_SESSION);
-?>
 <body id="page1">
 
             <div class="menu-row">
@@ -33,7 +23,7 @@ print_r($_SESSION);
                                 <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
-                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
+                                <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$weiboList[0]['user']['head_img']?>"></a>
                             </div>
                             <div class="carousel-feature">
                                 <a href="#"><img class="carousel-image" alt="" src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>"></a>
@@ -44,13 +34,21 @@ print_r($_SESSION);
             </div>
 
         <!--==============================content================================-->
-        <div id="content">
-            <div class="main">
+     <div id="content">
+        <div class="main">
+
 
 <!--==============================w_blog=================================-->
-                <?php $i=0; foreach($weiboList as $key=>$val):$i=$i+1;?>
-                    <div class="w_blog">
-
+                <?php $i=0; foreach($weiboList as $key=>$val): $i=$i+1;?>
+            <?php
+            if( $val['comment']==null){
+                $isSetComment="N";
+                $val['comment']['comment_conteng']=null;
+            }else{
+                $isSetComment="Y";
+            }
+            ?>
+                    <div class="w_blog" data="<?php echo $w_id=$val['weibo']['w_id'];?>">
 							<div class="blog_content">
                                         <div class="content_main">
                                             <h2>转自：人人网</h2>
@@ -59,12 +57,12 @@ print_r($_SESSION);
                                             <div class="share-video">
                                                 <a href="#"></a>
 									</div>
-									<p class="main_text"><a href="#">日常生活百科<?php echo $i;?></a><?php echo $val['weibo']['text'];?></p>
+									<p class="main_text"><a href="#">日常生活百科</a><?php echo $val['weibo']['text'];?></p>
 								</div>
 							</div>
 
 							<div class="legend" >
-								<a href="javascript:;" class="replied" name="<?php echo $i;?>" onclick="active(this);">回复</a>
+								<a href="javascript:;" class="replied" name="<?php echo $i;?>">回复</a>
 								<a href="javascript:;" class="shared">共享</a>
 							</div>
 
@@ -86,27 +84,48 @@ print_r($_SESSION);
 									</p>
 								</div>
 							</div>
-
-							<div class="<?php echo 'replies_'.$i;?>" name="rpl_active2" style="display:none;">
+							<div class="<?php echo 'replies_'.$i;?>" name="rpl_active2" style="display:none;" data="<?echo $isSetComment;?>">
 								<div class="a_reply">
 									<a href="#" class="avatar" target="_blank">
 									<img src="/images/userindex/gallery-img2.png">
 									</a>
 
 									<div class="reply_content">
-										<p class="text"><a href="#" class="name">cz_keller</a>":HELLO WORLD"</p>
+										<p class="text"><a href="#" class="name" name="<?php echo 1;?>">cz_keller</a><?php $val['comment']['comment_content'];?></p>
 										<div class="bottom_bar">
 											<span class="time">2013/1/28</span>
 											<div class="action">
                                             <a href="javascript:;">回复</a><a href="javascript:;">赞</a>
-
-                                        </div>
+                                            </div>
 										</div>
 									</div>
 								</div>
-                                <textarea class="reply_content" placeholder="在此输入评论内容"></textarea>
-							</div>
 
+                                <div class="feed-comment">
+									<span class="avatar" name="<?php echo $i;?>" style="display:none;">
+										<img src="<?php echo Yii::app()->request->baseUrl.'/uploads/userheadimage/'.$_SESSION['user']['head_img']?>">
+									</span>
+                                <div class="comment-box">
+                                    <textarea data-fid="111"  placeholder="评论...." class="text-area"></textarea>
+                                </div>
+                                <div class="action">
+                                    <div class="action-l">
+                                        <a href="#nogo" onclick="return false;"class="emotion">表情
+                                             <span class="tip"></span>
+                                             <span class="arrow"></span>
+                                        </a>
+                                        <a href="#nogo" onclick="return false;" class="mention"></a>
+											<span class="share">
+												<input id="shareThis_ID_" type="checkbox">
+												<label for="shareThis_ID_">同时分享</label>
+											</span>
+                                    </div>
+                                    <div class="action-r">
+                                        <input type="submit" value="回复" href="#nogo" class="submit-disabled submit" name="<?php echo $i;?>">
+                                    </div>
+                                </div>
+                            </div>
+							</div>
 				</div>
                 <?php endforeach;?>
 <!--==============================w_blog==END===============================-->
